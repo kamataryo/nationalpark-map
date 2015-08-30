@@ -71,7 +71,7 @@ moveToCurrentPosition = () ->
 			# 読み取り成功
 			currentPosition = new google.maps.LatLng position.coords.latitude, position.coords.longitude
 			##マーカーを表示
-			if currentPositionMarker? then currentPositionMarker.setMap null
+			if currentPositionMarker isnt null then currentPositionMarker.setMap null
 			currentPositionMarker = new google.maps.Marker
 				position: currentPosition
 				map: googlemapCanvas
