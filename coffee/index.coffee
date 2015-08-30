@@ -1,5 +1,5 @@
 googlemapCanvas = null #googlemapのキャンバスへの参照を格納
-currentPositionmarker = null #現在地のマーカーへの参照を格納しておくグローバル変数
+currentPositionMarker = null #現在地のマーカーへの参照を格納しておくグローバル変数
 timerId = 0 # 現在地追跡のためのsetTimeout用
 
 # 国立公園KMLのURLを定義
@@ -71,13 +71,15 @@ moveToCurrentPosition = () ->
 			# 読み取り成功
 			currentPosition = new google.maps.LatLng position.coords.latitude, position.coords.longitude
 			##マーカーを表示
-			if currentPositionMarker isnt null then currentPositionMarker.setMap null
-			currentPositionMarker = new google.maps.Marker
-				position: currentPosition
-				map: googlemapCanvas
+			if currentPositionMarker is null
+				currentPositionMarker = new google.maps.Marker
+					position: currentPosition
+					map: googlemapCanvas
+			else
+				currentPositionMarker.setPosition currentPosition
 			## 現在地にパン
 			newLatLng = currentPosition
-			googlemapCanvas.panTo newLatLng
+			sgooglemapCanvas.panTo newLatLng
 		, () ->
 			# 読み取りにエラー
 			return false

@@ -1,9 +1,9 @@
-var $map, NPs, base, currentPositionmarker, googlemapCanvas, initialPosition, key, kmlOverlayed, moveToCurrentButton, moveToCurrentPosition, myOptions, selectbox, timerId, traceConditionIcon, traceCurrentButton, value,
+var $map, NPs, base, currentPositionMarker, googlemapCanvas, initialPosition, key, kmlOverlayed, moveToCurrentButton, moveToCurrentPosition, myOptions, selectbox, timerId, traceConditionIcon, traceCurrentButton, value,
   indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
 googlemapCanvas = null;
 
-currentPositionmarker = null;
+currentPositionMarker = null;
 
 timerId = 0;
 
@@ -67,17 +67,18 @@ moveToCurrentPosition = function() {
       maximumAge: 200
     };
     return navigator.geolocation.getCurrentPosition(function(position) {
-      var currentPosition, currentPositionMarker, newLatLng;
+      var currentPosition, newLatLng;
       currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-      if (typeof currentPositionMarker !== "undefined" && currentPositionMarker !== null) {
-        currentPositionMarker.setMap(null);
+      if (currentPositionMarker === null) {
+        currentPositionMarker = new google.maps.Marker({
+          position: currentPosition,
+          map: googlemapCanvas
+        });
+      } else {
+        currentPositionMarker.setPosition(currentPosition);
       }
-      currentPositionMarker = new google.maps.Marker({
-        position: currentPosition,
-        map: googlemapCanvas
-      });
       newLatLng = currentPosition;
-      return googlemapCanvas.panTo(newLatLng);
+      return sgooglemapCanvas.panTo(newLatLng);
     }, function() {
       return false;
     }, opts);

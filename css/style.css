@@ -1,14 +1,12 @@
-#move-to-current {
-  display: inline-block;
+#map {
+  height: 640px;
 }
+
 #move-to-current:hover {
   cursor: pointer;
   opacity: 0.6;
 }
 
-#trace-current {
-  display: inline-block;
-}
 #trace-current:hover {
   cursor: pointer;
   opacity: 0.6;
@@ -16,8 +14,4 @@
 
 #trace-condition {
   color: gray;
-}
-
-#map {
-  height: 640px;
 }
