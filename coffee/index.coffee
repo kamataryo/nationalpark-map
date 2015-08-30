@@ -79,7 +79,7 @@ moveToCurrentPosition = () ->
 				currentPositionMarker.setPosition currentPosition
 			## 現在地にパン
 			newLatLng = currentPosition
-			sgooglemapCanvas.panTo newLatLng
+			googlemapCanvas.panTo newLatLng
 		, () ->
 			# 読み取りにエラー
 			return false

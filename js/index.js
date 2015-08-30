@@ -78,7 +78,7 @@ moveToCurrentPosition = function() {
         currentPositionMarker.setPosition(currentPosition);
       }
       newLatLng = currentPosition;
-      return sgooglemapCanvas.panTo(newLatLng);
+      return googlemapCanvas.panTo(newLatLng);
     }, function() {
       return false;
     }, opts);
