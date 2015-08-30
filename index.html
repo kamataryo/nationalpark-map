@@ -2,30 +2,31 @@
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
-			<h1>今いる国立公園を表示する</h1>
+			<h1>国立公園マップ</h1>
+			<p>このアプリでは、以下のデータを一部加工して利用しています。<br>
+				<a href="http://www.biodic.go.jp/trialSystem/info/nps.html">
+					自然環境情報GIS提供システムー国立公園区域・地種区分データ閲覧
+				</a>
+				（環境省自然環境局 生物多様性センター）
+			</p>
 		</header>
 
 		<section>
 			<select id="select-np">
 				<option value="">（国立公園を選択）</option>
 			</select>
+			<div id="move-to-current">現在地を中心に表示</div>
+			<div id="trace-current"><i id="trace-condition" class="fa fa-play"></i>現在地を追跡</div>
 			<div id="map"></div>
 		</section>
 
 		<footer>
-			<h2>国立公園マップ</h2>
-			<p>このアプリでは、以下のデータを一部加工して利用しています。</p>
-			<p>
-				<a href="http://www.biodic.go.jp/trialSystem/info/nps.html">
-					自然環境情報GIS提供システムー国立公園区域・地種区分データ閲覧
-				</a>
-				（環境省自然環境局 生物多様性センター）
-			</p>
 		</footer>
 
 		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true&hl=ja"></script>

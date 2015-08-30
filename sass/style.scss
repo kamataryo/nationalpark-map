@@ -1,8 +1,26 @@
 @import "compass";
 
 
+@mixin button-style {
+	display: inline-block;
+	&:hover {
+		cursor: pointer;
+		opacity: 0.6;
+	}
+}
+
+
+#move-to-current {
+	@include button-style;
+}
+
+#trace-current {
+	@include button-style;
+}
+#trace-condition {
+	color: rgb(128,128,128);
+}
+
 #map {
-	border: 1px black solid;
-	height: 480px;
-	margin: 10px;
+	height: 640px;
 }

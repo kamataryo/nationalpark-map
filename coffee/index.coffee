@@ -1,37 +1,6 @@
-#現在の端末の位置に移動させる
-moveToCurrentPosition = (gmapobj) ->
-	if navigator.geolocation
-		## 端末が対応している場合
-		opts =
-			enableHighAcuracy: true
-			timeout: 3000 # 取得のタイムアウト
-			maximumAge: 200 # 現在の位置情報をキャッシュする時間
-
-		navigator.geolocation.getCurrentPosition (position) ->
-			# 読み取り成功
-			newLatLng = new google.maps.LatLng position.coords.latitude, position.coords.longitude
-			gmapobj.setCenter newLatLng
-		, () ->
-			# 読み取りにエラー
-			return false
-		,opts
-	else
-		# 端末未対応
-		return false
-
-
-
-
-# googlemapの初期設定
-$map = $('#map')
-initialPosition = new google.maps.LatLng 35.127152, 138.910627
-myOptions =
-	noClear : true,
-	center : initialPosition,
-	zoom : 10,
-	mapTypeId : google.maps.MapTypeId.ROADMAP
-map_canvas = new google.maps.Map $map[0], myOptions# $map[0]でdomに変換
-
+googlemapCanvas = null #googlemapのキャンバスへの参照を格納
+currentPositionmarker = null #現在地のマーカーへの参照を格納しておくグローバル変数
+timerId = 0 # 現在地追跡のためのsetTimeout用
 
 # 国立公園KMLのURLを定義
 base = "http://www.biodic.go.jp/trialSystem/LinkEnt/nps/"
@@ -68,18 +37,98 @@ NPs =
 	"屋久島": "NPS_yakushimaLinkEnt.kml"
 	"西表石垣": "NPS_iriomoteishigakiLinkEnt.kml"
 	"慶良間諸島": "NPS_fkeramashotouLinkEnt.kml"
+kmlOverlayed = [""]#重複読み込みをさけるための記憶用。(国立公園を選択)のラベルに対してselectbox.changeを発火させないように""を入れておく
 
-# セレクトボックスの初期設定
+
+
+# googlemapの初期設定
+$map = $('#map')
+initialPosition = new google.maps.LatLng 35.127152, 138.910627
+myOptions =
+	noClear : true,
+	center : initialPosition,
+	zoom : 16,
+	mapTypeId : google.maps.MapTypeId.ROADMAP
+googlemapCanvas = new google.maps.Map $map[0], myOptions# $map[0]でdomに変換
+
+
+# 状態トグルの最良の実装は...
+# google.maps.event.addListener googlemapCanvas, 'drag', () ->
+# 	clearTimeout timerId
+
+
+
+#現在の端末の位置に移動させる処理
+moveToCurrentPosition = () ->
+	if navigator.geolocation
+		## 端末が対応している場合
+		opts =
+			enableHighAcuracy: true
+			timeout: 3000 # 取得のタイムアウト
+			maximumAge: 200 # 現在の位置情報をキャッシュする時間
+
+		navigator.geolocation.getCurrentPosition (position) ->
+			# 読み取り成功
+			currentPosition = new google.maps.LatLng position.coords.latitude, position.coords.longitude
+			##マーカーを表示
+			if currentPositionMarker? then currentPositionMarker.setMap null
+			currentPositionMarker = new google.maps.Marker
+				position: currentPosition
+				map: googlemapCanvas
+			## 現在地にパン
+			newLatLng = currentPosition
+			googlemapCanvas.panTo newLatLng
+		, () ->
+			# 読み取りにエラー
+			return false
+		,opts
+	else
+		# 端末未対応
+		return false
+
+
+
+# セレクトボックスのオプションの初期設定
 selectbox = $('#select-np')
 for key, value of NPs
 	selectbox.append $("<option value='#{value}'>#{key}</option>")
-
-moveToCurrentPosition map_canvas
-
-
-# kmlの処理（加工とマップへの追加）
+# kmlの加工とマップへの追加
 selectbox.change () ->
-	unless kmlurl is ""
-		kmlurl = base + $(this).val()
-		kmlLayer = new google.maps.KmlLayer kmlurl
+	filename = $(this).val()
+	unless filename in kmlOverlayed
+		urlTokml = base + filename
+		kmlOverlayed.push filename
+		kmlLayer = new google.maps.KmlLayer urlTokml
 		kmlLayer.setMap map_canvas
+
+
+
+# 現在地へ移動ボタン
+moveToCurrentButton = $('#move-to-current')
+moveToCurrentButton.click () ->
+	moveToCurrentPosition()
+
+
+
+#現在地追跡ボタン
+traceCurrentButton = $('#trace-current')
+traceConditionIcon = $('#trace-condition')
+
+
+traceCurrentButton.click () ->
+
+	updateCurrentPosition = () ->
+		timerId = setTimeout () ->
+			moveToCurrentPosition()
+			updateCurrentPosition()
+
+	if $(this).hasClass 'on'
+		clearTimeout timerId
+		$(this).removeClass 'on'
+		traceConditionIcon.removeClass 'fa-pause'
+		traceConditionIcon.addClass 'fa-play'
+	else
+		$(this).addClass 'on'
+		traceConditionIcon.removeClass 'fa-play'
+		traceConditionIcon.addClass 'fa-pause'
+		updateCurrentPosition()

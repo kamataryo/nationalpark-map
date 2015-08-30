@@ -1,37 +1,11 @@
-var $map, NPs, base, initialPosition, key, map_canvas, moveToCurrentPosition, myOptions, selectbox, value;
+var $map, NPs, base, currentPositionmarker, googlemapCanvas, initialPosition, key, kmlOverlayed, moveToCurrentButton, moveToCurrentPosition, myOptions, selectbox, timerId, traceConditionIcon, traceCurrentButton, value,
+  indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
-moveToCurrentPosition = function(gmapobj) {
-  var opts;
-  if (navigator.geolocation) {
-    opts = {
-      enableHighAcuracy: true,
-      timeout: 3000,
-      maximumAge: 200
-    };
-    return navigator.geolocation.getCurrentPosition(function(position) {
-      var newLatLng;
-      newLatLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-      return gmapobj.setCenter(newLatLng);
-    }, function() {
-      return false;
-    }, opts);
-  } else {
-    return false;
-  }
-};
+googlemapCanvas = null;
 
-$map = $('#map');
+currentPositionmarker = null;
 
-initialPosition = new google.maps.LatLng(35.127152, 138.910627);
-
-myOptions = {
-  noClear: true,
-  center: initialPosition,
-  zoom: 10,
-  mapTypeId: google.maps.MapTypeId.ROADMAP
-};
-
-map_canvas = new google.maps.Map($map[0], myOptions);
+timerId = 0;
 
 base = "http://www.biodic.go.jp/trialSystem/LinkEnt/nps/";
 
@@ -69,6 +43,49 @@ NPs = {
   "慶良間諸島": "NPS_fkeramashotouLinkEnt.kml"
 };
 
+kmlOverlayed = [""];
+
+$map = $('#map');
+
+initialPosition = new google.maps.LatLng(35.127152, 138.910627);
+
+myOptions = {
+  noClear: true,
+  center: initialPosition,
+  zoom: 16,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+
+googlemapCanvas = new google.maps.Map($map[0], myOptions);
+
+moveToCurrentPosition = function() {
+  var opts;
+  if (navigator.geolocation) {
+    opts = {
+      enableHighAcuracy: true,
+      timeout: 3000,
+      maximumAge: 200
+    };
+    return navigator.geolocation.getCurrentPosition(function(position) {
+      var currentPosition, currentPositionMarker, newLatLng;
+      currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      if (typeof currentPositionMarker !== "undefined" && currentPositionMarker !== null) {
+        currentPositionMarker.setMap(null);
+      }
+      currentPositionMarker = new google.maps.Marker({
+        position: currentPosition,
+        map: googlemapCanvas
+      });
+      newLatLng = currentPosition;
+      return googlemapCanvas.panTo(newLatLng);
+    }, function() {
+      return false;
+    }, opts);
+  } else {
+    return false;
+  }
+};
+
 selectbox = $('#select-np');
 
 for (key in NPs) {
@@ -76,13 +93,44 @@ for (key in NPs) {
   selectbox.append($("<option value='" + value + "'>" + key + "</option>"));
 }
 
-moveToCurrentPosition(map_canvas);
-
 selectbox.change(function() {
-  var kmlLayer, kmlurl;
-  if (kmlurl !== "") {
-    kmlurl = base + $(this).val();
-    kmlLayer = new google.maps.KmlLayer(kmlurl);
+  var filename, kmlLayer, urlTokml;
+  filename = $(this).val();
+  if (indexOf.call(kmlOverlayed, filename) < 0) {
+    urlTokml = base + filename;
+    kmlOverlayed.push(filename);
+    kmlLayer = new google.maps.KmlLayer(urlTokml);
     return kmlLayer.setMap(map_canvas);
+  }
+});
+
+moveToCurrentButton = $('#move-to-current');
+
+moveToCurrentButton.click(function() {
+  return moveToCurrentPosition();
+});
+
+traceCurrentButton = $('#trace-current');
+
+traceConditionIcon = $('#trace-condition');
+
+traceCurrentButton.click(function() {
+  var updateCurrentPosition;
+  updateCurrentPosition = function() {
+    return timerId = setTimeout(function() {
+      moveToCurrentPosition();
+      return updateCurrentPosition();
+    });
+  };
+  if ($(this).hasClass('on')) {
+    clearTimeout(timerId);
+    $(this).removeClass('on');
+    traceConditionIcon.removeClass('fa-pause');
+    return traceConditionIcon.addClass('fa-play');
+  } else {
+    $(this).addClass('on');
+    traceConditionIcon.removeClass('fa-play');
+    traceConditionIcon.addClass('fa-pause');
+    return updateCurrentPosition();
   }
 });

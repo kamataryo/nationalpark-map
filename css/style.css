@@ -1,5 +1,23 @@
+#move-to-current {
+  display: inline-block;
+}
+#move-to-current:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#trace-current {
+  display: inline-block;
+}
+#trace-current:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#trace-condition {
+  color: gray;
+}
+
 #map {
-  border: 1px black solid;
-  height: 480px;
-  margin: 10px;
+  height: 640px;
 }
