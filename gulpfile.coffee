@@ -9,7 +9,7 @@ notify     = require 'gulp-notify'
 
 base = './'
 
-srcs = 
+srcs =
   watching : [
     base + '*.html'
     base + 'sass/*.scss'
@@ -20,10 +20,9 @@ srcs =
     base + 'css/*.css'
     base + 'js/*.js'
   ]
- 
+
 host = 'localhost'
 port = 8001
-
 
 
 # create server
@@ -33,16 +32,12 @@ gulp.task "connect", () ->
     livereload: true
     port: port
     host: host
-
   connect.server options
-
 
 
 
 gulp.task "watch", () ->
   gulp.watch srcs["watching"], ["compass", "coffee", "reload"]
-
-
 
 
 gulp.task "compass", () ->
@@ -58,12 +53,11 @@ gulp.task "compass", () ->
     .pipe gulp.dest base + 'css/'
 
 
-
 gulp.task "coffee", () ->
   gulp.src base + 'coffee/*.coffee'
     .pipe plumber(errorHandler: notify.onError '<%= error.message %>')
     .pipe coffee(bare: true).on 'error', (err) -> 
-      console.log err.stack   
+      console.log err.stack
     .pipe gulp.dest base + 'js/'
 
 
@@ -72,7 +66,4 @@ gulp.task "reload", ["compass", "coffee"] , () ->
     .pipe connect.reload()
 
 
-
 gulp.task "default", ["compass","coffee","connect", "watch" ]
-
-
