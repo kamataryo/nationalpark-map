@@ -2,11 +2,17 @@
   height: 640px;
 }
 
+#move-to-current {
+  font-size: 2em;
+}
 #move-to-current:hover {
   cursor: pointer;
   opacity: 0.6;
 }
 
+#trace-current {
+  font-size: 2em;
+}
 #trace-current:hover {
   cursor: pointer;
   opacity: 0.6;

@@ -101,8 +101,8 @@ selectbox.change () ->
 		urlTokml = base + filename
 		kmlOverlayed.push filename
 		kmlLayer = new google.maps.KmlLayer urlTokml
-		kmlLayer.setMap map_canvas
-
+		console.log kmlLayer
+		kmlLayer.setMap googlemapCanvas
 
 
 # 現在地へ移動ボタン

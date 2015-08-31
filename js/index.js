@@ -101,7 +101,8 @@ selectbox.change(function() {
     urlTokml = base + filename;
     kmlOverlayed.push(filename);
     kmlLayer = new google.maps.KmlLayer(urlTokml);
-    return kmlLayer.setMap(map_canvas);
+    console.log(kmlLayer);
+    return kmlLayer.setMap(googlemapCanvas);
   }
 });
 

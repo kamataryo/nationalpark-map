@@ -2,6 +2,7 @@
 
 
 @mixin button-style {
+	font-size: 2em;
 	&:hover {
 		cursor: pointer;
 		opacity: 0.6;
