@@ -106,6 +106,8 @@ selectbox.change(function() {
   }
 });
 
+d3.select('footer').selectAll('p').text('hello from d3');
+
 moveToCurrentButton = $('#move-to-current');
 
 moveToCurrentButton.click(function() {

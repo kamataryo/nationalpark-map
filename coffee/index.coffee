@@ -104,6 +104,17 @@ selectbox.change () ->
 		console.log kmlLayer
 		kmlLayer.setMap googlemapCanvas
 
+# ----------
+#D3.jsの練習
+d3
+ .select 'footer'
+ .selectAll 'p'
+ .text 'hello from d3'
+
+
+# ----------
+
+
 
 # 現在地へ移動ボタン
 moveToCurrentButton = $('#move-to-current')

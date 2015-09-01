@@ -85,7 +85,7 @@ rename  = require 'gulp-rename'
 NPs = require './NPs.json'
 
 
-gulp.task 'downloadKML', () ->
+gulp.task 'download', () ->
 
     getHttpBody = (url, callback) ->
         request.get url:url, (err, res, body) ->
@@ -129,13 +129,13 @@ gulp.task 'downloadKML', () ->
                     console.log "\"#{path.basename kmzUrl}\" has been downloaded."
                     downloadBin kmzUrl, kmzPath, (pathToKmz) ->
                         gulp.src kmzPath
-                        .pipe unzip()
-                        .pipe geojson()
-                        .pipe rename (filepath) ->
-                            console.log "\"#{path.basename kmzUrl}\" has been converted to geojson."
-                            filepath.basename = path.basename kmzUrl, '.kmz'
-                            filepath.extname = '.geojson'
-                        .pipe gulp.dest base + 'geojson'
+                            .pipe unzip()
+                            .pipe geojson()
+                            .pipe rename (filepath) ->
+                                console.log "\"#{path.basename kmzUrl}\" has been converted to geojson."
+                                filepath.basename = path.basename kmzUrl, '.kmz'
+                                filepath.extname = '.geojson'
+                            .pipe gulp.dest base + 'geojson'
 
     for name, url of NPs.urllist
         pushToGulpStream NPs.base + url
