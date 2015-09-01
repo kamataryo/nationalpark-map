@@ -67,19 +67,20 @@ gulp.task "reload", ["compass", "coffee"] , () ->
 
 gulp.task "default", ["compass","coffee","connect", "watch" ]
 
-
-
-# ==========for dev==========
+# ==========for developing==========
 
 
 
 
-request = require 'request'
-xml2js  = require('xml2js').parseString
-fs      = require 'fs'
-unzip   = require 'gulp-unzip'
-geojson = require 'gulp-geojson'
-rename  = require 'gulp-rename'
+# ==========data download==========
+
+request  = require 'request'
+xml2js   = require('xml2js').parseString
+fs       = require 'fs'
+unzip    = require 'gulp-unzip'
+geojson  = require 'gulp-geojson'
+prettify = require 'gulp-jsbeautifier'
+rename   = require 'gulp-rename'
 
 # list of NP
 NPs = require './NPs.json'
@@ -103,9 +104,7 @@ gulp.task 'download', () ->
         xml2js kml, (err, json) ->
             if !err then callback json
 
-    # 環境省の提供するkmlのネットワークリンク構造に依存
     # this function depends on network-link structure of KMLs hosted by environmental ministry of Japan
-    # 実態のあるデータへのurlを返す
     # it returns url to KML data Entity
     env_getKmzEntityLink = (json, callback) ->
         entityUrl = json.kml.Document[0].Folder[0].NetworkLink[0].Link[0].href[0]
@@ -128,9 +127,14 @@ gulp.task 'download', () ->
                     kmzPath = "./kml/#{path.basename kmzUrl}"
                     console.log "\"#{path.basename kmzUrl}\" has been downloaded."
                     downloadBin kmzUrl, kmzPath, (pathToKmz) ->
+
                         gulp.src kmzPath
                             .pipe unzip()
                             .pipe geojson()
+                            .pipe rename (filepath) ->
+                                filepath.basename = path.basename kmzUrl, '.kmz'
+                                filepath.extname = '.json'
+                            .pipe prettify()
                             .pipe rename (filepath) ->
                                 console.log "\"#{path.basename kmzUrl}\" has been converted to geojson."
                                 filepath.basename = path.basename kmzUrl, '.kmz'

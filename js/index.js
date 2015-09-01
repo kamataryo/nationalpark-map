@@ -1,4 +1,4 @@
-var $map, NPs, base, currentPositionMarker, googlemapCanvas, initialPosition, key, kmlOverlayed, moveToCurrentButton, moveToCurrentPosition, myOptions, selectbox, timerId, traceConditionIcon, traceCurrentButton, value,
+var $map, NPs, base, currentPositionMarker, dataset, googlemapCanvas, initialPosition, key, kmlOverlayed, moveToCurrentButton, moveToCurrentPosition, myOptions, p, selectbox, timerId, traceConditionIcon, traceCurrentButton, value,
   indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
 googlemapCanvas = null;
@@ -107,6 +107,21 @@ selectbox.change(function() {
 });
 
 d3.select('footer').selectAll('p').text('hello from d3');
+
+p = d3.selectAll('p');
+
+p.style({
+  'font-size': Math.floor(Math.random() * 20) + 'px',
+  'color': 'rgb(128,64,32)'
+});
+
+d3.select('footer').append('span').text('aaa');
+
+d3.selectAll('p').remove();
+
+dataset = [12, 24, 36];
+
+p = d3.select('footer').selectAll('p');
 
 moveToCurrentButton = $('#move-to-current');
 
