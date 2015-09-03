@@ -36,35 +36,27 @@
     "styles" : [
         {
             "name": "特別保護地区",
-            "stroke" : #ffffff,
             "fill" : "#dddd66"
         },{
             "name": "海域公園地区",
-            "stroke" : #ffffff,
             "fill" : "#2233dd"
         },{
             "name": "海中公園地区",
-            "stroke" : #ffffff,
             "fill" : "#2233dd"
         },{
             "name": "第1種特別地域",
-            "stroke" : "#ffffff",
             "fill" : "#dd66dd"
         },{
             "name": "第2種特別地域",
-            "stroke" : "#ffffff",
             "fill" : "#dd6666"
         },{
             "name": "第3種特別地域",
-            "stroke" : "#ffffff",
             "fill" : "#66dd66"
         },{
             "name": "普通地域",
-            "stroke" : "#ffffff",
             "fill" : "#66dddd"
         },{
             "name" : "else",
-            "stroke" : "#ffffff",
             "fill" : "#666666"
         }
     ]

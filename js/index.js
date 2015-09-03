@@ -15,7 +15,6 @@ map = new google.maps.Map(mapElement, myOptions);
 
 d3.json('./NPs.json', function(data) {
   var styles;
-  console.log(data);
   styles = data.styles;
   return d3.json('./geojson/NPS_fujihakoneizu.geojson', function(data) {
     var styleFeature;
@@ -35,13 +34,31 @@ d3.json('./NPs.json', function(data) {
       style = determineStyle(feature);
       styleForMap = {
         fillColor: style.fill,
-        strokeColor: style.stroke,
+        strokeColor: '#eeeeee',
         strokeWeight: 1,
-        fillOpacity: 0.2
+        fillOpacity: 0.4
       };
       return styleForMap;
     };
     map.data.addGeoJson(data);
-    return map.data.setStyle(styleFeature);
+    map.data.setStyle(styleFeature);
+    map.data.addListener('mouseover', function(event) {
+      var newStyle;
+      newStyle = {
+        strokeColor: '#ffffff',
+        strokeWeight: 1,
+        fillOpacity: 0.8
+      };
+      return map.data.overrideStyle(event.feature, newStyle);
+    });
+    return map.data.addListener('mouseout', function(event) {
+      var newStyle;
+      newStyle = {
+        strokeColor: '#eeeeee',
+        strokeWeight: 1,
+        fillOpacity: 0.4
+      };
+      return map.data.overrideStyle(event.feature, newStyle);
+    });
   });
 });

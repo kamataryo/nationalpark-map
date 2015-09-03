@@ -1,23 +1,7 @@
-#map {
-  height: 640px;
+html, body {
+  height: 100%;
 }
 
-#move-to-current {
-  font-size: 2em;
-}
-#move-to-current:hover {
-  cursor: pointer;
-  opacity: 0.6;
-}
-
-#trace-current {
-  font-size: 2em;
-}
-#trace-current:hover {
-  cursor: pointer;
-  opacity: 0.6;
-}
-
-#trace-condition {
-  color: gray;
+#map-canvas {
+  height: 100%;
 }
