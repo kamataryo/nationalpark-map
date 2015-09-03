@@ -1,6 +1,6 @@
 {
     "base": "http://www.biodic.go.jp/trialSystem/LinkEnt/nps/",
-    "urllist": {
+    "entries": {
         "利尻礼文サロベツ": "NPS_rishirirebunLinkEnt.kml",
         "知床": "NPS_shiretokoLinkEnt.kml",
         "阿寒": "NPS_akanLinkEnt.kml",
@@ -32,5 +32,40 @@
         "屋久島": "NPS_yakushimaLinkEnt.kml",
         "西表石垣": "NPS_iriomoteishigakiLinkEnt.kml",
         "慶良間諸島": "NPS_keramashotouLinkEnt.kml"
-    }
+    },
+    "Styles" : [
+        {
+            "name": "特別保護地区",
+            "stroke" : "#dddd66",
+            "fill" : null
+        },{
+            "name": "海域公園地区",
+            "stroke" : null,
+            "fill" : "#2233dd"
+        },{
+            "name": "海中公園地区",
+            "stroke" : null,
+            "fill" : "#2233dd"
+        },{
+            "name": "第1種特別地域",
+            "stroke" : "#dd66dd",
+            "fill" : null
+        },{
+            "name": "第2種特別地域",
+            "stroke" : "#dd6666",
+            "fill" : null
+        },{
+            "name": "第3種特別地域",
+            "stroke" : "#66dd66",
+            "fill" : null
+        },{
+            "name": "普通地域",
+            "stroke" : "#66dddd",
+            "fill" : null
+        },{
+            "name" : "else",
+            "stroke" : "#666666",
+            "fill" : null
+        }
+    ]
 }

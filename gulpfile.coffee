@@ -74,73 +74,67 @@ gulp.task "default", ["compass","coffee","connect", "watch" ]
 
 # ==========data download==========
 
-request  = require 'request'
+#request  = require 'request'
+
 xml2js   = require('xml2js').parseString
-fs       = require 'fs'
+#fs       = require 'fs'
+
+intercept = require 'gulp-intercept'
+#replace  = require 'gulp-replace'
+#xeditor  = require 'gulp-xml-editor'
+#xmlEdit = require 'gulp-edit-xml'
+xml2json = require 'gulp-xml2json'
+jeditor  = require 'gulp-json-editor'
+download = require 'gulp-download'
 unzip    = require 'gulp-unzip'
+convert  = require 'gulp-convert'
 geojson  = require 'gulp-geojson'
-prettify = require 'gulp-jsbeautifier'
+beautify = require 'gulp-jsbeautifier'
 rename   = require 'gulp-rename'
-_        = require 'underscore'
+#_        = require 'underscore'
 # list of NP
 NPs = require './NPs.json'
 
 
 gulp.task 'download', () ->
 
-    getHttpBody = (url, callback) ->
-        request.get url:url, (err, res, body) ->
-            if !err and res?
-                if res.statusCode is 200
-                    callback body
-                else
-                    console.log "Err: statusCode#{res.statusCode}"
-                    console.log "Request for \"#{url}\" failed."
-            else
-                console.log "Err: unknown error."
-                console.log "Please check the internet connection."
-
-    kmlToJson = (kml, callback) ->
+    searchKmzUrl = (kml, callback) ->
         xml2js kml, (err, json) ->
-            if !err then callback json
+            if !err
+                entityUrl = json.kml.Document[0].Folder[0].NetworkLink[0].Link[0].href[0]
+                callback entityUrl
 
-    # this function depends on network-link structure of KMLs hosted by environmental ministry of Japan
-    # it returns url to KML data Entity
-    env_getKmzEntityLink = (json, callback) ->
-        entityUrl = json.kml.Document[0].Folder[0].NetworkLink[0].Link[0].href[0]
-        callback entityUrl
-
-    downloadBin = (binUrl, pathToFile, callback) ->
-        readStream = request.get binUrl
-        writeStream = fs.createWriteStream pathToFile
-        readStream
-            .pipe writeStream
-            .on 'close', () ->
-                callback pathToFile
-            .on 'error', () ->
-                console.log "streaming for #{pathToFile}"
 
     pushToGulpStream = (kmlEntUrl) ->
-        getHttpBody kmlEntUrl, (kml) ->
-            kmlToJson kml, (json) ->
-                env_getKmzEntityLink json, (kmzUrl) ->
-                    kmzPath = "./kml/#{path.basename kmzUrl}"
-                    console.log "\"#{path.basename kmzUrl}\" has been downloaded."
-                    downloadBin kmzUrl, kmzPath, (pathToKmz) ->
+        download kmlEntUrl
+            .pipe rename extname:'.xml'
+            .pipe xml2json()
+            # this depends on network-link structure of KMLs hosted by environmental ministry of Japan
+            .pipe jeditor (json) ->
+                kmzUrl = json.kml.Document[0].Folder[0].NetworkLink[0].Link[0].href[0]
+            #.pipe intercept (file) ->
+                #searchKmzUrl file.contents, (kmzUrl) ->
+                basename = path.basename kmzUrl, '.kmz'
+                download kmzUrl
+                    .pipe unzip()
+                    .pipe rename extname:'.xml'
+                    .pipe xml2json()
+                    # gulp-geojsonがdescription属性下のCDATAを吐き出してくれないので、
+                    # 一旦gulp-xml2jsonで変換して実態参照を含んだjsonに変換
+                    # このjsonから自分でパースしてもよい
+                    .pipe rename extname:'.json'
+                    .pipe convert {from:'json', to:'xml'}
 
-                        gulp.src kmzPath
-                            .pipe unzip()
-                            .pipe geojson()
-                            .pipe rename (filepath) ->
-                                filepath.basename = path.basename kmzUrl, '.kmz'
-                                filepath.extname = '.json'
-                            .pipe prettify()
-                            .pipe rename (filepath) ->
-                                console.log "\"#{path.basename kmzUrl}\" has been converted to geojson."
-                                filepath.basename = path.basename kmzUrl, '.kmz'
-                                filepath.extname = '.geojson'
-                            .pipe gulp.dest base + 'geojson'
+                    .pipe rename extname:'.kml'
+                    .pipe geojson()
+
+                    .pipe rename extname:'.json'
+                    .pipe beautify()
+
+                    .pipe rename {basename:basename, extname:'.geojson'}
+                    .pipe gulp.dest base + 'geojson'
 
 
-    for name, url of NPs.urllist
-        pushToGulpStream NPs.base + url
+    #for name, url of NPs.entries
+    #    pushToGulpStream NPs.base + url
+    pushToGulpStream NPs.base + NPs.entries['小笠原']
