@@ -4721,7 +4721,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -5007,7 +5008,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5035,7 +5037,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5131,7 +5134,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5208,7 +5212,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5303,7 +5308,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5465,7 +5471,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5572,7 +5579,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5669,7 +5677,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5692,7 +5701,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5754,7 +5764,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle010",
             "styleHash": "28a16679",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "海中公園地区"
         }
     }, {
         "type": "Feature",
@@ -5805,7 +5816,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5850,7 +5862,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -6072,7 +6085,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6100,7 +6114,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -6195,7 +6210,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6339,7 +6355,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6486,7 +6503,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -6585,7 +6603,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6661,7 +6680,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6701,7 +6721,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6728,7 +6749,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6769,7 +6791,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6790,7 +6813,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -7148,7 +7172,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -7189,7 +7214,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -7244,7 +7270,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -7618,7 +7645,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -7687,7 +7715,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -7884,7 +7913,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -8277,7 +8307,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -8410,7 +8441,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -8474,7 +8506,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -8743,7 +8776,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -8947,7 +8981,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -9012,7 +9047,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -9220,7 +9256,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -9276,7 +9313,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle010",
             "styleHash": "28a16679",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "海中公園地区"
         }
     }, {
         "type": "Feature",
@@ -9461,7 +9499,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -9590,7 +9629,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -9660,7 +9700,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -9930,7 +9971,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -10922,7 +10964,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -10996,7 +11039,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -11291,7 +11335,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -12092,7 +12137,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -12371,7 +12417,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -13464,7 +13511,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -13502,7 +13550,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -13533,7 +13582,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -13565,7 +13615,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -14089,7 +14140,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -14124,7 +14176,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -14179,7 +14232,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -14262,7 +14316,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -14338,7 +14393,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle010",
             "styleHash": "28a16679",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "海中公園地区"
         }
     }, {
         "type": "Feature",
@@ -14384,7 +14440,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle010",
             "styleHash": "28a16679",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "海中公園地区"
         }
     }, {
         "type": "Feature",
@@ -14441,7 +14498,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -14768,7 +14826,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -16152,7 +16211,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -16346,7 +16406,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -16690,7 +16751,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -16813,7 +16875,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -17179,7 +17242,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -17789,7 +17853,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -17910,7 +17975,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -18087,7 +18153,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -19235,7 +19302,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -19621,7 +19689,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -20242,7 +20311,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -20280,7 +20350,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -21337,7 +21408,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -21812,7 +21884,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -25372,7 +25445,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -25550,7 +25624,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -25840,7 +25915,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -27272,7 +27348,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -27304,7 +27381,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -27339,7 +27417,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -29922,7 +30001,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -29963,7 +30043,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -29989,7 +30070,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -30057,7 +30139,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -30119,7 +30202,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -30341,7 +30425,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -30368,7 +30453,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -30666,7 +30752,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -30708,7 +30795,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -30921,7 +31009,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -31076,7 +31165,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -31529,7 +31619,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -31600,7 +31691,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -31679,7 +31771,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -31743,7 +31836,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -31954,7 +32048,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -32042,7 +32137,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -32337,7 +32433,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -32420,7 +32517,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -32848,7 +32946,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -33231,7 +33330,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -33279,7 +33379,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -34004,7 +34105,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -34365,7 +34467,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -34422,7 +34525,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -34464,7 +34568,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -34536,7 +34641,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -34629,7 +34735,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -34735,7 +34842,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -34778,7 +34886,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -34874,7 +34983,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -35068,7 +35178,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -35140,7 +35251,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -35502,7 +35614,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -35607,7 +35720,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -35667,7 +35781,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -35885,7 +36000,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -35922,7 +36038,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -35963,7 +36080,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -35995,7 +36113,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -36030,7 +36149,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle013",
             "styleHash": "76570cd6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -36101,7 +36221,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -36256,7 +36377,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -36331,7 +36453,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -36809,7 +36932,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -36900,7 +37024,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -37032,7 +37157,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle01",
             "styleHash": "4661cd53",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -38284,7 +38410,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -38331,7 +38458,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle010",
             "styleHash": "28a16679",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "海中公園地区"
         }
     }, {
         "type": "Feature",
@@ -39096,7 +39224,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle010",
             "styleHash": "28a16679",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "海中公園地区"
         }
     }, {
         "type": "Feature",
@@ -39267,7 +39396,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle010",
             "styleHash": "28a16679",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "海中公園地区"
         }
     }, {
         "type": "Feature",
@@ -39348,7 +39478,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle010",
             "styleHash": "28a16679",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "海中公園地区"
         }
     }, {
         "type": "Feature",
@@ -39383,7 +39514,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle010",
             "styleHash": "28a16679",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "海中公園地区"
         }
     }, {
         "type": "Feature",
@@ -39405,7 +39537,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle010",
             "styleHash": "28a16679",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "海中公園地区"
         }
     }, {
         "type": "Feature",
@@ -39608,7 +39741,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle010",
             "styleHash": "28a16679",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "海中公園地区"
         }
     }, {
         "type": "Feature",
@@ -39656,7 +39790,8 @@
             "name": "霧島錦江湾",
             "styleUrl": "#PolyStyle010",
             "styleHash": "28a16679",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>霧島錦江湾</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>海中公園地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "海中公園地区"
         }
     }]
 }

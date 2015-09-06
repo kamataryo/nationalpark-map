@@ -153,7 +153,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -355,7 +356,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -604,7 +606,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -943,7 +946,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -2063,7 +2067,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle04",
             "styleHash": "-6be88c50",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -2669,7 +2674,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle05",
             "styleHash": "58a955cf",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -3098,7 +3104,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle04",
             "styleHash": "-6be88c50",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -3275,7 +3282,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle05",
             "styleHash": "58a955cf",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -3379,7 +3387,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle05",
             "styleHash": "58a955cf",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -3458,7 +3467,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -3494,7 +3504,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -3671,7 +3682,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle05",
             "styleHash": "58a955cf",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -3778,7 +3790,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -5050,7 +5063,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle04",
             "styleHash": "-6be88c50",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5251,7 +5265,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle05",
             "styleHash": "58a955cf",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5529,7 +5544,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle05",
             "styleHash": "58a955cf",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6264,7 +6280,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle04",
             "styleHash": "-6be88c50",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6285,7 +6302,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -6894,7 +6912,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle05",
             "styleHash": "58a955cf",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6936,7 +6955,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -7801,7 +7821,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle012",
             "styleHash": "-4e3ad549",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -7824,7 +7845,8 @@
             "name": "尾瀬",
             "styleUrl": "#PolyStyle04",
             "styleHash": "-6be88c50",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>尾瀬</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }]
 }

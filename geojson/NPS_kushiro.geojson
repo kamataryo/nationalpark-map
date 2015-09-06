@@ -143,7 +143,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -260,7 +261,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -294,7 +296,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -653,7 +656,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -2685,7 +2689,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -2757,7 +2762,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle00",
             "styleHash": "-7e3014cc",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第1種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第1種特別地域"
         }
     }, {
         "type": "Feature",
@@ -3016,7 +3022,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -3043,7 +3050,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -3458,7 +3466,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -3666,7 +3675,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -3705,7 +3715,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -4851,7 +4862,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -4901,7 +4913,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5363,7 +5376,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5767,7 +5781,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -5955,7 +5970,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6344,7 +6360,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6551,7 +6568,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -6902,7 +6920,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle06",
             "styleHash": "1d3b37ee",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第2種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第2種特別地域"
         }
     }, {
         "type": "Feature",
@@ -7322,7 +7341,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -7399,7 +7419,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -7480,7 +7501,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -7546,7 +7568,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -7629,7 +7652,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -7796,7 +7820,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -8125,7 +8150,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -8286,7 +8312,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -8795,7 +8822,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -10242,7 +10270,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -10436,7 +10465,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -10725,7 +10755,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle019",
             "styleHash": "11c25990",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>第3種特別地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "第3種特別地域"
         }
     }, {
         "type": "Feature",
@@ -11623,7 +11654,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -11679,7 +11711,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -11775,7 +11808,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -12383,7 +12417,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -13883,7 +13918,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -13915,7 +13951,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -14141,7 +14178,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -14949,7 +14987,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -16053,7 +16092,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -16153,7 +16193,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -16338,7 +16379,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -17112,7 +17154,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -17290,7 +17333,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -17370,7 +17414,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -17699,7 +17744,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle031",
             "styleHash": "-7777f3e6",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>普通地域</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "普通地域"
         }
     }, {
         "type": "Feature",
@@ -19772,7 +19818,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle046",
             "styleHash": "2d0bd876",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }, {
         "type": "Feature",
@@ -20114,7 +20161,8 @@
             "name": "釧路湿原",
             "styleUrl": "#PolyStyle046",
             "styleHash": "2d0bd876",
-            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n"
+            "description": "<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\">\r\r\n<body leftmargin=\"0\" topmargin=\"0\" bottommargin=\"0\" rightmargin=\"0\">\r\r\n<font face=\"Arial\">\r\r\n<table border=\"1\" width=\"300\" cellpadding=\"5\" cellspacing=\"0\">\r\r\n<tr bgcolor=\"#9CBCE2\"></tr>\r\r\n<tr bgcolor=\"#D4E4F3\">\r\r\n<td>名称</td>\r\r\n<td>釧路湿原</td>\r\r\n</tr>\r\r\n<tr>\r\r\n<td>地域区分</td>\r\r\n<td>特別保護地区</td>\r\r\n</tr>\r\r\n</table>\r\r\n</font>\r\r\n</body>\r\r\n</html>\r\r\n",
+            "grade": "特別保護地区"
         }
     }]
 }

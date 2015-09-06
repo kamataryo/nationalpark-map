@@ -1,11 +1,31 @@
-@import "compass";
+@import "compass/css3/transform";
+
+@mixin floating-part {
+	position: absolute;
+	z-index: 10;
+}
 
 
 html, body {
-	height: 100%;	
+	height: 100%;
+	position: relative;
 }
 
 
 #map-canvas {
 	height: 100%;
+	z-index: 0;
+}
+
+#move-to-current {
+	@include floating-part;
+	left: 10px;
+	top: 60px;
+}
+#change-opacity {
+	// $width: 300px;
+	@include floating-part;
+	// width :$width;
+	left: 10px;
+	top: 80px;
 }
