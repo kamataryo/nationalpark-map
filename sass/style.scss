@@ -1,8 +1,17 @@
-@import "compass/css3/transform";
+@import "compass";
 
-@mixin floating-part {
+@mixin floating-board {
 	position: absolute;
 	z-index: 10;
+	background-color: rgba(255,255,255,0.4);
+}
+@mixin floating-part {
+	position: relative;
+	opacity: 1;
+}
+@mixin floating-part-statement {
+	position: relative;
+	opacity: 0.5;
 }
 
 
@@ -17,15 +26,67 @@ html, body {
 	z-index: 0;
 }
 
+#controls {
+	@include floating-board;
+	top: 60px;
+	padding: 20px;
+	margin-left:0;
+	@include border-top-right-radius(8px);
+	@include border-bottom-right-radius(8px);
+}
+
 #move-to-current {
 	@include floating-part;
-	left: 10px;
-	top: 60px;
+	&:hover {
+		cursor: pointer;
+	}
 }
-#change-opacity {
-	// $width: 300px;
+#auto-overlay {
 	@include floating-part;
-	// width :$width;
-	left: 10px;
-	top: 80px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+label[for=auto-overlay] {
+	@include floating-part;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+
+#handy-overlay {
+	@include floating-part;
+}
+#load-statement {
+	@include floating-part-statement;
+}
+
+#geolocation-statement {
+	@include floating-part-statement;
+}
+
+#np-statement {
+	@include floating-part-statement;
+}
+
+#grade-statement {
+	@include floating-part-statement;
+}
+
+h2{
+	display:inline-block;
+	font-size: 1em;
+	@include floating-part;
+	padding: 0 5px 0 5px;
+	margin: 0;
+	&:hover {
+		@include border-radius(5px);
+		background-color: rgba(0,0,0,0.2);
+		cursor: pointer;
+	}
+}
+p {
+	line-height: 1em;
+	padding: 0 0 0 10px;
 }

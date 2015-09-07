@@ -4,13 +4,48 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/le-frog/jquery-ui.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<title>国立公園区域マップ</title>
 </head>
 <body>
 	<div id="map-canvas"></div>
-	<input id="move-to-current" type="button" value="現在地">
-	<input id="change-opacity" type="range">
+	<div id="controls">
+		<div>
+		<h2 class="toggle-next">コントロール</h2>
+		<div>
+		<p>
+			<input id="move-to-current" type="button" value="現在地">
+			<i id="geolocation-statement" class="fa fa-question"></i>
+		</p>
+		<p><input id="auto-overlay" type="checkbox" value="自動読み込み" checked>
+			<label for="auto-overlay">自動読み込み</label></p>
+			<p>
+				<select id="handy-overlay">
+					<option value="">(国立公園を選択)</option>
+				</select>
+				<i id="load-statement" class="fa fa-cog"></i>
+			</p>
+		<p>
+			<input id="display-np" type="text" placeholder="(国立公園名)">
+			<i id="np-statement" class="fa fa-map-pin"></i>
+		</p>
+		<p>
+			<input id="display-grade" type="text" placeholder="(地種区分)">
+			<i id="grade-statement" class="fa fa-map-pin"></i>
+		</p>
+	</div>
+</div>
+<div>
+		<h2 id="readme" class="toggle-next">このサイトについて</h2>
+		<div style="display: none">
+		<p>このサイト「国立公園マップ」は、<a href="http://www.biodic.go.jp/trialSystem/top.html">自然環境情報GIS</a> <a href="http://www.biodic.go.jp/trialSystem/info/nps.html">国立公園の区域等</a>（<a href="http://www.biodic.go.jp/">環境省生物多様性センター</a>）のデータを加工し作成したものです。</p>
+		<p>このサイトは、あくまで目安とするための公園区域を表示するためのものです。<br />
+			正確な国立公園の区域や地種区分等を調べるにあたっては、当該国立公園を所管する環境省の自然保護官事務所等に問い合わせを行うことをおすすめします。</p>
+	</div>
+</div>
+	</div>
+	<!-- /#the-readme -->
 	<script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
 	<!-- <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
 	<script src="https://code.jquery.com/jquery-git2.min.js"></script>

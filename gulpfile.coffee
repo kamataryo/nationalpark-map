@@ -127,6 +127,10 @@ gulp.task 'download', () ->
                     .pipe rename extname:'.json'
                     .pipe jeditor (json) ->
                         for feature, i in json.features
+                            #なぜか慶良間諸島はname属性が欠けているので、暫定的な処置
+                            #if path.basename kmzUrl is "NPS_keramashotou"
+                            #     feature.properties.name ="慶良間諸島"
+
                             #地種属性を付与
                             description = feature.properties.description
                             for style in settings.styles
@@ -141,6 +145,15 @@ gulp.task 'download', () ->
                     .pipe rename {basename:basename, extname:'.geojson'}
                     .pipe gulp.dest base + 'geojson'
 
+
+#慶良間のgeojsonに国立公園名が入ってないので処理
+gulp.task 'kerama', () ->
+    gulp.src 'geojson/NPS_keramashotou.geojson'
+        .pipe jeditor (json) ->
+            for feature in json.features
+                feature.properties.name = '慶良間諸島'
+            return json
+        .pipe gulp.dest 'geojson/'
 
 
 #geojsonフォルダに入っている全ての国立公園geojsonファイルから、

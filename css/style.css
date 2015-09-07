@@ -8,16 +8,87 @@ html, body {
   z-index: 0;
 }
 
-#move-to-current {
+#controls {
   position: absolute;
   z-index: 10;
-  left: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
   top: 60px;
+  padding: 20px;
+  margin-left: 0;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
-#change-opacity {
-  position: absolute;
-  z-index: 10;
-  left: 10px;
-  top: 80px;
+#move-to-current {
+  position: relative;
+  opacity: 1;
+}
+#move-to-current:hover {
+  cursor: pointer;
+}
+
+#auto-overlay {
+  position: relative;
+  opacity: 1;
+}
+#auto-overlay:hover {
+  cursor: pointer;
+}
+
+label[for=auto-overlay] {
+  position: relative;
+  opacity: 1;
+}
+label[for=auto-overlay]:hover {
+  cursor: pointer;
+}
+
+#handy-overlay {
+  position: relative;
+  opacity: 1;
+}
+
+#load-statement {
+  position: relative;
+  opacity: 0.5;
+}
+
+#geolocation-statement {
+  position: relative;
+  opacity: 0.5;
+}
+
+#np-statement {
+  position: relative;
+  opacity: 0.5;
+}
+
+#grade-statement {
+  position: relative;
+  opacity: 0.5;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 1em;
+  position: relative;
+  opacity: 1;
+  padding: 0 5px 0 5px;
+  margin: 0;
+}
+h2:hover {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+p {
+  line-height: 1em;
+  padding: 0 0 0 10px;
 }
