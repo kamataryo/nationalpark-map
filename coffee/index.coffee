@@ -11,6 +11,7 @@ initialize = () ->
 		noClear : true
 		center : new google.maps.LatLng 35.127152, 138.910627
 		zoom : 10
+		mapTypeId: google.maps.MapTypeId.SATELLITE
 		panControl: false
 		zoomControl: false
 		mapTypeControl: true

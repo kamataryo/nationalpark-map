@@ -78,7 +78,7 @@ h2 {
   position: relative;
   opacity: 1;
   padding: 0 5px 0 5px;
-  margin: 0;
+  margin: 2px 0 0 0;
 }
 h2:hover {
   -moz-border-radius: 5px;

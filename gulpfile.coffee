@@ -79,9 +79,6 @@ request  = require 'request'
 xml2js   = require('xml2js').parseString
 fs       = require 'fs'
 _ = require 'underscore'
-
-intercept = require 'gulp-intercept'
-#replace  = require 'gulp-replace'
 #xeditor  = require 'gulp-xml-editor'
 #xmlEdit = require 'gulp-edit-xml'
 xml2json = require 'gulp-xml2json'
@@ -92,8 +89,6 @@ convert  = require 'gulp-convert'
 geojson  = require 'gulp-geojson'
 beautify = require 'gulp-jsbeautifier'
 rename   = require 'gulp-rename'
-#runSequence = require 'run-sequence'
-#through2 = require 'through2'
 concat  = require 'gulp-concat-json'
 
 
@@ -127,10 +122,6 @@ gulp.task 'download', () ->
                     .pipe rename extname:'.json'
                     .pipe jeditor (json) ->
                         for feature, i in json.features
-                            #なぜか慶良間諸島はname属性が欠けているので、暫定的な処置
-                            #if path.basename kmzUrl is "NPS_keramashotou"
-                            #     feature.properties.name ="慶良間諸島"
-
                             #地種属性を付与
                             description = feature.properties.description
                             for style in settings.styles
