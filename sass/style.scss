@@ -72,7 +72,7 @@ h2{
 	font-size: 0.8em;
 	@include floating-part;
 	padding: 0 5px 0 5px;
-	margin: 2px 0 2px 0;
+	margin: 1px 0 0 0;
 	&:hover {
 		@include border-radius(5px);
 		background-color: rgba(0,0,0,0.2);
@@ -80,7 +80,7 @@ h2{
 	}
 }
 p {
-	margin: 4px;
+	margin: 2px;
 	padding: 0 0 0 10px;
 	font-size: 0.8em;
 }
