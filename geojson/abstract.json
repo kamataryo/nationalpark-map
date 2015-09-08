@@ -1,6 +1,7 @@
 {
     "NPS_akan.geojson": {
         "name": "阿寒",
+        "size": 0.8,
         "top": 43.727696,
         "right": 144.669091,
         "bottom": 43.350097,
@@ -8,6 +9,7 @@
     },
     "NPS_ashizuriuwakai.geojson": {
         "name": "足摺宇和海",
+        "size": 1.81,
         "top": 33.339303,
         "right": 133.036692,
         "bottom": 32.69386,
@@ -15,6 +17,7 @@
     },
     "NPS_asokuju.geojson": {
         "name": "阿蘇くじゅう",
+        "size": 2.55,
         "top": 33.310982,
         "right": 131.470309,
         "bottom": 32.783724,
@@ -22,6 +25,7 @@
     },
     "NPS_bandaiasahi.geojson": {
         "name": "磐梯朝日",
+        "size": 1.62,
         "top": 38.711394,
         "right": 140.367959,
         "bottom": 37.41137,
@@ -29,6 +33,7 @@
     },
     "NPS_chichibutama.geojson": {
         "name": "秩父多摩",
+        "size": 1.89,
         "top": 36.038832,
         "right": 139.228927,
         "bottom": 35.689177,
@@ -36,6 +41,7 @@
     },
     "NPS_chubusangaku.geojson": {
         "name": "中部山岳",
+        "size": 0.91,
         "top": 36.900235,
         "right": 137.860722,
         "bottom": 36.060752,
@@ -43,6 +49,7 @@
     },
     "NPS_daisen.geojson": {
         "name": "大山隠岐",
+        "size": 3.02,
         "top": 36.36622290590223,
         "right": 133.9720669518606,
         "bottom": 35.09314407254354,
@@ -50,6 +57,7 @@
     },
     "NPS_daisetsuzan.geojson": {
         "name": "大雪山",
+        "size": 2.29,
         "top": 43.805662,
         "right": 143.314812,
         "bottom": 43.217839,
@@ -57,6 +65,7 @@
     },
     "NPS_fujihakoneizu.geojson": {
         "name": "富士箱根伊豆",
+        "size": 3.57,
         "top": 35.572259,
         "right": 139.869902,
         "bottom": 33.036272,
@@ -64,6 +73,7 @@
     },
     "NPS_hakusan.geojson": {
         "name": "白山",
+        "size": 0.42,
         "top": 36.37474962306193,
         "right": 136.8851361782092,
         "bottom": 35.99140366335239,
@@ -71,6 +81,7 @@
     },
     "NPS_iriomoteishigaki.geojson": {
         "name": "西表石垣",
+        "size": 3.3,
         "top": 24.630266,
         "right": 124.360701,
         "bottom": 24.027582,
@@ -78,6 +89,7 @@
     },
     "NPS_iseshima.geojson": {
         "name": "伊勢志摩",
+        "size": 1.93,
         "top": 34.559794,
         "right": 136.998858,
         "bottom": 34.210557,
@@ -85,6 +97,7 @@
     },
     "NPS_joshinetsu.geojson": {
         "name": "上信越高原",
+        "size": 2.09,
         "top": 36.986518,
         "right": 138.998046,
         "bottom": 36.336468,
@@ -92,6 +105,7 @@
     },
     "NPS_keramashotou.geojson": {
         "name": "慶良間諸島",
+        "size": 4.56,
         "top": 26.33018747455019,
         "right": 127.6536603084227,
         "bottom": 26.07341590841694,
@@ -99,6 +113,7 @@
     },
     "NPS_kirishimakinkowan.geojson": {
         "name": "霧島錦江湾",
+        "size": 1.97,
         "top": 31.997441,
         "right": 130.990586,
         "bottom": 30.981693,
@@ -106,6 +121,7 @@
     },
     "NPS_kushiro.geojson": {
         "name": "釧路湿原",
+        "size": 1.01,
         "top": 43.257795,
         "right": 144.618063,
         "bottom": 43.014008,
@@ -113,6 +129,7 @@
     },
     "NPS_nikkou.geojson": {
         "name": "日光",
+        "size": 1.57,
         "top": 37.217768,
         "right": 140.089067,
         "bottom": 36.645629,
@@ -120,6 +137,7 @@
     },
     "NPS_nishikai.geojson": {
         "name": "西海",
+        "size": 15.35,
         "top": 33.454399,
         "right": 129.764118,
         "bottom": 32.575688,
@@ -127,6 +145,7 @@
     },
     "NPS_ogasawara.geojson": {
         "name": "小笠原",
+        "size": 9.92,
         "top": 27.270134,
         "right": 142.299881,
         "bottom": 25.400859,
@@ -134,6 +153,7 @@
     },
     "NPS_oze.geojson": {
         "name": "尾瀬",
+        "size": 0.39,
         "top": 37.094266,
         "right": 139.50465,
         "bottom": 36.839636,
@@ -141,6 +161,7 @@
     },
     "NPS_rishirirebun.geojson": {
         "name": "利尻礼文サロベツ",
+        "size": 0.48,
         "top": 45.488892,
         "right": 141.742291,
         "bottom": 44.898649,
@@ -148,6 +169,7 @@
     },
     "NPS_saninkaigan.geojson": {
         "name": "山陰海岸",
+        "size": 23.17,
         "top": 35.74053958103639,
         "right": 135.0276831384999,
         "bottom": 35.53216446652368,
@@ -155,6 +177,7 @@
     },
     "NPS_sanrikufukkou.geojson": {
         "name": "三陸復興",
+        "size": 7.79,
         "top": 40.5192243320683,
         "right": 142.0369168124584,
         "bottom": 38.80951078676914,
@@ -162,6 +185,7 @@
     },
     "NPS_setonaikai.geojson": {
         "name": "瀬戸内海",
+        "size": 7.58,
         "top": 34.811728,
         "right": 135.324648,
         "bottom": 33.244139,
@@ -169,6 +193,7 @@
     },
     "NPS_shikotsutouya.geojson": {
         "name": "支笏洞爺",
+        "size": 1.24,
         "top": 43.016698,
         "right": 141.458706,
         "bottom": 42.470162,
@@ -176,6 +201,7 @@
     },
     "NPS_shiretoko.geojson": {
         "name": "知床",
+        "size": 0.59,
         "top": 44.374063,
         "right": 145.404721,
         "bottom": 43.980186,
@@ -183,6 +209,7 @@
     },
     "NPS_southalps.geojson": {
         "name": "南アルプス",
+        "size": 0.59,
         "top": 35.81035,
         "right": 138.342291,
         "bottom": 35.324635,
@@ -190,6 +217,7 @@
     },
     "NPS_towadahatimantai.geojson": {
         "name": "十和田八幡平",
+        "size": 1.35,
         "top": 40.727308,
         "right": 141.053086,
         "bottom": 39.707535,
@@ -197,6 +225,7 @@
     },
     "NPS_unzenamakusa.geojson": {
         "name": "雲仙天草",
+        "size": 2.52,
         "top": 32.830673,
         "right": 130.478324,
         "bottom": 32.133413,
@@ -204,6 +233,7 @@
     },
     "NPS_yakushima.geojson": {
         "name": "屋久島",
+        "size": 2.04,
         "top": 30.499702,
         "right": 130.680971,
         "bottom": 30.221832,
@@ -211,6 +241,7 @@
     },
     "NPS_yoshinokumano.geojson": {
         "name": "吉野熊野",
+        "size": 2.28,
         "top": 34.386564,
         "right": 136.315076,
         "bottom": 33.424588,

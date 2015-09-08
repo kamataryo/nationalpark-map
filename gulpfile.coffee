@@ -79,8 +79,6 @@ request  = require 'request'
 xml2js   = require('xml2js').parseString
 fs       = require 'fs'
 _ = require 'underscore'
-#xeditor  = require 'gulp-xml-editor'
-#xmlEdit = require 'gulp-edit-xml'
 xml2json = require 'gulp-xml2json'
 jeditor  = require 'gulp-json-editor'
 download = require 'gulp-download'
@@ -90,7 +88,7 @@ geojson  = require 'gulp-geojson'
 beautify = require 'gulp-jsbeautifier'
 rename   = require 'gulp-rename'
 concat  = require 'gulp-concat-json'
-
+intercept = require 'gulp-intercept'
 
 # list of National Park
 settingsUrl = './settings.json'
@@ -159,7 +157,7 @@ gulp.task 'abstract', () ->
             latitudes = []
             longitudes = []
             name = json.features[0].properties.name
-
+            size = Math.round(100 * (new Buffer JSON.stringify json, null, 4).length / 1024 / 1024 / 3) /100
             for feature in json.features
                 if feature.geometry.coordinates?
                     for coordinate in feature.geometry.coordinates[0]
@@ -169,6 +167,7 @@ gulp.task 'abstract', () ->
             information = {}
             information[filename] =
                 name: name
+                size: size
                 top: _.max longitudes
                 right: _.max latitudes
                 bottom: _.min longitudes

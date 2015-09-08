@@ -196,7 +196,7 @@ $.getJSON './geojson/abstract.json', (json) ->
 		$('<option>')
 			.appendTo $ '#handy-overlay'
 			.val url
-			.text information.name
+			.text "#{information.name} [#{information.size} MB]"
 	$('#handy-overlay').change () ->
 		basename = $(this).val()
 		if basename is '' then return false

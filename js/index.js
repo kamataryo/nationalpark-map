@@ -227,7 +227,7 @@ $.getJSON('./geojson/abstract.json', function(json) {
   abstract = json;
   for (url in json) {
     information = json[url];
-    $('<option>').appendTo($('#handy-overlay')).val(url).text(information.name);
+    $('<option>').appendTo($('#handy-overlay')).val(url).text(information.name + " [" + information.size + " MB]");
   }
   return $('#handy-overlay').change(function() {
     var Clat, Clon, basename, geojsonCenter;
