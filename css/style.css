@@ -12,8 +12,8 @@ html, body {
   position: absolute;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.4);
-  top: 60px;
-  padding: 20px;
+  top: 50px;
+  padding: 10px;
   margin-left: 0;
   -moz-border-radius-topright: 8px;
   -webkit-border-top-right-radius: 8px;
@@ -62,23 +62,13 @@ label[for=auto-overlay]:hover {
   opacity: 0.5;
 }
 
-#np-statement {
-  position: relative;
-  opacity: 0.5;
-}
-
-#grade-statement {
-  position: relative;
-  opacity: 0.5;
-}
-
 h2 {
   display: inline-block;
-  font-size: 1em;
+  font-size: 0.8em;
   position: relative;
   opacity: 1;
   padding: 0 5px 0 5px;
-  margin: 2px 0 0 0;
+  margin: 2px 0 2px 0;
 }
 h2:hover {
   -moz-border-radius: 5px;
@@ -89,6 +79,7 @@ h2:hover {
 }
 
 p {
-  line-height: 1em;
+  margin: 4px;
   padding: 0 0 0 10px;
+  font-size: 0.8em;
 }

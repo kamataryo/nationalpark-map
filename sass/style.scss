@@ -28,8 +28,8 @@ html, body {
 
 #controls {
 	@include floating-board;
-	top: 60px;
-	padding: 20px;
+	top: 50px;
+	padding: 10px;
 	margin-left:0;
 	@include border-top-right-radius(8px);
 	@include border-bottom-right-radius(8px);
@@ -66,20 +66,13 @@ label[for=auto-overlay] {
 	@include floating-part-statement;
 }
 
-#np-statement {
-	@include floating-part-statement;
-}
-
-#grade-statement {
-	@include floating-part-statement;
-}
 
 h2{
 	display:inline-block;
-	font-size: 1em;
+	font-size: 0.8em;
 	@include floating-part;
 	padding: 0 5px 0 5px;
-	margin: 2px 0 0 0;
+	margin: 2px 0 2px 0;
 	&:hover {
 		@include border-radius(5px);
 		background-color: rgba(0,0,0,0.2);
@@ -87,6 +80,7 @@ h2{
 	}
 }
 p {
-	line-height: 1em;
+	margin: 4px;
 	padding: 0 0 0 10px;
+	font-size: 0.8em;
 }

@@ -2,7 +2,6 @@ map = null#googlemapオブジェクトを格納
 geojsonLoaded = {}#マップへの読み込み済みgeojsonを判別する
 abstract = null# geojsonのabstractを読み込む
 loadingque = []#geojsonの読み込み状態を管理
-areaPin = null#エリアをピン留めするときのマーカー
 currentMarker = null #現在地を表示するマーカー
 # googlemapの初期設定
 initialize = () ->
@@ -72,50 +71,35 @@ loadGeojson = (url) ->
 			return featureStyle '', grade
 		changeLoadingState url,'finish'
 
-		updatePinningInformation = (e, active) ->
-			if active
-				npname = e.feature.getProperty 'name'
-				grade = e.feature.getProperty 'grade'
-				$('#display-np').val "#{npname}国立公園"
-				$('#display-grade').val grade
-				$('#np-statement').css 'color', 'red'
-				$('#grade-statement').css 'color', 'red'
-			else
-				$('#display-np').val ''
-				$('#display-grade').val ''
-				$('#np-statement').css 'color', 'black'
-				$('#grade-statement').css 'color', 'black'
-
 		map.data.addListener 'mouseover', (e) ->
-			if !areaPin then updatePinningInformation e, true
 			map.data.overrideStyle e.feature, featureStyle 'mouseover'
 
 		map.data.addListener 'click', (e) ->
-			if areaPin?
-				#marker取り除き
-				areaPin.setMap null
-				areaPin = null
-				#marker追加
-			opt =
+			npname = e.feature.getProperty 'name'
+			grade = e.feature.getProperty 'grade'
+
+			infowindow = new google.maps.InfoWindow
+				content: e.feature.getProperty 'description'#"#{npname}国立公園<br>#{grade}"
+
+			infomarker = new google.maps.Marker
 				position: e.latLng
 				map: map
-				clickable: true
-				cursor: 'crosshair'
-			areaPin = new google.maps.Marker opt
-			areaPin.addListener 'click', (e) ->
-				areaPin.setMap null
-				areaPin = null
-			updatePinningInformation e, true
+				icon: './img/featureselection.svg'
+
+			infowindow.addListener 'closeclick', () ->
+				infomarker.setMap null
+				infomarker = null
+
+			infowindow.open map,infomarker
 
 		map.data.addListener 'mouseout', (e) ->
-			if !areaPin then updatePinningInformation null, false
 			map.data.overrideStyle e.feature, featureStyle()
 
 
 #現在の座標位置をもとに、範囲内のgeojsonを全て読み込む
 geojsonAutoload = () ->
 	if !abstract then return false
-	margin = 0.1#margin = 10%
+	margin = -0.3#margin = -30%
 	top = map.getBounds().getNorthEast().G
 	right = map.getBounds().getNorthEast().K
 	bottom = map.getBounds().getSouthWest().G
@@ -149,17 +133,16 @@ $('#move-to-current').click () ->
 				.addClass 'fa fa-check-circle'
 				.css 'color', 'green'
 			map.panTo theCurrent
-
+			#現在地にマーカーを追加
 			if currentMarker?
 				#marker取り除き
 				currentMarker.setMap null
 				currentMarker = null
 			#marker追加
-			opt =
+			currentMarker = new google.maps.Marker
 				position: theCurrent
 				map: map
 				icon: './img/currentmarker.svg'
-			currentMarker = new google.maps.Marker opt
 
 		,(e) ->
 			$('#geolocation-statement')

@@ -1,4 +1,4 @@
-var abstract, areaPin, changeLoadingState, currentMarker, featureStyle, geojsonAutoload, geojsonLoaded, gradeFill, initialize, loadGeojson, loadingque, map;
+var abstract, changeLoadingState, currentMarker, featureStyle, geojsonAutoload, geojsonLoaded, gradeFill, initialize, loadGeojson, loadingque, map;
 
 map = null;
 
@@ -7,8 +7,6 @@ geojsonLoaded = {};
 abstract = null;
 
 loadingque = [];
-
-areaPin = null;
 
 currentMarker = null;
 
@@ -86,7 +84,6 @@ loadGeojson = function(url) {
   }
   changeLoadingState(url, 'start');
   return $.getJSON(url, function(json) {
-    var updatePinningInformation;
     map.data.addGeoJson(json);
     map.data.setStyle(function(feature) {
       var grade;
@@ -94,51 +91,28 @@ loadGeojson = function(url) {
       return featureStyle('', grade);
     });
     changeLoadingState(url, 'finish');
-    updatePinningInformation = function(e, active) {
-      var grade, npname;
-      if (active) {
-        npname = e.feature.getProperty('name');
-        grade = e.feature.getProperty('grade');
-        $('#display-np').val(npname + "国立公園");
-        $('#display-grade').val(grade);
-        $('#np-statement').css('color', 'red');
-        return $('#grade-statement').css('color', 'red');
-      } else {
-        $('#display-np').val('');
-        $('#display-grade').val('');
-        $('#np-statement').css('color', 'black');
-        return $('#grade-statement').css('color', 'black');
-      }
-    };
     map.data.addListener('mouseover', function(e) {
-      if (!areaPin) {
-        updatePinningInformation(e, true);
-      }
       return map.data.overrideStyle(e.feature, featureStyle('mouseover'));
     });
     map.data.addListener('click', function(e) {
-      var opt;
-      if (areaPin != null) {
-        areaPin.setMap(null);
-        areaPin = null;
-      }
-      opt = {
+      var grade, infomarker, infowindow, npname;
+      npname = e.feature.getProperty('name');
+      grade = e.feature.getProperty('grade');
+      infowindow = new google.maps.InfoWindow({
+        content: e.feature.getProperty('description')
+      });
+      infomarker = new google.maps.Marker({
         position: e.latLng,
         map: map,
-        clickable: true,
-        cursor: 'crosshair'
-      };
-      areaPin = new google.maps.Marker(opt);
-      areaPin.addListener('click', function(e) {
-        areaPin.setMap(null);
-        return areaPin = null;
+        icon: './img/featureselection.svg'
       });
-      return updatePinningInformation(e, true);
+      infowindow.addListener('closeclick', function() {
+        infomarker.setMap(null);
+        return infomarker = null;
+      });
+      return infowindow.open(map, infomarker);
     });
     return map.data.addListener('mouseout', function(e) {
-      if (!areaPin) {
-        updatePinningInformation(null, false);
-      }
       return map.data.overrideStyle(e.feature, featureStyle());
     });
   });
@@ -149,7 +123,7 @@ geojsonAutoload = function() {
   if (!abstract) {
     return false;
   }
-  margin = 0.1;
+  margin = -0.3;
   top = map.getBounds().getNorthEast().G;
   right = map.getBounds().getNorthEast().K;
   bottom = map.getBounds().getSouthWest().G;
@@ -188,7 +162,7 @@ $('#move-to-current').click(function() {
   result = false;
   if (navigator.geolocation) {
     return navigator.geolocation.getCurrentPosition(function(pos) {
-      var opt, theCurrent;
+      var theCurrent;
       theCurrent = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
       $('#geolocation-statement').removeClass(theClass).addClass('fa fa-check-circle').css('color', 'green');
       map.panTo(theCurrent);
@@ -196,12 +170,11 @@ $('#move-to-current').click(function() {
         currentMarker.setMap(null);
         currentMarker = null;
       }
-      opt = {
+      return currentMarker = new google.maps.Marker({
         position: theCurrent,
         map: map,
         icon: './img/currentmarker.svg'
-      };
-      return currentMarker = new google.maps.Marker(opt);
+      });
     }, function(e) {
       $('#geolocation-statement').removeClass(theClass).addClass('fa fa-plus-circle fa-rotate-45').css('color', 'red');
       return console.log('現在地取得エラー:' + e);
