@@ -5,6 +5,7 @@ compass    = require 'gulp-compass'
 coffee     = require 'gulp-coffee'
 plumber    = require 'gulp-plumber'
 notify     = require 'gulp-notify'
+sketch     = require 'gulp-sketch'
 
 base = './'
 
@@ -13,11 +14,13 @@ srcs =
     base + '*.html'
     base + 'sass/*.scss'
     base + 'coffee/*.coffee'
+    base + 'sketch/*.sketch'
   ]
   uploading :　[
     base + '*.html'
     base + 'css/*.css'
     base + 'js/*.js'
+    base + 'img/*.svg'
   ]
 
 host = 'localhost'
@@ -59,13 +62,19 @@ gulp.task "coffee", () ->
       console.log err.stack
     .pipe gulp.dest base + 'js/'
 
+gulp.task 'sketch', () ->
+  gulp.src base + 'sketch/*.sketch'
+    .pipe sketch
+      export: 'artboards'
+      formats: 'svg'
+    .pipe gulp.dest base + 'img/'
 
-gulp.task "reload", ["compass", "coffee"] , () ->
+gulp.task "reload", ["compass", "coffee", "sketch"] , () ->
   gulp.src srcs["watching"]
     .pipe connect.reload()
 
 
-gulp.task "default", ["compass","coffee","connect", "watch" ]
+gulp.task "default", ["compass","coffee","sketch","connect", "watch" ]
 
 # ==========upper for developing==========
 

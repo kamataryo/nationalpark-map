@@ -1,4 +1,4 @@
-var abstract, areaPin, changeLoadingState, featureStyle, geojsonAutoload, geojsonLoaded, gradeFill, initialize, loadGeojson, loadingque, map;
+var abstract, areaPin, changeLoadingState, currentMarker, featureStyle, geojsonAutoload, geojsonLoaded, gradeFill, initialize, loadGeojson, loadingque, map;
 
 map = null;
 
@@ -9,6 +9,8 @@ abstract = null;
 loadingque = [];
 
 areaPin = null;
+
+currentMarker = null;
 
 initialize = function() {
   var $map, options;
@@ -186,8 +188,20 @@ $('#move-to-current').click(function() {
   result = false;
   if (navigator.geolocation) {
     return navigator.geolocation.getCurrentPosition(function(pos) {
+      var opt, theCurrent;
+      theCurrent = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
       $('#geolocation-statement').removeClass(theClass).addClass('fa fa-check-circle').css('color', 'green');
-      return map.panTo(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+      map.panTo(theCurrent);
+      if (currentMarker != null) {
+        currentMarker.setMap(null);
+        currentMarker = null;
+      }
+      opt = {
+        position: theCurrent,
+        map: map,
+        icon: './img/currentmarker.svg'
+      };
+      return currentMarker = new google.maps.Marker(opt);
     }, function(e) {
       $('#geolocation-statement').removeClass(theClass).addClass('fa fa-plus-circle fa-rotate-45').css('color', 'red');
       return console.log('現在地取得エラー:' + e);

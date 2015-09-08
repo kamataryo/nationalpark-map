@@ -3,7 +3,7 @@ geojsonLoaded = {}#マップへの読み込み済みgeojsonを判別する
 abstract = null# geojsonのabstractを読み込む
 loadingque = []#geojsonの読み込み状態を管理
 areaPin = null#エリアをピン留めするときのマーカー
-
+currentMarker = null #現在地を表示するマーカー
 # googlemapの初期設定
 initialize = () ->
 	$map = $ '#map-canvas'
@@ -143,11 +143,24 @@ $('#move-to-current').click () ->
 	result = false
 	if navigator.geolocation
 		navigator.geolocation.getCurrentPosition (pos) ->
+			theCurrent = new google.maps.LatLng pos.coords.latitude, pos.coords.longitude
 			$('#geolocation-statement')
 				.removeClass theClass
 				.addClass 'fa fa-check-circle'
 				.css 'color', 'green'
-			map.panTo new google.maps.LatLng pos.coords.latitude, pos.coords.longitude
+			map.panTo theCurrent
+
+			if currentMarker?
+				#marker取り除き
+				currentMarker.setMap null
+				currentMarker = null
+			#marker追加
+			opt =
+				position: theCurrent
+				map: map
+				icon: './img/currentmarker.svg'
+			currentMarker = new google.maps.Marker opt
+
 		,(e) ->
 			$('#geolocation-statement')
 				.removeClass theClass
