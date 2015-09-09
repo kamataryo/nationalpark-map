@@ -3,6 +3,7 @@ japanese national park map (restriction area)
 
 # License
 MIT
+
 ## attention
-GeoJSONs are under other License.
+GeoJSONs are under another License.
 See geojson/LICENSE.md
