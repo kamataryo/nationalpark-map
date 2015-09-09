@@ -1,14 +1,14 @@
 # nationalpark map-国立公園区域
 
 ## Abstract-概要
-japanese national park map (restriction area)
+National park map in Japan (restriction area)
 
 日本の国立公園（規制区域）の区域図です。
 
-## screenshot
+## How does it works?-どんなものか？
 ![screen shot](screenshot.png)
 
-works like this.
+It works like this.
 
 The development restriction areas are overlaid on Google Maps.
 
@@ -19,7 +19,7 @@ The development restriction areas are overlaid on Google Maps.
 ## License-ライセンス
 MIT. see [LICENSE.md](LICENSE.md)
 
-## attention-注意事項
+## Attention-注意事項
 GeoJSONs are under another License.
 
 GeoJSONファイルは他のライセンス下にあると考えています。
