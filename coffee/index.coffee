@@ -3,6 +3,7 @@ geojsonLoaded = {}#マップへの読み込み済みgeojsonを判別する
 abstract = null# geojsonのabstractを読み込む
 loadingque = []#geojsonの読み込み状態を管理
 currentMarker = null #現在地を表示するマーカー
+timerIDcurrentInactivate = 0 # 現在地表示有効期間を設定するためのtimeout用ID
 # googlemapの初期設定
 initialize = () ->
 	$map = $ '#map-canvas'
@@ -84,7 +85,7 @@ loadGeojson = (url) ->
 			infomarker = new google.maps.Marker
 				position: e.latLng
 				map: map
-				icon: './img/featureselection.svg'
+				icon: './img/selected-feature.svg'
 
 			infowindow.addListener 'closeclick', () ->
 				infomarker.setMap null
@@ -134,19 +135,29 @@ $('#move-to-current').click () ->
 				.css 'color', 'green'
 			map.panTo theCurrent
 			#現在地にマーカーを追加
-			if currentMarker?
-				#marker取り除き
-				currentMarker.setMap null
-				currentMarker = null
+			if !currentMarker
 			#marker追加
-			currentMarker = new google.maps.Marker
-				position: theCurrent
-				map: map
-				icon: './img/currentmarker.svg'
+				currentMarker = new google.maps.Marker
+					position: theCurrent
+					map: map
+					icon: './img/marker-current.svg'
+			else
+				currentMarker.setPosition theCurrent
+				currentMarker.setIcon './img/marker-current.svg'
+				clearTimeout timerIDcurrentInactivate
+			#timeoutをセットし、5秒くらいでdeactiveする
+			timerIDcurrentInactivate = setTimeout () ->
+				currentMarker.setIcon './img/marker-inactive.svg'
+				$('#geolocation-statement')
+					.removeClass theClass
+					.addClass 'fa fa-question'
+					.css 'color', 'black'
+			,5000
 
 		,(e) ->
 			$('#geolocation-statement')
 				.removeClass theClass
+				#fa-rotate-45機能してない
 				.addClass 'fa fa-plus-circle fa-rotate-45'
 				.css 'color', 'red'
 			console.log '現在地取得エラー:' + e

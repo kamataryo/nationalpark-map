@@ -16,8 +16,6 @@
 			<p>
 				<input id="move-to-current" type="button" value="現在地を表示">
 				<i id="geolocation-statement" class="fa fa-question"></i>
-				<p><input id="auto-overlay" type="checkbox" value="自動読み込み">
-				<label for="auto-overlay">自動読み込み</label>
 			</p>
 			<p>
 				<select id="handy-overlay">
@@ -25,20 +23,25 @@
 				</select>
 				<i id="load-statement" class="fa fa-cog"></i>
 			</p>
+			<p>
+				<input id="auto-overlay" type="checkbox" value="自動読み込み">
+				<label for="auto-overlay">自動読み込みの有効化</label>
+			</p>
 		</div>
 		<div>
 			<h2 id="readme" class="toggle-next">このサイトについて</h2>
 			<div style="display: none">
 				<p>このサイト「国立公園区域マップ v1.1」は、<a href="http://www.biodic.go.jp/trialSystem/top.html">自然環境情報GIS</a> <a href="http://www.biodic.go.jp/trialSystem/info/nps.html">国立公園の区域等</a>（<a href="http://www.biodic.go.jp/">環境省生物多様性センター</a>）のデータを加工し作成したものです。</p>
-				<p>このサイトは、あくまで目安とするための公園区域を表示するためのものです。正確な国立公園の区域や地種区分等を調べる場合は、当該国立公園を所管する環境省の自然保護官事務所等に問い合わせを行うことをおすすめします。</p>
+				<p>国立公園のポリゴンデータには、政府標準利用規約（第1.0版）が適用されていると考えています。</p>
+				<p>このサイトで表示される公園区域は、あくまで目安に留めておくことをお勧めします。正確な国立公園の区域や地種区分等を調べる場合は、当該国立公園を所管する環境省の自然保護官事務所等に問い合わせを行うのが好ましいでしょう。</p>
 			</div>
 		</div>
 		<div>
 			<h2 id="howto" class="toggle-next">使い方など</h2>
 			<div style="display: none">
-				<p>自動読み込み機能は、マップのスクロールに伴って国立公園のデータを読み込む機能です。ですので、日本中を表示できるスケールで使うとたくさん通信します。スマホなどだとブラウザも固まるかもしれません。</p>
+				<p>自動読み込み機能は、マップのスクロールと同時に国立公園のデータを読み込む機能です。画面に表示されるべき公園を発見した場合に、通信を行いデータを取得します。日本中を表示できるスケールで使うと、たくさん通信することになります。スマホなどだとブラウザも固まるかもしれません。</p>
 				<p>また、特にiPhoneなどで「国立公園を選択」の操作をすると、画面が拡大したまま戻らなくなるかもしれません。その場合は、この操作パネル上でピンチインして戻してあげてください。これは改修予定です。</p>
-			</div>
+		</div>
 		</div>
 	</div>
 

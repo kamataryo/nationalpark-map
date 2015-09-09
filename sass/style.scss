@@ -1,10 +1,5 @@
 @import "compass";
 
-@mixin floating-board {
-	position: absolute;
-	z-index: 10;
-	background-color: rgba(255,255,255,0.4);
-}
 @mixin floating-part {
 	position: relative;
 	opacity: 1;
@@ -16,8 +11,13 @@
 
 
 html, body {
+	margin:0;
+	padding:0;
 	height: 100%;
 	position: relative;
+	line-height:1.4;
+	color: #111;
+	font-family:Arial, sans-serif;
 }
 
 
@@ -27,7 +27,9 @@ html, body {
 }
 
 #controls {
-	@include floating-board;
+	position: absolute;
+	z-index: 10;
+	background-color: rgba(255,255,255,0.6);
 	top: 50px;
 	padding: 10px;
 	margin-left:0;

@@ -1,4 +1,4 @@
-var abstract, changeLoadingState, currentMarker, featureStyle, geojsonAutoload, geojsonLoaded, gradeFill, initialize, loadGeojson, loadingque, map;
+var abstract, changeLoadingState, currentMarker, featureStyle, geojsonAutoload, geojsonLoaded, gradeFill, initialize, loadGeojson, loadingque, map, timerIDcurrentInactivate;
 
 map = null;
 
@@ -9,6 +9,8 @@ abstract = null;
 loadingque = [];
 
 currentMarker = null;
+
+timerIDcurrentInactivate = 0;
 
 initialize = function() {
   var $map, options;
@@ -104,7 +106,7 @@ loadGeojson = function(url) {
       infomarker = new google.maps.Marker({
         position: e.latLng,
         map: map,
-        icon: './img/featureselection.svg'
+        icon: './img/selected-feature.svg'
       });
       infowindow.addListener('closeclick', function() {
         infomarker.setMap(null);
@@ -166,15 +168,21 @@ $('#move-to-current').click(function() {
       theCurrent = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
       $('#geolocation-statement').removeClass(theClass).addClass('fa fa-check-circle').css('color', 'green');
       map.panTo(theCurrent);
-      if (currentMarker != null) {
-        currentMarker.setMap(null);
-        currentMarker = null;
+      if (!currentMarker) {
+        currentMarker = new google.maps.Marker({
+          position: theCurrent,
+          map: map,
+          icon: './img/marker-current.svg'
+        });
+      } else {
+        currentMarker.setPosition(theCurrent);
+        currentMarker.setIcon('./img/marker-current.svg');
+        clearTimeout(timerIDcurrentInactivate);
       }
-      return currentMarker = new google.maps.Marker({
-        position: theCurrent,
-        map: map,
-        icon: './img/currentmarker.svg'
-      });
+      return timerIDcurrentInactivate = setTimeout(function() {
+        currentMarker.setIcon('./img/marker-inactive.svg');
+        return $('#geolocation-statement').removeClass(theClass).addClass('fa fa-question').css('color', 'black');
+      }, 5000);
     }, function(e) {
       $('#geolocation-statement').removeClass(theClass).addClass('fa fa-plus-circle fa-rotate-45').css('color', 'red');
       return console.log('現在地取得エラー:' + e);
