@@ -6,6 +6,7 @@ japanese national park map (restriction area)
 
 ## Screen Shot-スクリーンショット
 ![screen shot](screenshot.png)
+
 works like this.
 The development restriction areas are overlaid on Google Maps.
 こんな感じです。
