@@ -5,7 +5,8 @@ japanese national park map (restriction area)
 日本の国立公園（規制区域）の区域図です。
 
 ## Screen Shot-スクリーンショット
-![screen shot]("screenshot.png")
+![screen shot](screenshot.png)
+
 works like this.
 The development restriction areas are overlaid on Google Maps.
 こんな感じです。
