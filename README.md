@@ -2,8 +2,8 @@
 japanese national park map (restriction area)
 
 # License
-MIT
+MIT(LICENSE.md)
 
 ## attention
 GeoJSONs are under another License.
-See geojson/LICENSE.md
+See (geojson/LICENSE.md).
