@@ -10,7 +10,7 @@ National park map in Japan (restriction area)
 
 It works like this.
 
-The development restriction areas are overlaid on Google Maps.
+The developmental restricted areas are overlaid on Google Maps.
 
 こんな感じです。
 
