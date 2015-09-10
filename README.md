@@ -5,7 +5,7 @@ National park map in Japan (restriction area)
 
 日本の国立公園（規制区域）の区域図です。
 
-## How does it works?-どんなものか？
+## How does it work?-どんなものか？
 ![screen shot](screenshot.png)
 
 It works like this.
