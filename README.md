@@ -20,8 +20,8 @@ The developmental restricted areas are overlaid on Google Maps.
 MIT. see [LICENSE.md](LICENSE.md)
 
 ## Attention-注意事項
-GeoJSONs are under another License.
+TopoJSONs are under another License.
 
-GeoJSONファイルは他のライセンス下にあると考えています。
+TopoJSONファイルは他のライセンス下にあると考えています。
 
-See [geojson/LICENSE.md](geojson/LICENSE.md).
+See [topojson/LICENSE.md](topojson/LICENSE.md).
