@@ -16,9 +16,11 @@
   "devDependencies": {
     "coffee-script": "^1.9.3",
     "fstream": "^1.0.7",
+    "geojson-vt": "^2.1.5",
     "gulp-concat-json": "^1.0.0",
     "gulp-convert": "^0.2.0",
     "gulp-download": "0.0.1",
+    "gulp-exec": "^2.1.1",
     "gulp-geojson": "^0.2.0",
     "gulp-intercept": "^0.1.0",
     "gulp-jsbeautifier": "^1.0.1",

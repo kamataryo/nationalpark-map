@@ -4,6 +4,17 @@ abstract = null# geojsonのabstractを読み込む
 loadingque = []#geojsonの読み込み状態を管理
 currentMarker = null #現在地を表示するマーカー
 timerIDcurrentInactivate = 0 # 現在地表示有効期間を設定するためのtimeout用ID
+gradeFill =　#地種区分ごとの色を定義
+    "特別保護地区": "#dddd66"
+    "海域公園地区": "#2233dd"
+    "海中公園地区": "#2233dd"
+    "第1種特別地域": "#dd66dd"
+    "第2種特別地域": "#dd6666"
+    "第3種特別地域": "#66dd66"
+    "普通地域": "#66dddd"
+    "else": "#666666"
+
+
 # googlemapの初期設定
 initialize = () ->
 	$map = $ '#map-canvas'
@@ -19,19 +30,28 @@ initialize = () ->
 		streetViewControl: true
 		overviewMapControl: false
 	map = new google.maps.Map $map[0], options
+	# autoloadの実行
 	map.addListener 'idle', () ->
 		if $('#auto-overlay').is ':checked' then geojsonAutoload()
+	# マウスオーバーで色変え
+	map.data.addListener 'mouseover', (e) ->
+		map.data.overrideStyle e.feature, featureStyle 'mouseover'
+	#クリックで情報ウインドウを表示
+	map.data.addListener 'click', (e) ->
+		infowindow = new google.maps.InfoWindow
+			content: e.feature.getProperty 'description'#"#{npname}国立公園<br>#{grade}"
+		infomarker = new google.maps.Marker
+			position: e.latLng
+			map: map
+			icon: './img/selected-feature.svg'
+		infowindow.addListener 'closeclick', () ->
+			infomarker.setMap null
+			infomarker = null
+		infowindow.open map,infomarker
+	#マウスアウトで色を戻す
+	map.data.addListener 'mouseout', (e) ->
+		map.data.overrideStyle e.feature, featureStyle()
 
-#地種区分ごとの色を定義
-gradeFill =
-    "特別保護地区": "#dddd66"
-    "海域公園地区": "#2233dd"
-    "海中公園地区": "#2233dd"
-    "第1種特別地域": "#dd66dd"
-    "第2種特別地域": "#dd6666"
-    "第3種特別地域": "#66dd66"
-    "普通地域": "#66dddd"
-    "else": "#666666"
 
 # geojsonフィーチャーの地種とそれに対するイベントから適応するスタイルを決定する
 featureStyle = (state, grade) ->
@@ -47,7 +67,8 @@ featureStyle = (state, grade) ->
 		result.strokeWeight = 2.5
 	return result
 
-#読み込み中の状態表示
+
+#topojson読み込み中の状態表示
 changeLoadingState = (loadStateID, state) ->
 	if state is 'start'
 		loadingque.push loadStateID
@@ -59,47 +80,27 @@ changeLoadingState = (loadStateID, state) ->
 
 
 # geojson layerの追加と設定
-loadGeojson = (url) ->
-	if geojsonLoaded[url]
+# topojsonファイルのbasenameをキーにしている
+loadTopojson = (basename) ->
+	if geojsonLoaded[basename]
 		return false
 	else
-		geojsonLoaded[url] = true
+		geojsonLoaded[basename] = true
+	url = 'topojson/' + basename + '.topojson'
 	changeLoadingState url,'start'
 	$.getJSON url, (json) ->
+		json = topojson.feature json,json.objects[basename]
 		map.data.addGeoJson json
 		map.data.setStyle (feature) ->
 			grade = feature.getProperty('grade')
 			return featureStyle '', grade
 		changeLoadingState url,'finish'
 
-		map.data.addListener 'mouseover', (e) ->
-			map.data.overrideStyle e.feature, featureStyle 'mouseover'
 
-		map.data.addListener 'click', (e) ->
-			npname = e.feature.getProperty 'name'
-			grade = e.feature.getProperty 'grade'
-
-			infowindow = new google.maps.InfoWindow
-				content: e.feature.getProperty 'description'#"#{npname}国立公園<br>#{grade}"
-
-			infomarker = new google.maps.Marker
-				position: e.latLng
-				map: map
-				icon: './img/selected-feature.svg'
-
-			infowindow.addListener 'closeclick', () ->
-				infomarker.setMap null
-				infomarker = null
-
-			infowindow.open map,infomarker
-
-		map.data.addListener 'mouseout', (e) ->
-			map.data.overrideStyle e.feature, featureStyle()
-
-
-#現在の座標位置をもとに、範囲内のgeojsonを全て読み込む
+#現在の座標位置をもとに、表示範囲内のgeojsonを全て読み込む
 geojsonAutoload = () ->
 	if !abstract then return false
+
 	margin = -0.3#margin = -30%
 	top = map.getBounds().getNorthEast().G
 	right = map.getBounds().getNorthEast().K
@@ -110,17 +111,20 @@ geojsonAutoload = () ->
 	bottom -= (1 + margin) * (top - bottom)
 	left -= (1 + margin) * (right - left)
 
-	for geojson, information of abstract
+	for basename, information of abstract
 		c1 = information.top > bottom
 		c2 = information.bottom < top
 		c3 = information.right > left
 		c4 = information.left < right
 		if c1 and c2 and c3 and c4
-			loadGeojson 'geojson/' + geojson
+			loadTopojson basename
 
+
+#自動読み込みのオンオフ
 $('#auto-overlay').change () ->
 	state = $(this).is ':checked'
 	if state is true then geojsonAutoload()
+
 
 #現在地にpanする
 $('#move-to-current').click () ->
@@ -145,7 +149,7 @@ $('#move-to-current').click () ->
 				currentMarker.setPosition theCurrent
 				currentMarker.setIcon './img/marker-current.svg'
 				clearTimeout timerIDcurrentInactivate
-			#timeoutをセットし、5秒くらいでdeactiveする
+			#timeoutをセットし、5秒くらいでdeactiate
 			timerIDcurrentInactivate = setTimeout () ->
 				currentMarker.setIcon './img/marker-inactive.svg'
 				$('#geolocation-statement')
@@ -181,6 +185,7 @@ $('.toggle-next').each (i, elem) ->
 	else
 		$i.addClass 'fa-angle-double-down'
 
+
 ## toggleの動作の定義
 $('.toggle-next').click () ->
 	display = $(this).next().css 'display'
@@ -196,19 +201,20 @@ $('.toggle-next').click () ->
 		$(this).next().hide 'fast'
 
 
-$.getJSON './geojson/abstract.json', (json) ->
+$.getJSON './topojson/abstract.json', (json) ->
 	# selectboxに反映
 	abstract = json#globalにも格納
-	for url, information of json
+	for basename, information of json
 		$('<option>')
 			.appendTo $ '#handy-overlay'
-			.val url
-			.text "#{information.name} [#{information.size} MB]"
+			.val basename
+			.text "#{information.name} [#{information.size} #{information.unit}]"
+
 	$('#handy-overlay').change () ->
 		basename = $(this).val()
 		if basename is '' then return false
-		url = 'geojson/' + basename
-		loadGeojson url
+		#url = 'geojson/' + basename
+		loadTopojson basename#url + '.topojson'
 		#中心座標へ移動
 		Clat = (json[basename].top + json[basename].bottom) / 2
 		Clon = (json[basename].right + json[basename].left) / 2
