@@ -1,4 +1,4 @@
-var abstract, changeLoadingState, currentMarker, featureStyle, geojsonAutoload, geojsonLoaded, gradeFill, initialize, loadGeojson, loadingque, map, timerIDcurrentInactivate;
+var abstract, changeLoadingState, currentMarker, featureStyle, geojsonAutoload, geojsonLoaded, gradeFill, initialize, loadTopojson, loadingque, map, timerIDcurrentInactivate;
 
 map = null;
 
@@ -78,14 +78,17 @@ changeLoadingState = function(loadStateID, state) {
   }
 };
 
-loadGeojson = function(url) {
-  if (geojsonLoaded[url]) {
+loadTopojson = function(basename) {
+  var url;
+  if (geojsonLoaded[basename]) {
     return false;
   } else {
-    geojsonLoaded[url] = true;
+    geojsonLoaded[basename] = true;
   }
+  url = 'topojson/' + basename + '.topojson';
   changeLoadingState(url, 'start');
   return $.getJSON(url, function(json) {
+    json = topojson.feature(json, json.objects[basename]);
     map.data.addGeoJson(json);
     map.data.setStyle(function(feature) {
       var grade;
@@ -121,7 +124,7 @@ loadGeojson = function(url) {
 };
 
 geojsonAutoload = function() {
-  var bottom, c1, c2, c3, c4, geojson, information, left, margin, results, right, top;
+  var basename, bottom, c1, c2, c3, c4, information, left, margin, results, right, top;
   if (!abstract) {
     return false;
   }
@@ -135,14 +138,14 @@ geojsonAutoload = function() {
   bottom -= (1 + margin) * (top - bottom);
   left -= (1 + margin) * (right - left);
   results = [];
-  for (geojson in abstract) {
-    information = abstract[geojson];
+  for (basename in abstract) {
+    information = abstract[basename];
     c1 = information.top > bottom;
     c2 = information.bottom < top;
     c3 = information.right > left;
     c4 = information.left < right;
     if (c1 && c2 && c3 && c4) {
-      results.push(loadGeojson('geojson/' + geojson));
+      results.push(loadTopojson(basename));
     } else {
       results.push(void 0);
     }
@@ -217,21 +220,20 @@ $('.toggle-next').click(function() {
   }
 });
 
-$.getJSON('./geojson/abstract.json', function(json) {
-  var information, url;
+$.getJSON('./topojson/abstract.json', function(json) {
+  var basename, information;
   abstract = json;
-  for (url in json) {
-    information = json[url];
-    $('<option>').appendTo($('#handy-overlay')).val(url).text(information.name + " [" + information.size + " MB]");
+  for (basename in json) {
+    information = json[basename];
+    $('<option>').appendTo($('#handy-overlay')).val(basename + '.topojson').text(information.name + " [" + information.size + " MB]");
   }
   return $('#handy-overlay').change(function() {
-    var Clat, Clon, basename, geojsonCenter;
+    var Clat, Clon, geojsonCenter;
     basename = $(this).val();
     if (basename === '') {
       return false;
     }
-    url = 'geojson/' + basename;
-    loadGeojson(url);
+    loadTopojson(basename);
     Clat = (json[basename].top + json[basename].bottom) / 2;
     Clon = (json[basename].right + json[basename].left) / 2;
     geojsonCenter = new google.maps.LatLng(Clat, Clon);

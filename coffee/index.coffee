@@ -59,13 +59,18 @@ changeLoadingState = (loadStateID, state) ->
 
 
 # geojson layerの追加と設定
-loadGeojson = (url) ->
-	if geojsonLoaded[url]
+# topojsonファイルのbasenameをキーにしている
+loadTopojson = (basename) ->
+	if geojsonLoaded[basename]
 		return false
 	else
-		geojsonLoaded[url] = true
+		geojsonLoaded[basename] = true
+
+	url = 'topojson/' + basename + '.topojson'
 	changeLoadingState url,'start'
 	$.getJSON url, (json) ->
+		json = topojson.feature json,json.objects[basename]
+
 		map.data.addGeoJson json
 		map.data.setStyle (feature) ->
 			grade = feature.getProperty('grade')
@@ -97,9 +102,10 @@ loadGeojson = (url) ->
 			map.data.overrideStyle e.feature, featureStyle()
 
 
-#現在の座標位置をもとに、範囲内のgeojsonを全て読み込む
+#現在の座標位置をもとに、表示範囲内のgeojsonを全て読み込む
 geojsonAutoload = () ->
 	if !abstract then return false
+
 	margin = -0.3#margin = -30%
 	top = map.getBounds().getNorthEast().G
 	right = map.getBounds().getNorthEast().K
@@ -110,13 +116,13 @@ geojsonAutoload = () ->
 	bottom -= (1 + margin) * (top - bottom)
 	left -= (1 + margin) * (right - left)
 
-	for geojson, information of abstract
+	for basename, information of abstract
 		c1 = information.top > bottom
 		c2 = information.bottom < top
 		c3 = information.right > left
 		c4 = information.left < right
 		if c1 and c2 and c3 and c4
-			loadGeojson 'geojson/' + geojson
+			loadTopojson basename
 
 $('#auto-overlay').change () ->
 	state = $(this).is ':checked'
@@ -196,19 +202,20 @@ $('.toggle-next').click () ->
 		$(this).next().hide 'fast'
 
 
-$.getJSON './geojson/abstract.json', (json) ->
+$.getJSON './topojson/abstract.json', (json) ->
 	# selectboxに反映
 	abstract = json#globalにも格納
-	for url, information of json
+	for basename, information of json
 		$('<option>')
 			.appendTo $ '#handy-overlay'
-			.val url
+			.val basename + '.topojson'
 			.text "#{information.name} [#{information.size} MB]"
+
 	$('#handy-overlay').change () ->
 		basename = $(this).val()
 		if basename is '' then return false
-		url = 'geojson/' + basename
-		loadGeojson url
+		#url = 'geojson/' + basename
+		loadTopojson basename#url + '.topojson'
 		#中心座標へ移動
 		Clat = (json[basename].top + json[basename].bottom) / 2
 		Clon = (json[basename].right + json[basename].left) / 2

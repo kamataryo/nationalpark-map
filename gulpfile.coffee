@@ -98,7 +98,7 @@ beautify = require 'gulp-jsbeautifier'
 rename   = require 'gulp-rename'
 concat  = require 'gulp-concat-json'
 intercept = require 'gulp-intercept'
-
+exec = require 'gulp-exec'
 # list of National Park
 settingsUrl = './settings.json'
 settings = require settingsUrl
@@ -157,12 +157,11 @@ gulp.task 'kerama', () ->
 #geojsonフォルダに入っている全ての国立公園geojsonファイルから、
 #その分布範囲などを記載したabstractを生成する
 gulp.task 'abstract', () ->
-    filename = ''
     gulp.src base + 'geojson/*.geojson'
-        .pipe rename (filepath) ->
-            filename = filepath.basename + filepath.extname
-        .pipe jeditor (json) ->
-            # abstractの作成用一時変数
+        .pipe intercept (file) ->
+            identifier = path.basename file.path, '.geojson'
+            json = JSON.parse file.contents.toString()
+
             latitudes = []
             longitudes = []
             name = json.features[0].properties.name
@@ -174,20 +173,40 @@ gulp.task 'abstract', () ->
                         longitudes.push coordinate[1]
 
             information = {}
-            information[filename] =
+            information[identifier] =
                 name: name
                 size: size
                 top: _.max longitudes
                 right: _.max latitudes
                 bottom: _.min longitudes
                 left: _.min latitudes
-            return information
+
+            file.contents = new Buffer JSON.stringify information
+            return file
         .pipe concat 'abstract.json'
         .pipe jeditor (json) ->
+            #flattenする
             result = {}
             for obj in json
                 key = _.keys(obj)[0]
                 result[key] = obj[key]
             return result
         .pipe beautify()
-        .pipe gulp.dest base + 'geojson'
+        .pipe gulp.dest base + 'topojson'
+
+
+#topojsonに変換
+gulp.task 'topojson', () ->
+    gulp.src 'geojson/*.geojson'
+        .pipe exec 'topojson -p name -p grade -p description -o <%= file.path %>.topojson <%= file.path %>'
+        .pipe exec.reporter stdout:true
+
+#topojsonを見やすくする
+gulp.task 'topojson2', () ->
+    gulp.src 'geojson/*.geojson.topojson'
+        .pipe rename extname:'.json'
+        .pipe beautify()
+        .pipe rename extname: '' # trim .topojson
+        .pipe rename extname: '' # trim .geojson
+        .pipe rename extname: '.topojson'
+        .pipe gulp.dest 'topojson/'
