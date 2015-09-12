@@ -12,6 +12,17 @@ currentMarker = null;
 
 timerIDcurrentInactivate = 0;
 
+gradeFill = {
+  "特別保護地区": "#dddd66",
+  "海域公園地区": "#2233dd",
+  "海中公園地区": "#2233dd",
+  "第1種特別地域": "#dd66dd",
+  "第2種特別地域": "#dd6666",
+  "第3種特別地域": "#66dd66",
+  "普通地域": "#66dddd",
+  "else": "#666666"
+};
+
 initialize = function() {
   var $map, options;
   $map = $('#map-canvas');
@@ -28,22 +39,33 @@ initialize = function() {
     overviewMapControl: false
   };
   map = new google.maps.Map($map[0], options);
-  return map.addListener('idle', function() {
+  map.addListener('idle', function() {
     if ($('#auto-overlay').is(':checked')) {
       return geojsonAutoload();
     }
   });
-};
-
-gradeFill = {
-  "特別保護地区": "#dddd66",
-  "海域公園地区": "#2233dd",
-  "海中公園地区": "#2233dd",
-  "第1種特別地域": "#dd66dd",
-  "第2種特別地域": "#dd6666",
-  "第3種特別地域": "#66dd66",
-  "普通地域": "#66dddd",
-  "else": "#666666"
+  map.data.addListener('mouseover', function(e) {
+    return map.data.overrideStyle(e.feature, featureStyle('mouseover'));
+  });
+  map.data.addListener('click', function(e) {
+    var infomarker, infowindow;
+    infowindow = new google.maps.InfoWindow({
+      content: e.feature.getProperty('description')
+    });
+    infomarker = new google.maps.Marker({
+      position: e.latLng,
+      map: map,
+      icon: './img/selected-feature.svg'
+    });
+    infowindow.addListener('closeclick', function() {
+      infomarker.setMap(null);
+      return infomarker = null;
+    });
+    return infowindow.open(map, infomarker);
+  });
+  return map.data.addListener('mouseout', function(e) {
+    return map.data.overrideStyle(e.feature, featureStyle());
+  });
 };
 
 featureStyle = function(state, grade) {
@@ -95,31 +117,7 @@ loadTopojson = function(basename) {
       grade = feature.getProperty('grade');
       return featureStyle('', grade);
     });
-    changeLoadingState(url, 'finish');
-    map.data.addListener('mouseover', function(e) {
-      return map.data.overrideStyle(e.feature, featureStyle('mouseover'));
-    });
-    map.data.addListener('click', function(e) {
-      var grade, infomarker, infowindow, npname;
-      npname = e.feature.getProperty('name');
-      grade = e.feature.getProperty('grade');
-      infowindow = new google.maps.InfoWindow({
-        content: e.feature.getProperty('description')
-      });
-      infomarker = new google.maps.Marker({
-        position: e.latLng,
-        map: map,
-        icon: './img/selected-feature.svg'
-      });
-      infowindow.addListener('closeclick', function() {
-        infomarker.setMap(null);
-        return infomarker = null;
-      });
-      return infowindow.open(map, infomarker);
-    });
-    return map.data.addListener('mouseout', function(e) {
-      return map.data.overrideStyle(e.feature, featureStyle());
-    });
+    return changeLoadingState(url, 'finish');
   });
 };
 
@@ -225,7 +223,7 @@ $.getJSON('./topojson/abstract.json', function(json) {
   abstract = json;
   for (basename in json) {
     information = json[basename];
-    $('<option>').appendTo($('#handy-overlay')).val(basename + '.topojson').text(information.name + " [" + information.size + " MB]");
+    $('<option>').appendTo($('#handy-overlay')).val(basename).text(information.name + " [" + information.size + " " + information.unit + "]");
   }
   return $('#handy-overlay').change(function() {
     var Clat, Clon, geojsonCenter;

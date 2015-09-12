@@ -141,31 +141,29 @@ gulp.task 'download', () ->
                         return json
                     .pipe beautify()
                     .pipe rename {basename:basename, extname:'.geojson'}
-                    .pipe gulp.dest base + 'geojson'
+                    .pipe gulp.dest base + '.geojson/'
 
 
 #慶良間のgeojsonに国立公園名が入ってないので処理
 gulp.task 'kerama', () ->
-    gulp.src 'geojson/NPS_keramashotou.geojson'
+    gulp.src '.geojson/NPS_keramashotou.geojson'
         .pipe jeditor (json) ->
             for feature in json.features
                 feature.properties.name = '慶良間諸島'
             return json
-        .pipe gulp.dest 'geojson/'
+        .pipe gulp.dest '.geojson/'
 
 
 #geojsonフォルダに入っている全ての国立公園geojsonファイルから、
 #その分布範囲などを記載したabstractを生成する
-gulp.task 'abstract', () ->
-    gulp.src base + 'geojson/*.geojson'
+gulp.task 'abstract_of_geo', () ->
+    gulp.src base + '.geojson/*.geojson'
         .pipe intercept (file) ->
             identifier = path.basename file.path, '.geojson'
-            json = JSON.parse file.contents.toString()
-
+            json = JSON.parse file.contents,toString()
             latitudes = []
             longitudes = []
             name = json.features[0].properties.name
-            size = Math.round(100 * (new Buffer JSON.stringify json, null, 4).length / 1024 / 1024 / 3) /100
             for feature in json.features
                 if feature.geometry.coordinates?
                     for coordinate in feature.geometry.coordinates[0]
@@ -175,7 +173,6 @@ gulp.task 'abstract', () ->
             information = {}
             information[identifier] =
                 name: name
-                size: size
                 top: _.max longitudes
                 right: _.max latitudes
                 bottom: _.min longitudes
@@ -183,7 +180,7 @@ gulp.task 'abstract', () ->
 
             file.contents = new Buffer JSON.stringify information
             return file
-        .pipe concat 'abstract.json'
+        .pipe concat 'abstract.ofGeo.json'
         .pipe jeditor (json) ->
             #flattenする
             result = {}
@@ -192,21 +189,63 @@ gulp.task 'abstract', () ->
                 result[key] = obj[key]
             return result
         .pipe beautify()
-        .pipe gulp.dest base + 'topojson'
+        .pipe gulp.dest base + '.geojson/'
 
 
 #topojsonに変換
-gulp.task 'topojson', () ->
-    gulp.src 'geojson/*.geojson'
+gulp.task 'topojson_export', () ->
+    gulp.src '.geojson/*.geojson'
         .pipe exec 'topojson -p name -p grade -p description -o <%= file.path %>.topojson <%= file.path %>'
         .pipe exec.reporter stdout:true
 
-#topojsonを見やすくする
-gulp.task 'topojson2', () ->
-    gulp.src 'geojson/*.geojson.topojson'
+#topojsonの名前を変える
+gulp.task 'topojson_rename', () ->
+    gulp.src '.geojson/*.geojson.topojson'
         .pipe rename extname:'.json'
         .pipe beautify()
         .pipe rename extname: '' # trim .topojson
         .pipe rename extname: '' # trim .geojson
         .pipe rename extname: '.topojson'
         .pipe gulp.dest 'topojson/'
+
+
+#topogeojsonフォルダに入っている全ての国立公園topojsonファイルから、
+#そのサイズを記載したabstractを生成する
+gulp.task 'abstract_of_topo', () ->
+    gulp.src base + 'topojson/*.topojson'
+        .pipe intercept (file) ->
+            identifier = path.basename file.path, '.topojson'
+            size = Math.round( file.contents.length / 1024 )
+            if size > 1000
+                size = Math.round(10 * size / 1024) / 10
+                unit = 'MB'
+            else
+                unit = 'kB'
+            information = {}
+            information[identifier] =
+                size: size
+                unit: unit
+            file.contents = new Buffer JSON.stringify information
+            return file
+        .pipe concat 'abstract.ofTopo.json'
+        .pipe jeditor (json) ->
+            #flattenする
+            result = {}
+            for obj in json
+                key = _.keys(obj)[0]
+                result[key] = obj[key]
+            return result
+        .pipe beautify()
+        .pipe gulp.dest base + '.geojson/'
+
+#最後に結合
+gulp.task 'abstract_concat', () ->
+    gulp.src base + '.geojson/abstract.*.json'
+        .pipe concat 'abstract.json'
+        .pipe beautify()
+        .pipe jeditor (json) ->
+            for key, value of json[0]
+                json[0][key]['size'] = json[1][key]['size']
+                json[0][key]['unit'] = json[1][key]['unit']
+            return json[0]
+        .pipe gulp.dest base + 'topojson/'
