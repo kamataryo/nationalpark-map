@@ -1,14 +1,18 @@
-var abstract, changeLoadingState, currentMarker, featureStyle, geojsonAutoload, geojsonLoaded, gradeFill, initialize, loadTopojson, loadingque, map, timerIDcurrentInactivate;
+var abstract, changeLoadingState, currentMarker, featureStyle, geojsonAutoload, geojsonLoaded, gradeFill, infomarker, infowindow, initialize, loadTopojson, loadingque, map, timerIDcurrentInactivate;
 
 map = null;
 
 geojsonLoaded = {};
 
-abstract = null;
-
 loadingque = [];
 
+abstract = null;
+
 currentMarker = null;
+
+infowindow = null;
+
+infomarker = null;
 
 timerIDcurrentInactivate = 0;
 
@@ -28,7 +32,7 @@ initialize = function() {
   $map = $('#map-canvas');
   options = {
     noClear: true,
-    center: new google.maps.LatLng(35.127152, 138.910627),
+    center: new google.maps.LatLng(35.680795, 139.76721),
     zoom: 10,
     mapTypeId: google.maps.MapTypeId.SATELLITE,
     panControl: false,
@@ -48,7 +52,14 @@ initialize = function() {
     return map.data.overrideStyle(e.feature, featureStyle('mouseover'));
   });
   map.data.addListener('click', function(e) {
-    var infomarker, infowindow;
+    if (infowindow !== null) {
+      infowindow.close();
+      infowindow = null;
+    }
+    if (infomarker !== null) {
+      infomarker.setMap(null);
+      infomarker = null;
+    }
     infowindow = new google.maps.InfoWindow({
       content: e.feature.getProperty('description')
     });

@@ -1,8 +1,10 @@
 map = null#googlemapオブジェクトを格納
 geojsonLoaded = {}#マップへの読み込み済みgeojsonを判別する
-abstract = null# geojsonのabstractを読み込む
 loadingque = []#geojsonの読み込み状態を管理
+abstract = null# geojsonのabstractを読み込む
 currentMarker = null #現在地を表示するマーカー
+infowindow = null#ポップする情報ウィンドウを1つにするためグローバルに参照を格納する
+infomarker = null#同上
 timerIDcurrentInactivate = 0 # 現在地表示有効期間を設定するためのtimeout用ID
 gradeFill =　#地種区分ごとの色を定義
     "特別保護地区": "#dddd66"
@@ -20,7 +22,7 @@ initialize = () ->
 	$map = $ '#map-canvas'
 	options =
 		noClear : true
-		center : new google.maps.LatLng 35.127152, 138.910627
+		center : new google.maps.LatLng 35.680795, 139.76721
 		zoom : 10
 		mapTypeId: google.maps.MapTypeId.SATELLITE
 		panControl: false
@@ -30,14 +32,23 @@ initialize = () ->
 		streetViewControl: true
 		overviewMapControl: false
 	map = new google.maps.Map $map[0], options
+
 	# autoloadの実行
 	map.addListener 'idle', () ->
 		if $('#auto-overlay').is ':checked' then geojsonAutoload()
-	# マウスオーバーで色変え
+
+	# マウスオーバーでフィーチャーの色変え
 	map.data.addListener 'mouseover', (e) ->
 		map.data.overrideStyle e.feature, featureStyle 'mouseover'
+
 	#クリックで情報ウインドウを表示
 	map.data.addListener 'click', (e) ->
+		if infowindow isnt null
+			infowindow.close()
+			infowindow = null
+		if infomarker isnt null
+			infomarker.setMap null
+			infomarker = null
 		infowindow = new google.maps.InfoWindow
 			content: e.feature.getProperty 'description'#"#{npname}国立公園<br>#{grade}"
 		infomarker = new google.maps.Marker
