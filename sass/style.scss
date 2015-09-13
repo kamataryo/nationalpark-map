@@ -68,18 +68,26 @@ label[for=auto-overlay] {
 	@include floating-part-statement;
 }
 
+@mixin toggle-header {
+		display:inline-block;
+		@include floating-part;
+		padding: 0 5px 0 5px;
+		margin: 1px 0 0 0;
+		&:hover {
+			@include border-radius(5px);
+			background-color: rgba(0,0,0,0.2);
+			cursor: pointer;
+		}
+}
 
-h2{
-	display:inline-block;
+
+h1{
+	@include toggle-header;
 	font-size: 0.8em;
-	@include floating-part;
-	padding: 0 5px 0 5px;
-	margin: 1px 0 0 0;
-	&:hover {
-		@include border-radius(5px);
-		background-color: rgba(0,0,0,0.2);
-		cursor: pointer;
-	}
+}
+h2{
+	@include toggle-header;
+	font-size: 0.8em;
 }
 p {
 	margin: 2px;

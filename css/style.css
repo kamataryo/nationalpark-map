@@ -67,13 +67,29 @@ label[for=auto-overlay]:hover {
   opacity: 0.5;
 }
 
-h2 {
+h1 {
   display: inline-block;
-  font-size: 0.8em;
   position: relative;
   opacity: 1;
   padding: 0 5px 0 5px;
   margin: 1px 0 0 0;
+  font-size: 0.8em;
+}
+h1:hover {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+h2 {
+  display: inline-block;
+  position: relative;
+  opacity: 1;
+  padding: 0 5px 0 5px;
+  margin: 1px 0 0 0;
+  font-size: 0.8em;
 }
 h2:hover {
   -moz-border-radius: 5px;
