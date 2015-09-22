@@ -20,9 +20,14 @@ gradeFill =　#地種区分ごとの色を定義
 # googlemapの初期設定
 initialize = () ->
 	$map = $ '#map-canvas'
+	try
+		c = new google.maps.LatLng 35.680795, 139.76721
+	catch
+		$map.text 'Google Maps APIに関する不明なエラーです。iOSのsafariの場合は、コンテンツブロッカーが原因かもしれません。'
+		console.log error
 	options =
 		noClear : true
-		center : new google.maps.LatLng 35.680795, 139.76721
+		center : c
 		zoom : 10
 		mapTypeId: google.maps.MapTypeId.TERRAIN
 		panControl: false

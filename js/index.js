@@ -28,11 +28,17 @@ gradeFill = {
 };
 
 initialize = function() {
-  var $map, options;
+  var $map, c, error1, options;
   $map = $('#map-canvas');
+  try {
+    c = new google.maps.LatLng(35.680795, 139.76721);
+  } catch (error1) {
+    $map.text('Google Maps APIに関する不明なエラーです。iOSのsafariの場合は、コンテンツブロッカーが原因かもしれません。');
+    console.log(error);
+  }
   options = {
     noClear: true,
-    center: new google.maps.LatLng(35.680795, 139.76721),
+    center: c,
     zoom: 10,
     mapTypeId: google.maps.MapTypeId.TERRAIN,
     panControl: false,
