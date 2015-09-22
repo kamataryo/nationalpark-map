@@ -14,7 +14,7 @@ srcs =
     base + '*.html'
     base + 'sass/*.scss'
     base + 'coffee/*.coffee'
-    base + 'sketch/*.sketch'
+    base + 'sketch/**/*.sketch'
   ]
   uploading :　[
     base + '*.html'
