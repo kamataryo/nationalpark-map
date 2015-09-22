@@ -135,15 +135,16 @@ geojsonAutoload = function() {
   if (!abstract) {
     return false;
   }
-  margin = -0.3;
-  top = map.getBounds().getNorthEast().G;
-  right = map.getBounds().getNorthEast().K;
-  bottom = map.getBounds().getSouthWest().G;
-  left = map.getBounds().getSouthWest().K;
+  margin = -0.2;
+  top = map.getBounds().getNorthEast().lat();
+  right = map.getBounds().getNorthEast().lng();
+  bottom = map.getBounds().getSouthWest().lat();
+  left = map.getBounds().getSouthWest().lng();
   top += (1 + margin) * (top - bottom);
   right += (1 + margin) * (right - left);
   bottom -= (1 + margin) * (top - bottom);
   left -= (1 + margin) * (right - left);
+  console.log(top);
   results = [];
   for (basename in abstract) {
     information = abstract[basename];

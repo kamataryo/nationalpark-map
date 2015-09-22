@@ -110,16 +110,17 @@ loadTopojson = (basename) ->
 geojsonAutoload = () ->
 	if !abstract then return false
 
-	margin = -0.3#margin = -30%
-	top = map.getBounds().getNorthEast().G
-	right = map.getBounds().getNorthEast().K
-	bottom = map.getBounds().getSouthWest().G
-	left = map.getBounds().getSouthWest().K
+	margin = -0.2#margin = -20%
+	top = map.getBounds().getNorthEast().lat()
+	right = map.getBounds().getNorthEast().lng()
+	bottom = map.getBounds().getSouthWest().lat()
+	left = map.getBounds().getSouthWest().lng()
 	top += (1 + margin) * (top - bottom)
 	right += (1 + margin) * (right - left)
 	bottom -= (1 + margin) * (top - bottom)
 	left -= (1 + margin) * (right - left)
 
+	console.log top#, right, bottom, left
 	for basename, information of abstract
 		c1 = information.top > bottom
 		c2 = information.bottom < top
