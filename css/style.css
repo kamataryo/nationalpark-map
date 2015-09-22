@@ -29,10 +29,11 @@ html, body {
 }
 
 #opacity-control {
-  position: absolute;
-  z-index: 10;
-  top: 240px;
-  left: 10px;
+  font-size: 0.8em;
+  padding: 1px 5px 0 5px;
+}
+#opacity-control #opacity-range {
+  padding-top: 2px;
 }
 
 #move-to-current {
