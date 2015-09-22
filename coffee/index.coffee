@@ -7,14 +7,14 @@ infowindow = null#ポップする情報ウィンドウを1つにするためグ�
 infomarker = null#同上
 timerIDcurrentInactivate = 0 # 現在地表示有効期間を設定するためのtimeout用ID
 gradeFill =　#地種区分ごとの色を定義
-    "特別保護地区": "#dddd66"
-    "海域公園地区": "#2233dd"
-    "海中公園地区": "#2233dd"
-    "第1種特別地域": "#dd66dd"
-    "第2種特別地域": "#dd6666"
-    "第3種特別地域": "#66dd66"
-    "普通地域": "#66dddd"
-    "else": "#666666"
+	"特別保護地区": "#dddd66"
+	"海域公園地区": "#2233dd"
+	"海中公園地区": "#2233dd"
+	"第1種特別地域": "#dd66dd"
+	"第2種特別地域": "#dd6666"
+	"第3種特別地域": "#66dd66"
+	"普通地域": "#66dddd"
+	"else": "#666666"
 
 
 # googlemapの初期設定
@@ -24,7 +24,7 @@ initialize = () ->
 		noClear : true
 		center : new google.maps.LatLng 35.680795, 139.76721
 		zoom : 10
-		mapTypeId: google.maps.MapTypeId.SATELLITE
+		mapTypeId: google.maps.MapTypeId.TERRAIN
 		panControl: false
 		zoomControl: false
 		mapTypeControl: true
@@ -37,9 +37,6 @@ initialize = () ->
 	map.addListener 'idle', () ->
 		if $('#auto-overlay').is ':checked' then geojsonAutoload()
 
-	# マウスオーバーでフィーチャーの色変え
-	map.data.addListener 'mouseover', (e) ->
-		map.data.overrideStyle e.feature, featureStyle 'mouseover'
 
 	#クリックで情報ウインドウを表示
 	map.data.addListener 'click', (e) ->
@@ -59,28 +56,23 @@ initialize = () ->
 			infomarker.setMap null
 			infomarker = null
 		infowindow.open map,infomarker
-	#マウスアウトで色を戻す
-	map.data.addListener 'mouseout', (e) ->
-		map.data.overrideStyle e.feature, featureStyle()
 
 
 # geojsonフィーチャーの地種とそれに対するイベントから適応するスタイルを決定する
-featureStyle = (state, grade) ->
+featureStyle = (grade, opacity) ->
 	result =
 		strokeColor: '#eeeeee'
 		strokeWeight: 1
-		fillOpacity: 0.4
+		fillOpacity: 0.20
+	if opacity?
+		result.fillOpacity = opacity
 	if grade?
 		result.fillColor = gradeFill[grade]
-	if state is 'mouseover'
-		strokeColor: '#ffffaa'
-		result.fillOpacity = 0.7
-		result.strokeWeight = 2.5
 	return result
 
 
 #topojson読み込み中の状態表示
-changeLoadingState = (loadStateID, state) ->
+uodateLoadingState = (loadStateID, state) ->
 	if state is 'start'
 		loadingque.push loadStateID
 		$('#load-statement').addClass 'fa-spin'
@@ -97,15 +89,21 @@ loadTopojson = (basename) ->
 		return false
 	else
 		geojsonLoaded[basename] = true
+		$('#handy-overlay').children('option').each (i, elem) ->
+			if $(elem).val() is basename
+				textOrigin = $(elem).text()
+				textModified = textOrigin.replace ']', ', loaded]'
+				$(elem).text textModified
+
 	url = 'topojson/' + basename + '.topojson'
-	changeLoadingState url,'start'
+	uodateLoadingState url,'start'
 	$.getJSON url, (json) ->
-		json = topojson.feature json,json.objects[basename]
+		json = topojson.feature json,json.objects[basename] #TopoJSON -> GeoJSON
 		map.data.addGeoJson json
 		map.data.setStyle (feature) ->
 			grade = feature.getProperty('grade')
-			return featureStyle '', grade
-		changeLoadingState url,'finish'
+			return featureStyle grade
+		uodateLoadingState url,'finish'
 
 
 #現在の座標位置をもとに、表示範囲内のgeojsonを全て読み込む
@@ -199,6 +197,7 @@ $('.toggle-next').each (i, elem) ->
 
 ## toggleの動作の定義
 $('.toggle-next').click () ->
+	minified = {}
 	display = $(this).next().css 'display'
 	if display is 'none'
 		$(this).children('i')
@@ -212,6 +211,7 @@ $('.toggle-next').click () ->
 		$(this).next().hide 'fast'
 
 
+
 $.getJSON './topojson/abstract.json', (json) ->
 	# selectboxに反映
 	abstract = json#globalにも格納
@@ -221,16 +221,18 @@ $.getJSON './topojson/abstract.json', (json) ->
 			.val basename
 			.text "#{information.name} [#{information.size} #{information.unit}]"
 
+
 	$('#handy-overlay').change () ->
 		basename = $(this).val()
 		if basename is '' then return false
 		#url = 'geojson/' + basename
-		loadTopojson basename#url + '.topojson'
+		loadTopojson basename #url + '.topojson'
 		#中心座標へ移動
 		Clat = (json[basename].top + json[basename].bottom) / 2
 		Clon = (json[basename].right + json[basename].left) / 2
 		geojsonCenter = new google.maps.LatLng Clat, Clon
 		map.panTo geojsonCenter
+
 
 
 initialize()

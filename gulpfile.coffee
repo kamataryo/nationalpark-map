@@ -27,6 +27,7 @@ host = 'localhost'
 port = 8001
 
 
+
 # create server
 gulp.task "connect", () ->
   options =
@@ -62,12 +63,20 @@ gulp.task "coffee", () ->
       console.log err.stack
     .pipe gulp.dest base + 'js/'
 
+
 gulp.task 'sketch', () ->
-  gulp.src base + 'sketch/*.sketch'
+  gulp.src base + 'sketch/svg/*.sketch'
     .pipe sketch
       export: 'artboards'
       formats: 'svg'
     .pipe gulp.dest base + 'img/'
+
+    gulp.src base + 'sketch/png/*.sketch'
+      .pipe sketch
+        export: 'artboards'
+        formats: 'png'
+      .pipe gulp.dest base + 'img/'
+
 
 gulp.task "reload", ["compass", "coffee", "sketch"] , () ->
   gulp.src srcs["watching"]

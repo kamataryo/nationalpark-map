@@ -4,7 +4,7 @@
 	position: relative;
 	opacity: 1;
 }
-@mixin floating-part-statement {
+@mixin icons-default {
 	position: relative;
 	opacity: 0.5;
 }
@@ -30,11 +30,18 @@ html, body {
 	position: absolute;
 	z-index: 10;
 	background-color: rgba(255,255,255,0.6);
-	top: 50px;
+	top: 80px;
 	padding: 10px;
 	margin-left:0;
 	@include border-top-right-radius(8px);
 	@include border-bottom-right-radius(8px);
+}
+
+#opacity-control {
+	position: absolute;
+	z-index: 10;
+	top: 240px;
+	left: 10px;
 }
 
 #move-to-current {
@@ -56,22 +63,21 @@ label[for=auto-overlay] {
 	}
 }
 
-
 #handy-overlay {
 	@include floating-part;
 }
 #load-statement {
-	@include floating-part-statement;
+	@include icons-default;
 }
 
 #geolocation-statement {
-	@include floating-part-statement;
+	@include icons-default;
 }
 
 @mixin toggle-header {
 		display:inline-block;
 		@include floating-part;
-		padding: 0 5px 0 5px;
+		padding: 1px 5px 0 5px;
 		margin: 1px 0 0 0;
 		&:hover {
 			@include border-radius(5px);
@@ -80,12 +86,7 @@ label[for=auto-overlay] {
 		}
 }
 
-
-h1{
-	@include toggle-header;
-	font-size: 0.8em;
-}
-h2{
+h1, h2{
 	@include toggle-header;
 	font-size: 0.8em;
 }

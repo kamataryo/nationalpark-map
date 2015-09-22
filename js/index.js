@@ -1,4 +1,4 @@
-var abstract, changeLoadingState, currentMarker, featureStyle, geojsonAutoload, geojsonLoaded, gradeFill, infomarker, infowindow, initialize, loadTopojson, loadingque, map, timerIDcurrentInactivate;
+var abstract, currentMarker, featureStyle, geojsonAutoload, geojsonLoaded, gradeFill, infomarker, infowindow, initialize, loadTopojson, loadingque, map, timerIDcurrentInactivate, uodateLoadingState;
 
 map = null;
 
@@ -34,7 +34,7 @@ initialize = function() {
     noClear: true,
     center: new google.maps.LatLng(35.680795, 139.76721),
     zoom: 10,
-    mapTypeId: google.maps.MapTypeId.SATELLITE,
+    mapTypeId: google.maps.MapTypeId.TERRAIN,
     panControl: false,
     zoomControl: false,
     mapTypeControl: true,
@@ -48,10 +48,7 @@ initialize = function() {
       return geojsonAutoload();
     }
   });
-  map.data.addListener('mouseover', function(e) {
-    return map.data.overrideStyle(e.feature, featureStyle('mouseover'));
-  });
-  map.data.addListener('click', function(e) {
+  return map.data.addListener('click', function(e) {
     if (infowindow !== null) {
       infowindow.close();
       infowindow = null;
@@ -74,32 +71,25 @@ initialize = function() {
     });
     return infowindow.open(map, infomarker);
   });
-  return map.data.addListener('mouseout', function(e) {
-    return map.data.overrideStyle(e.feature, featureStyle());
-  });
 };
 
-featureStyle = function(state, grade) {
+featureStyle = function(grade, opacity) {
   var result;
   result = {
     strokeColor: '#eeeeee',
     strokeWeight: 1,
-    fillOpacity: 0.4
+    fillOpacity: 0.20
   };
+  if (opacity != null) {
+    result.fillOpacity = opacity;
+  }
   if (grade != null) {
     result.fillColor = gradeFill[grade];
-  }
-  if (state === 'mouseover') {
-    ({
-      strokeColor: '#ffffaa'
-    });
-    result.fillOpacity = 0.7;
-    result.strokeWeight = 2.5;
   }
   return result;
 };
 
-changeLoadingState = function(loadStateID, state) {
+uodateLoadingState = function(loadStateID, state) {
   if (state === 'start') {
     loadingque.push(loadStateID);
     return $('#load-statement').addClass('fa-spin');
@@ -117,18 +107,26 @@ loadTopojson = function(basename) {
     return false;
   } else {
     geojsonLoaded[basename] = true;
+    $('#handy-overlay').children('option').each(function(i, elem) {
+      var textModified, textOrigin;
+      if ($(elem).val() === basename) {
+        textOrigin = $(elem).text();
+        textModified = textOrigin.replace(']', ', loaded]');
+        return $(elem).text(textModified);
+      }
+    });
   }
   url = 'topojson/' + basename + '.topojson';
-  changeLoadingState(url, 'start');
+  uodateLoadingState(url, 'start');
   return $.getJSON(url, function(json) {
     json = topojson.feature(json, json.objects[basename]);
     map.data.addGeoJson(json);
     map.data.setStyle(function(feature) {
       var grade;
       grade = feature.getProperty('grade');
-      return featureStyle('', grade);
+      return featureStyle(grade);
     });
-    return changeLoadingState(url, 'finish');
+    return uodateLoadingState(url, 'finish');
   });
 };
 
@@ -218,7 +216,8 @@ $('.toggle-next').each(function(i, elem) {
 });
 
 $('.toggle-next').click(function() {
-  var display;
+  var display, minified;
+  minified = {};
   display = $(this).next().css('display');
   if (display === 'none') {
     $(this).children('i').removeClass('fa-angle-double-right').addClass('fa-angle-double-down');
