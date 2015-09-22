@@ -62,8 +62,8 @@ initialize = () ->
 featureStyle = (grade, opacity) ->
 	result =
 		strokeColor: '#eeeeee'
-		strokeWeight: 1
-		fillOpacity: 0.20
+		strokeWeight: 1.5
+		fillOpacity: 0.40
 	if opacity?
 		result.fillOpacity = opacity
 	if grade?
@@ -120,7 +120,6 @@ geojsonAutoload = () ->
 	bottom -= (1 + margin) * (top - bottom)
 	left -= (1 + margin) * (right - left)
 
-	console.log top#, right, bottom, left
 	for basename, information of abstract
 		c1 = information.top > bottom
 		c2 = information.bottom < top
@@ -235,5 +234,9 @@ $.getJSON './topojson/abstract.json', (json) ->
 		map.panTo geojsonCenter
 
 
-
+	#opacityの変更
+	$('#opacity-range').on 'input', () ->
+		opacity = $(this).val()
+		map.data.setStyle (feature) ->
+			result = featureStyle (feature.getProperty 'grade'), opacity
 initialize()

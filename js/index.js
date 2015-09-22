@@ -77,8 +77,8 @@ featureStyle = function(grade, opacity) {
   var result;
   result = {
     strokeColor: '#eeeeee',
-    strokeWeight: 1,
-    fillOpacity: 0.20
+    strokeWeight: 1.5,
+    fillOpacity: 0.40
   };
   if (opacity != null) {
     result.fillOpacity = opacity;
@@ -144,7 +144,6 @@ geojsonAutoload = function() {
   right += (1 + margin) * (right - left);
   bottom -= (1 + margin) * (top - bottom);
   left -= (1 + margin) * (right - left);
-  console.log(top);
   results = [];
   for (basename in abstract) {
     information = abstract[basename];
@@ -236,7 +235,7 @@ $.getJSON('./topojson/abstract.json', function(json) {
     information = json[basename];
     $('<option>').appendTo($('#handy-overlay')).val(basename).text(information.name + " [" + information.size + " " + information.unit + "]");
   }
-  return $('#handy-overlay').change(function() {
+  $('#handy-overlay').change(function() {
     var Clat, Clon, geojsonCenter;
     basename = $(this).val();
     if (basename === '') {
@@ -247,6 +246,14 @@ $.getJSON('./topojson/abstract.json', function(json) {
     Clon = (json[basename].right + json[basename].left) / 2;
     geojsonCenter = new google.maps.LatLng(Clat, Clon);
     return map.panTo(geojsonCenter);
+  });
+  return $('#opacity-range').on('input', function() {
+    var opacity;
+    opacity = $(this).val();
+    return map.data.setStyle(function(feature) {
+      var result;
+      return result = featureStyle(feature.getProperty('grade'), opacity);
+    });
   });
 });
 
