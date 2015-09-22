@@ -47,7 +47,7 @@ initialize = () ->
 			infomarker.setMap null
 			infomarker = null
 		infowindow = new google.maps.InfoWindow
-			content: e.feature.getProperty 'description'#"#{npname}国立公園<br>#{grade}"
+			content: "#{e.feature.getProperty 'name'}国立公園<br>#{e.feature.getProperty 'grade'}"
 		infomarker = new google.maps.Marker
 			position: e.latLng
 			map: map
