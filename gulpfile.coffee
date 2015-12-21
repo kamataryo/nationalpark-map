@@ -59,7 +59,7 @@ gulp.task "compass", () ->
 gulp.task "coffee", () ->
   gulp.src base + 'coffee/*.coffee'
     .pipe plumber(errorHandler: notify.onError '<%= error.message %>')
-    .pipe coffee(bare: true).on 'error', (err) ->
+    .pipe coffee(bare: false).on 'error', (err) ->
       console.log err.stack
     .pipe gulp.dest base + 'js/'
 
@@ -131,7 +131,6 @@ gulp.task 'download', () ->
                     .pipe xml2json()
                     # gulp-geojsonがdescription属性下のCDATAを吐き出してくれないので、
                     # 一旦gulp-xml2jsonで変換して実態参照を含んだjsonに変換
-                    # このJSONから自分でパースしてもよいが
                     .pipe convert {from:'json', to:'xml'}
                     .pipe rename extname:'.kml'
                     .pipe geojson()

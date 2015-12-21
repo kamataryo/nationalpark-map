@@ -1,3 +1,4 @@
 node_modules/
 .sass-cache/
 .geojson/
+npm-debug.log
