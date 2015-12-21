@@ -32,4 +32,4 @@ git config user.name "kamataryo"
 git config user.email "travis@example.com"
 git add .
 git commit --quiet -m "Deploy from travis"
-git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:release > /dev/null 2>&1
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
