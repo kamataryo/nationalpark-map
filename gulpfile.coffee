@@ -7,7 +7,6 @@ plumber    = require 'gulp-plumber'
 sketch     = require 'gulp-sketch'
 
 base = './'
-
 srcs =
   watching : [
     base + '*.html'
@@ -21,10 +20,8 @@ srcs =
     base + 'js/*.js'
     base + 'img/*.svg'
   ]
-
 host = 'localhost'
 port = 8001
-
 
 
 # create server
@@ -40,7 +37,6 @@ gulp.task "connect", () ->
 
 gulp.task "watch", () ->
   gulp.watch srcs["watching"], ["compass", "coffee", "reload"]
-
 
 gulp.task "compass", () ->
   options =
@@ -65,14 +61,6 @@ gulp.task "coffee", () ->
         console.log err.stack
     .pipe gulp.dest base + 'js/'
 
-
-gulp.task 'sketch', () ->
-  gulp.src base + 'sketch/svg/*.sketch'
-    .pipe sketch
-      export: 'artboards'
-      formats: 'svg'
-    .pipe gulp.dest base + 'img/'
-
     gulp.src base + 'sketch/png/*.sketch'
       .pipe sketch
         export: 'artboards'
@@ -87,6 +75,14 @@ gulp.task "reload", ["compass", "coffee"] , () ->
 
 gulp.task "default", ["compass","coffee","connect", "watch" ]
 
+# gulp-skectchは純粋なnode packageではないため、自動ビルドからは除く
+gulp.task 'sketch', () ->
+  gulp.src base + 'sketch/svg/*.sketch'
+    .pipe sketch
+      export: 'artboards'
+      formats: 'svg'
+    .pipe gulp.dest base + 'img/'
+
 # ==========upper for developing==========
 
 
@@ -94,130 +90,112 @@ gulp.task "default", ["compass","coffee","connect", "watch" ]
 
 # ==========lower for data Initialization==========
 
-request  = require 'request'
+download  = require 'gulp-download'
+rename    = require 'gulp-rename'
+xml2json  = require 'gulp-xml2json'
+jeditor   = require 'gulp-json-editor'
+unzip     = require 'gulp-unzip'
+convert   = require 'gulp-convert'
+geojson   = require 'gulp-geojson'
+gulpif    = require 'gulp-if'
+exec      = require 'gulp-exec'
+beautify  = require 'gulp-jsbeautifier'
 
-xml2js   = require('xml2js').parseString
-fs       = require 'fs'
-_ = require 'underscore'
-xml2json = require 'gulp-xml2json'
-jeditor  = require 'gulp-json-editor'
-download = require 'gulp-download'
-unzip    = require 'gulp-unzip'
-convert  = require 'gulp-convert'
-geojson  = require 'gulp-geojson'
-beautify = require 'gulp-jsbeautifier'
-rename   = require 'gulp-rename'
-concat  = require 'gulp-concat-json'
 intercept = require 'gulp-intercept'
-exec = require 'gulp-exec'
+_ = require 'underscore'
+concat  = require 'gulp-concat-json'
 UTMfy = require('wgs84-util').LLtoUTM
 
 # list of National Park
-settings = require './settings.json'
+entries =
+  "利尻礼文サロベツ":"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_rishirirebunLinkEnt.kml",
+  "知床"          :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_shiretokoLinkEnt.kml",
+  "阿寒"          :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_akanLinkEnt.kml",
+  "釧路湿原"       :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_kushiroLinkEnt.kml",
+  "大雪山"        :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_daisetsuzanLinkEnt.kml",
+  "支笏洞爺"       :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_shikotsutouyaLinkEnt.kml",
+  "十和田八幡平"    :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_towadahatimantaiLinkEnt.kml",
+  "三陸復興"       :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_sanrikufukkouLinkEnt.kml",
+  "磐梯朝日"       :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_bandaiasahiLinkEnt.kml",
+  "日光"          :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_nikkouLinkEnt.kml",
+  "尾瀬"          :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_ozeLinkEnt.kml",
+  "秩父多摩甲斐"   :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_chichibutamaLinkEnt.kml",
+  "小笠原"        :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_ogasawaraLinkEnt.kml",
+  "富士箱根伊豆"   :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_fujihakoneizuLinkEnt.kml",
+  "南アルプス"     :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_southalpsLinkEnt.kml",
+  "上信越高原"     :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_joshinetsuLinkEnt.kml",
+  "中部山岳"       :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_chubusangakuLinkEnt.kml",
+  "白山"          :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_hakusanLinkEnt.kml",
+  "伊勢志摩"      :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_iseshimaLinkEnt.kml",
+  "吉野熊野"      :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_yoshinokumanoLinkEnt.kml",
+  "山陰海岸"      :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_saninkaiganLinkEnt.kml",
+  "瀬戸内海"      :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_setonaikaiLinkEnt.kml",
+  "大山隠岐"      :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_daisenLinkEnt.kml",
+  "足摺宇和海"    :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_ashizuriuwakaiLinkEnt.kml",
+  "西海"         :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_nishikaiLinkEnt.kml",
+  "雲仙天草"      :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_unzenamakusaLinkEnt.kml",
+  "阿蘇くじゅう"   :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_asokujuLinkEnt.kml",
+  "霧島錦江湾"    :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_kirishimakinkowanLinkEnt.kml",
+  "屋久島"       :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_yakushimaLinkEnt.kml",
+  "西表石垣"     :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_iriomoteishigakiLinkEnt.kml",
+  "慶良間諸島"   :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_keramashotouLinkEnt.kml"
+styles =
+    "特別保護地区" : "#dd6"
+    "海域公園地区" : "#23d"
+    "海中公園地区" : "#23d"
+    "第1種特別地域": "#d6d"
+    "第2種特別地域": "#d66"
+    "第3種特別地域": "#6d6"
+    "普通地域"    : "#6dd"
 
-
-#settings.jsonにエントリーポイントを記載した全ての国立公園kmlのURLから、
-#gejsonを生成し、地種区分属性を付与する
 gulp.task 'download', () ->
-    for filename, npname of settings.entries
-        url = settings.base + filename
-        #url = 'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_ozeLinkEnt.kml'
-        download url
-            .pipe rename  extname:'.xml'
-            .pipe xml2json()
-            .pipe jeditor (json) ->
-                kmzUrl = json.kml.Document[0].Folder[0].NetworkLink[0].Link[0].href[0]
-                basename = path.basename kmzUrl, '.kmz'
-                download kmzUrl
-                    .pipe unzip()
-                    .pipe rename extname:'.xml'
-                    .pipe xml2json()
-                    # gulp-geojsonがdescription属性下のCDATAを吐き出してくれないので、
-                    # 一旦gulp-xml2jsonで変換して実態参照を含んだjsonに変換
-                    .pipe convert {from:'json', to:'xml'}
-                    .pipe rename extname:'.kml'
-                    .pipe geojson()
-                    .pipe rename extname:'.json'
-                    .pipe jeditor (json) ->
-                        for feature, i in json.features
-                            #地種属性を付与
-                            description = feature.properties.description
-                            for style in settings.styles
-                                if description.match ///#{style.name}///
-                                    feature.properties.grade = style.name
-                                    break;
-                                else
-                                    feature.properties.grade = '地種不明'
-                            json.features[i] = feature
-                        return  UTMfy json
-                    .pipe beautify()
-                    .pipe rename {basename:basename, extname:'.geojson'}
-                    .pipe gulp.dest base + '.geojson/'
-
-
-#慶良間のgeojsonに国立公園名が入ってないので処理
-gulp.task 'kerama', () ->
-    gulp.src '.geojson/NPS_keramashotou.geojson'
+  for npname, url of entries
+  download url
+    .pipe rename  extname:'.xml'
+    .pipe xml2json()
+    .pipe jeditor (json) ->
+      #get urls of networklinked KMLs
+      kmzUrl = json.kml.Document[0].Folder[0].NetworkLink[0].Link[0].href[0]
+      basename = path.basename kmzUrl, '.kmz'
+      download kmzUrl
+        .pipe unzip()
+        .pipe rename extname:'.xml'
+        # conserve CDATA--
+        .pipe xml2json()
+        .pipe convert {from:'json', to:'xml'}
+        .pipe rename extname:'.kml'
+        # --conserve CDATA
+        .pipe geojson()
+        .pipe rename extname:'.json'
         .pipe jeditor (json) ->
+          for feature, i in json.features
+          #地種属性を付与
+          description = feature.properties.description
+          for grade, fillColor in styles
+          feature.properties.grade = '地種不明'
+          feature.properties.gradeFill = '#666'
+            if description.match ///#{style.name}///
+              feature.properties.grade = grade
+              feature.properties.gradeFill = fillColor
+              break;
+        .pipe rename {basename:basename, extname:'.geojson'}
+        .pipe gulpif (file) ->
+            return file.name is 'NPS_keramashotou.geojson'
+        , jeditor (json) ->
             for feature in json.features
                 feature.properties.name = '慶良間諸島'
             return json
-        .pipe gulp.dest '.geojson/'
-
-
-#geojsonフォルダに入っている全ての国立公園geojsonファイルから、
-#その分布範囲などを記載したabstractを生成する
-gulp.task 'abstract_of_geo', () ->
-    gulp.src base + '.geojson/*.geojson'
-        .pipe intercept (file) ->
-            identifier = path.basename file.path, '.geojson'
-            json = JSON.parse file.contents,toString()
-            latitudes = []
-            longitudes = []
-            name = json.features[0].properties.name
-            for feature in json.features
-                if feature.geometry.coordinates?
-                    for coordinate in feature.geometry.coordinates[0]
-                        latitudes.push coordinate[0]
-                        longitudes.push coordinate[1]
-
-            information = {}
-            information[identifier] =
-                name: name
-                top: _.max longitudes
-                right: _.max latitudes
-                bottom: _.min longitudes
-                left: _.min latitudes
-
-            file.contents = new Buffer JSON.stringify information
-            return file
-        .pipe concat 'abstract.ofGeo.json'
-        .pipe jeditor (json) ->
-            #flattenする
-            result = {}
-            for obj in json
-                key = _.keys(obj)[0]
-                result[key] = obj[key]
-            return result
-        .pipe beautify()
-        .pipe gulp.dest base + '.geojson/'
-
-
-#topojsonに変換
-gulp.task 'topojson_export', () ->
-    gulp.src '.geojson/*.geojson'
-        .pipe exec 'topojson -p name -p grade -p description -o <%= file.path %>.topojson <%= file.path %>'
+        .pipe exec 'topojson -p name -p grade -p gradeFill -p description -o <%= file.path %>.topojson <%= file.path %>'
         .pipe exec.reporter stdout:true
-
-#topojsonの名前を変える
-gulp.task 'topojson_rename', () ->
-    gulp.src '.geojson/*.geojson.topojson'
         .pipe rename extname:'.json'
         .pipe beautify()
         .pipe rename extname: '' # trim .topojson
         .pipe rename extname: '' # trim .geojson
         .pipe rename extname: '.topojson'
         .pipe gulp.dest 'topojson/'
+
+
+
 
 
 #topogeojsonフォルダに入っている全ての国立公園topojsonファイルから、
