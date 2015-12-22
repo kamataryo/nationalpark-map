@@ -75,7 +75,6 @@ gulp.task "reload", ["compass", "coffee"] , () ->
 
 gulp.task "default", ["compass","coffee","connect", "watch" ]
 
-# gulp-skectchは純粋なnode packageではないため、自動ビルドからは除く
 gulp.task 'sketch', () ->
   gulp.src base + 'sketch/svg/*.sketch'
     .pipe sketch
@@ -150,49 +149,49 @@ styles =
 
 gulp.task 'download', () ->
   for npname, url of entries
-  download url
-    .pipe rename  extname:'.xml'
-    .pipe xml2json()
-    .pipe jeditor (json) ->
-      #get urls of networklinked KMLs
-      kmzUrl = json.kml.Document[0].Folder[0].NetworkLink[0].Link[0].href[0]
-      basename = path.basename kmzUrl, '.kmz'
-      download kmzUrl
-        .pipe unzip()
-        .pipe rename extname:'.xml'
-        # conserve CDATA--
-        .pipe xml2json()
-        .pipe convert {from:'json', to:'xml'}
-        .pipe rename extname:'.kml'
-        # --conserve CDATA
-        .pipe geojson()
-        .pipe rename extname:'.json'
-        .pipe jeditor (json) ->
-          for feature, i in json.features
-          #地種属性を付与
-          description = feature.properties.description
-          for grade, fillColor in styles
-          feature.properties.grade = '地種不明'
-          feature.properties.gradeFill = '#666'
-            if description.match ///#{style.name}///
-              feature.properties.grade = grade
-              feature.properties.gradeFill = fillColor
-              break;
-        .pipe rename {basename:basename, extname:'.geojson'}
-        .pipe gulpif (file) ->
-            return file.name is 'NPS_keramashotou.geojson'
-        , jeditor (json) ->
-            for feature in json.features
-                feature.properties.name = '慶良間諸島'
-            return json
-        .pipe exec 'topojson -p name -p grade -p gradeFill -p description -o <%= file.path %>.topojson <%= file.path %>'
-        .pipe exec.reporter stdout:true
-        .pipe rename extname:'.json'
-        .pipe beautify()
-        .pipe rename extname: '' # trim .topojson
-        .pipe rename extname: '' # trim .geojson
-        .pipe rename extname: '.topojson'
-        .pipe gulp.dest 'topojson/'
+    download url
+      .pipe rename  extname:'.xml'
+      .pipe xml2json()
+      .pipe jeditor (json) ->
+        #get urls of networklinked KMLs
+        kmzUrl = json.kml.Document[0].Folder[0].NetworkLink[0].Link[0].href[0]
+        basename = path.basename kmzUrl, '.kmz'
+        download kmzUrl
+          .pipe unzip()
+          .pipe rename extname:'.xml'
+          # conserve CDATA--
+          .pipe xml2json()
+          .pipe convert {from:'json', to:'xml'}
+          .pipe rename extname:'.kml'
+          # --conserve CDATA
+          .pipe geojson()
+          .pipe rename extname:'.json'
+          .pipe jeditor (json) ->
+            for feature, i in json.features
+              # 地種属性を付与
+              description = feature.properties.description
+              for grade, fillColor in styles
+                feature.properties.grade = '地種不明'
+                feature.properties.gradeFill = '#666'
+                if description.match ///#{style.name}///
+                  feature.properties.grade = grade
+                  feature.properties.gradeFill = fillColor
+                  break;
+          .pipe rename {basename:basename, extname:'.geojson'}
+          .pipe gulpif (file) ->
+              return file.name is 'NPS_keramashotou.geojson'
+          , jeditor (json) ->
+              for feature in json.features
+                  feature.properties.name = '慶良間諸島'
+              return json
+          .pipe exec 'topojson -p name -p grade -p gradeFill -p description -o <%= file.path %>.topojson <%= file.path %>'
+          .pipe exec.reporter stdout:true
+          .pipe rename extname:'.json'
+          .pipe beautify()
+          .pipe rename extname: '' # trim .topojson
+          .pipe rename extname: '' # trim .geojson
+          .pipe rename extname: '.topojson'
+          .pipe gulp.dest 'topojson/'
 
 
 
