@@ -73,7 +73,7 @@ gulp.task "reload", ["compass", "coffee"] , () ->
     .pipe connect.reload()
 
 
-gulp.task "default", ["compass","coffee","connect" ]
+gulp.task "default", ["coffee","connect" ]
 gulp.task "default", ["compass","coffee","connect", "sketch", "watch" ]
 
 gulp.task 'sketch', () ->
