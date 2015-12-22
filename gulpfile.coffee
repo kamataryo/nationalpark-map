@@ -108,9 +108,10 @@ rename   = require 'gulp-rename'
 concat  = require 'gulp-concat-json'
 intercept = require 'gulp-intercept'
 exec = require 'gulp-exec'
+UTMfy = require('wgs84-util').LLtoUTM
+
 # list of National Park
-settingsUrl = './settings.json'
-settings = require settingsUrl
+settings = require './settings.json'
 
 
 #settings.jsonにエントリーポイントを記載した全ての国立公園kmlのURLから、
@@ -146,7 +147,7 @@ gulp.task 'download', () ->
                                 else
                                     feature.properties.grade = '地種不明'
                             json.features[i] = feature
-                        return json
+                        return  UTMfy json
                     .pipe beautify()
                     .pipe rename {basename:basename, extname:'.geojson'}
                     .pipe gulp.dest base + '.geojson/'
