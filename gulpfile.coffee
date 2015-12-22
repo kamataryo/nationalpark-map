@@ -73,7 +73,8 @@ gulp.task "reload", ["compass", "coffee"] , () ->
     .pipe connect.reload()
 
 
-gulp.task "default", ["compass","coffee","connect", "watch" ]
+gulp.task "default", ["compass","coffee","connect" ]
+gulp.task "default", ["compass","coffee","connect", "sketch", "watch" ]
 
 gulp.task 'sketch', () ->
   gulp.src base + 'sketch/svg/*.sketch'
