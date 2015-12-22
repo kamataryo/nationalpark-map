@@ -104,7 +104,6 @@ beautify  = require 'gulp-jsbeautifier'
 intercept = require 'gulp-intercept'
 _ = require 'underscore'
 concat  = require 'gulp-concat-json'
-UTMfy = require('wgs84-util').LLtoUTM
 
 # list of National Park
 entries =
