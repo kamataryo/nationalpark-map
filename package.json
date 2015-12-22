@@ -5,6 +5,7 @@
   "main": "index.js",
   "devDependencies": {
     "coffee-script": "^1.10.0",
+    "contextify": "^0.1.15",
     "fstream": "^1.0.7",
     "geojson-vt": "^2.1.5",
     "gulp": "^3.9.0",
