@@ -4,7 +4,6 @@ path       = require 'path'
 compass    = require 'gulp-compass'
 coffee     = require 'gulp-coffee'
 plumber    = require 'gulp-plumber'
-notify     = require 'gulp-notify'
 sketch     = require 'gulp-sketch'
 
 base = './'
@@ -51,16 +50,19 @@ gulp.task "compass", () ->
     image: base + 'img/'
 
   gulp.src base + 'sass/*.scss'
-    .pipe plumber(errorHandler: notify.onError '<%= error.message %>')
+    .pipe plumber()
     .pipe compass options
+    .on 'error', (err) ->
+        console.log err
     .pipe gulp.dest base + 'css/'
 
 
 gulp.task "coffee", () ->
   gulp.src base + 'coffee/*.coffee'
-    .pipe plumber(errorHandler: notify.onError '<%= error.message %>')
-    .pipe coffee(bare: false).on 'error', (err) ->
-      console.log err.stack
+    .pipe plumber()
+    .pipe coffee(bare: false)
+    .on 'error', (err) ->
+        console.log err.stack
     .pipe gulp.dest base + 'js/'
 
 
@@ -78,12 +80,12 @@ gulp.task 'sketch', () ->
       .pipe gulp.dest base + 'img/'
 
 
-gulp.task "reload", ["compass", "coffee", "sketch"] , () ->
+gulp.task "reload", ["compass", "coffee"] , () ->
   gulp.src srcs["watching"]
     .pipe connect.reload()
 
 
-gulp.task "default", ["compass","coffee","sketch","connect", "watch" ]
+gulp.task "default", ["compass","coffee","connect", "watch" ]
 
 # ==========upper for developing==========
 
