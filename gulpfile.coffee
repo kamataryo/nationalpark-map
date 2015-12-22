@@ -74,7 +74,7 @@ gulp.task "reload", ["compass", "coffee"] , () ->
 
 
 gulp.task "default", ["coffee","connect" ]
-gulp.task "default", ["compass","coffee","connect", "sketch", "watch" ]
+gulp.task "developing", ["compass","coffee","connect", "sketch", "watch" ]
 
 gulp.task 'sketch', () ->
   gulp.src base + 'sketch/svg/*.sketch'
