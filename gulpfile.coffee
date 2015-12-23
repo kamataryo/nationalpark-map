@@ -25,7 +25,7 @@ port = 8001
 
 
 # create server
-gulp.task "connect", () ->
+gulp.task 'connect', () ->
   options =
     root: path.resolve base
     livereload: true
@@ -34,11 +34,10 @@ gulp.task "connect", () ->
   connect.server options
 
 
+gulp.task 'watch', () ->
+  gulp.watch srcs['watching'], ['compass', 'coffee', 'reload']
 
-gulp.task "watch", () ->
-  gulp.watch srcs["watching"], ["compass", "coffee", "reload"]
-
-gulp.task "compass", () ->
+gulp.task 'compass', () ->
   options =
     config_file: base + 'config.rb'
     css: base + 'css/'
@@ -53,7 +52,7 @@ gulp.task "compass", () ->
     .pipe gulp.dest base + 'css/'
 
 
-gulp.task "coffee", () ->
+gulp.task 'coffee', () ->
   gulp.src base + 'coffee/*.coffee'
     .pipe plumber()
     .pipe coffee(bare: false)
@@ -62,13 +61,13 @@ gulp.task "coffee", () ->
     .pipe gulp.dest base + 'js/'
 
 
-gulp.task "reload", ["compass", "coffee"] , () ->
-  gulp.src srcs["watching"]
+gulp.task 'reload', ['compass', 'coffee'] , () ->
+  gulp.src srcs['watching']
     .pipe connect.reload()
 
 
-gulp.task "default", ["coffee" ]
-gulp.task "dev", ["compass","coffee","connect", "watch" ]
+gulp.task 'default', ['coffee','compass' ]
+gulp.task 'dev', ['compass','coffee','connect', 'watch' ]
 
 gulp.task 'sketch', () ->
   gulp.src base + 'sketch/svg/*.sketch'
@@ -101,45 +100,45 @@ concat  = require 'gulp-concat-json'
 
 # list of National Park
 entries =
-  "利尻礼文サロベツ":"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_rishirirebunLinkEnt.kml",
-  "知床"          :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_shiretokoLinkEnt.kml",
-  "阿寒"          :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_akanLinkEnt.kml",
-  "釧路湿原"       :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_kushiroLinkEnt.kml",
-  "大雪山"        :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_daisetsuzanLinkEnt.kml",
-  "支笏洞爺"       :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_shikotsutouyaLinkEnt.kml",
-  "十和田八幡平"    :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_towadahatimantaiLinkEnt.kml",
-  "三陸復興"       :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_sanrikufukkouLinkEnt.kml",
-  "磐梯朝日"       :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_bandaiasahiLinkEnt.kml",
-  "日光"          :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_nikkouLinkEnt.kml",
-  "尾瀬"          :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_ozeLinkEnt.kml",
-  "秩父多摩甲斐"   :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_chichibutamaLinkEnt.kml",
-  "小笠原"        :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_ogasawaraLinkEnt.kml",
-  "富士箱根伊豆"   :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_fujihakoneizuLinkEnt.kml",
-  "南アルプス"     :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_southalpsLinkEnt.kml",
-  "上信越高原"     :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_joshinetsuLinkEnt.kml",
-  "中部山岳"       :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_chubusangakuLinkEnt.kml",
-  "白山"          :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_hakusanLinkEnt.kml",
-  "伊勢志摩"      :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_iseshimaLinkEnt.kml",
-  "吉野熊野"      :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_yoshinokumanoLinkEnt.kml",
-  "山陰海岸"      :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_saninkaiganLinkEnt.kml",
-  "瀬戸内海"      :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_setonaikaiLinkEnt.kml",
-  "大山隠岐"      :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_daisenLinkEnt.kml",
-  "足摺宇和海"    :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_ashizuriuwakaiLinkEnt.kml",
-  "西海"         :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_nishikaiLinkEnt.kml",
-  "雲仙天草"      :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_unzenamakusaLinkEnt.kml",
-  "阿蘇くじゅう"   :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_asokujuLinkEnt.kml",
-  "霧島錦江湾"    :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_kirishimakinkowanLinkEnt.kml",
-  "屋久島"       :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_yakushimaLinkEnt.kml",
-  "西表石垣"     :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_iriomoteishigakiLinkEnt.kml",
-  "慶良間諸島"   :"http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_keramashotouLinkEnt.kml"
+  '利尻礼文サロベツ':'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_rishirirebunLinkEnt.kml',
+  '知床'          :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_shiretokoLinkEnt.kml',
+  '阿寒'          :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_akanLinkEnt.kml',
+  '釧路湿原'       :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_kushiroLinkEnt.kml',
+  '大雪山'        :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_daisetsuzanLinkEnt.kml',
+  '支笏洞爺'       :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_shikotsutouyaLinkEnt.kml',
+  '十和田八幡平'    :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_towadahatimantaiLinkEnt.kml',
+  '三陸復興'       :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_sanrikufukkouLinkEnt.kml',
+  '磐梯朝日'       :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_bandaiasahiLinkEnt.kml',
+  '日光'          :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_nikkouLinkEnt.kml',
+  '尾瀬'          :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_ozeLinkEnt.kml',
+  '秩父多摩甲斐'   :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_chichibutamaLinkEnt.kml',
+  '小笠原'        :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_ogasawaraLinkEnt.kml',
+  '富士箱根伊豆'   :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_fujihakoneizuLinkEnt.kml',
+  '南アルプス'     :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_southalpsLinkEnt.kml',
+  '上信越高原'     :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_joshinetsuLinkEnt.kml',
+  '中部山岳'       :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_chubusangakuLinkEnt.kml',
+  '白山'          :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_hakusanLinkEnt.kml',
+  '伊勢志摩'      :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_iseshimaLinkEnt.kml',
+  '吉野熊野'      :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_yoshinokumanoLinkEnt.kml',
+  '山陰海岸'      :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_saninkaiganLinkEnt.kml',
+  '瀬戸内海'      :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_setonaikaiLinkEnt.kml',
+  '大山隠岐'      :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_daisenLinkEnt.kml',
+  '足摺宇和海'    :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_ashizuriuwakaiLinkEnt.kml',
+  '西海'         :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_nishikaiLinkEnt.kml',
+  '雲仙天草'      :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_unzenamakusaLinkEnt.kml',
+  '阿蘇くじゅう'   :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_asokujuLinkEnt.kml',
+  '霧島錦江湾'    :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_kirishimakinkowanLinkEnt.kml',
+  '屋久島'       :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_yakushimaLinkEnt.kml',
+  '西表石垣'     :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_iriomoteishigakiLinkEnt.kml',
+  '慶良間諸島'   :'http://www.biodic.go.jp/trialSystem/LinkEnt/nps/NPS_keramashotouLinkEnt.kml'
 styles =
-    "特別保護地区" : "#dd6"
-    "海域公園地区" : "#23d"
-    "海中公園地区" : "#23d"
-    "第1種特別地域": "#d6d"
-    "第2種特別地域": "#d66"
-    "第3種特別地域": "#6d6"
-    "普通地域"    : "#6dd"
+    '特別保護地区' : '#dd6'
+    '海域公園地区' : '#23d'
+    '海中公園地区' : '#23d'
+    '第1種特別地域': '#d6d'
+    '第2種特別地域': '#d66'
+    '第3種特別地域': '#6d6'
+    '普通地域'    : '#6dd'
 
 gulp.task 'download', () ->
   for npname, url of entries
