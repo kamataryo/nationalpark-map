@@ -23,7 +23,7 @@ initialize = () ->
 	try
 		c = new google.maps.LatLng 35.680795, 139.76721
 	catch
-		$map.text 'Google Maps APIに関する不明なエラーです。iOSのsafariの場合は、コンテンツブロッカーが原因かもしれません。'
+		$map.text 'Google Maps APIに関する不明なエラーです。'
 		console.log error
 	options =
 		noClear : true

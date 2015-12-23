@@ -61,12 +61,6 @@ gulp.task "coffee", () ->
         console.log err.stack
     .pipe gulp.dest base + 'js/'
 
-    gulp.src base + 'sketch/png/*.sketch'
-      .pipe sketch
-        export: 'artboards'
-        formats: 'png'
-      .pipe gulp.dest base + 'img/'
-
 
 gulp.task "reload", ["compass", "coffee"] , () ->
   gulp.src srcs["watching"]
@@ -74,7 +68,7 @@ gulp.task "reload", ["compass", "coffee"] , () ->
 
 
 gulp.task "default", ["coffee" ]
-gulp.task "dev", ["compass","coffee","connect", "sketch", "watch" ]
+gulp.task "dev", ["compass","coffee","connect", "watch" ]
 
 gulp.task 'sketch', () ->
   gulp.src base + 'sketch/svg/*.sketch'

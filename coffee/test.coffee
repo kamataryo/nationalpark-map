@@ -1,1 +1,0 @@
-webpage = require 'webpage'
