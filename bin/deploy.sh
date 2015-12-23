@@ -16,6 +16,8 @@ rm -rf .git
 rm -r .gitignore
 
 echo ".travis.yml
+.gitignore
+.config.rb
 README.md
 screenshot.png
 bin
@@ -23,7 +25,7 @@ coffee
 sass
 sketch
 bower.json
-gulpfile.js
+gulpfile.coffee
 node_modules
 package.json" > .gitignore
 
