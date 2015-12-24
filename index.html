@@ -1,60 +1,96 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
-	<title>国立公園区域マップ</title>
-</head>
-<body>
-	<div id="map-canvas"></div>
+<html lang="ja" ng-app="nationalpark-map">
+  <head>
+    <meta charset="UTF-8">
+    <title>国立公園区域オンラインマップ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/lib/lodash/lodash.min.js"></script>
+    <script src="js/lib/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+    <script src="js/lib/angular-google-maps/dist/angular-google-maps.min.js"></script>
+    <script src="js/lib/topojson/topojson.js"></script>
+    <script src="js/lib/ngmap/build/scripts/ng-map.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaIyiWRQe5ZjR1MPAWev0o_j9QPbTsM8E"></script>
 
-	<div id="controls">
-		<h1 class="toggle-next">国立公園区域マップ</h1>
-		<div>
-			<p>
-				<input id="move-to-current" type="button" value="現在地を表示">
-				<i id="geolocation-statement" class="fa fa-question"></i>
-			</p>
-			<p>
-				<select id="handy-overlay">
-					<option value="">(国立公園を選択)</option>
-				</select>
-				<i id="load-statement" class="fa fa-cog"></i>
-			</p>
-			<p>
-				<input id="auto-overlay" type="checkbox" value="自動読み込み">
-				<label for="auto-overlay">自動読み込みの有効化</label>
-			</p>
-			<p>
-				<div id="opacity-control">
-					<label for="opacity-range">透過度</label>
-					<input id="opacity-range" type="range" min="0" max="1" value="0.4" step="0.01">
-				</div>
-				</p>
-			<div>
-				<h2 id="readme" class="toggle-next">このサイトについて</h2>
-				<div style="display: none">
-					<p><img alt="Build Status Images" src="https://travis-ci.org/KamataRyo/nationalpark-map.svg"></p>
-					<p>このサイト「国立公園区域マップ v2.0」は、<a href="http://www.biodic.go.jp/trialSystem/top.html">自然環境情報GIS</a> <a href="http://www.biodic.go.jp/trialSystem/info/nps.html">国立公園の区域等</a>（<a href="http://www.biodic.go.jp/">環境省生物多様性センター</a>）のデータを加工し作成したものです。</p>
-					<p>国立公園のポリゴンデータには、<a href="http://www.biodic.go.jp/copyright/index.html">政府標準利用規約（第1.0版）</a>が適用されていると考えています。</p>
-					<p>このサイトで表示される公園区域は、あくまで目安に留めておくことをお勧めします。正確な国立公園の区域や地種区分等を調べる場合は、当該国立公園を所管する環境省の自然保護官事務所等に問い合わせを行うのが好ましいでしょう。</p>
-				</div>
-			</div>
-			<div>
-				<h2 id="howto" class="toggle-next">使い方など</h2>
-				<div style="display: none">
-					<p>自動読み込み機能は、マップのスクロールと同時に国立公園のデータを読み込む機能です。画面に表示されるべき公園を発見した場合に、通信を行いデータを取得します。日本中を表示できるスケールで使うと、たくさん通信することになります。クライアント側の負荷も大きいので、スマホなどだとブラウザも固まるかもしれません。</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <script src="js/app.min.js"></script>
+  </head>
 
-	<script src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="http://d3js.org/topojson.v1.min.js"></script>
-	<script src="js/index.js"></script>
-</body>
+  <body ng-controller="mainCtrl">
+    <header>
+      <h1>国立公園区域オンラインマップ</h1>
+      <nav>
+				<p ng-show="selected">{{selected.name}}</p>
+        <p ng-hide="nps">http error</p>
+        <ul id="#mainMenu">
+          <li>
+            <h2>国立公園</h2>
+            <ul ng-show="nps" id="npList">
+              <li ng-repeat="(id, np) in nps">
+                <a ng-href="#/{{id}}" ng-click="onSelect(id)">{{np.name}}国立公園</a> [{{np.size}} {{np.unit}}]
+              </li>
+            </ul><!--ul#npList-->
+          </li>
+					<li>
+						<h2>凡例</h2>
+						<table ng-show="styles" id="legend">
+							<tr>
+								<th>地種区分</th>
+								<th>fill</th>
+							</tr>
+							<tr ng-repeat="(grade, style) in styles">
+								<td>{{grade}}</td>
+								<td style="background-color:white"><div style="
+                  background-color:{{style}};
+                  color:{{style}};
+                  opacity:{{opacity}};
+                  border:{{lineWidth}}px {{lineColor}} solid;
+                  ">{{style}}</div></td>
+							</tr>
+						</table>
+					</li>
+          <li>
+            <h2>トラッキング</h2>
+            <form>
+              <input type="checkbox" id="tracking" ng-model="tracking">
+              <label for="tracking">トラッキングを有効にする</label>
+            </form>
+          </li>
+          <li>
+            <h2>スタイル</h2>
+            <form>
+              <ul>
+                <li>
+                  <h3>不透明度</h3>
+                    <input id="opacity-range" type="range" min="0" max="1" value="0.4" step="0.01" ng-model="opacity" ng-init="opacity=0.4">
+                    <span>[{{opacity * 100 | number:0}}%]</span>
+                </li>
+                <li>
+                  <h3>線色</h3>
+                    <input id="line-color" type="color" value="#eeeeee" ng-model="lineColor" ng-init="lineColor='#eeeeee'">
+                    <span>[{{lineColor}}]</span>
+                </li>
+                <li>
+                  <h3>幅</h3>
+                    <input id="line-color" type="number" value="1.5" step="0.5" min="0" ng-model="lineWidth" ng-init="lineWidth=1.5">
+                    <span>[{{lineWidth}}px]</span>
+                </li>
+              </ul>
+            </form>
+          </li>
+          <li>
+            <h2>このサイトについて</h2>
+            <p>
+              このサイト「国立公園区域オンラインマップ」は、<a href="http://www.biodic.go.jp/trialSystem/top.html">自然環境情報GIS</a> <a href="http://www.biodic.go.jp/trialSystem/info/nps.html">国立公園の区域等</a>（<a href="http://www.biodic.go.jp/">環境省生物多様性センター</a>）のデータを加工し作成したものです。<br />
+              国立公園のポリゴンデータには、<a href="http://www.biodic.go.jp/copyright/index.html">政府標準利用規約（第1.0版）</a>が適用されています。<br />
+              このサイトに表示される公園区域は、あくまで目安に留めておくことをお勧めします。正確な国立公園の区域や地種区分等を調べる際は、当該国立公園を所管する環境省の自然保護官事務所等に問い合わせを行うことをお勧めします。
+            </p>
+          </li>
+        </ul><!--mainMenu-->
+      </nav>
+    </header>
+    <div map-lazy-load="https://maps.google.com/maps/api/js">
+      <ng-map center="35.680795, 139.76721" zoom="5"></ng-map>
+    </div>
+  </body>
 </html>

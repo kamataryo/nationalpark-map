@@ -25,6 +25,7 @@ coffee
 sass
 sketch
 bower.json
+.bowerrc
 gulpfile.coffee
 node_modules
 package.json" > .gitignore

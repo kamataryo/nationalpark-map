@@ -18,16 +18,10 @@ gradeFill =　#地種区分ごとの色を定義
 
 
 # googlemapの初期設定
-initialize = () ->
-	$map = $ '#map-canvas'
-	try
-		c = new google.maps.LatLng 35.680795, 139.76721
-	catch
-		$map.text 'Google Maps APIに関する不明なエラーです。'
-		console.log error
+googleMapInitialize = (mapId) ->
 	options =
 		noClear : true
-		center : c
+		center : new google.maps.LatLng 35.680795, 139.76721
 		zoom : 10
 		mapTypeId: google.maps.MapTypeId.TERRAIN
 		panControl: false
@@ -36,7 +30,7 @@ initialize = () ->
 		scaleControl: true
 		streetViewControl: true
 		overviewMapControl: false
-	map = new google.maps.Map $map[0], options
+	map = new google.maps.Map Document.getElementById(mapId), options
 
 	# autoloadの実行
 	map.addListener 'idle', () ->

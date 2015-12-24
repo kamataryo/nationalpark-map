@@ -1,0 +1,24 @@
+{
+  "name": "japanese-national-park-map",
+  "description": "## Abstract-概要 National park map in Japan (restriction area)",
+  "main": "index.js",
+  "authors": [
+    "kamataryo"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "national",
+    "park",
+    "nature",
+    "environmental",
+    "ministry"
+  ],
+  "homepage": "https://github.com/KamataRyo/nationalpark-map",
+  "moduleType": [],
+  "devDependencies": {
+    "angular": "angularjs#~1.4.8",
+    "angular-google-maps": "~2.2.1",
+    "topojson": "~1.6.19",
+    "ngmap": "~1.15.8"
+  }
+}

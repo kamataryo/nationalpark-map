@@ -1,10 +1,13 @@
-gulp       = require 'gulp'
-connect    = require 'gulp-connect'
-path       = require 'path'
-compass    = require 'gulp-compass'
-coffee     = require 'gulp-coffee'
-plumber    = require 'gulp-plumber'
-sketch     = require 'gulp-sketch'
+gulp    = require 'gulp'
+connect = require 'gulp-connect'
+path    = require 'path'
+compass = require 'gulp-compass'
+coffee  = require 'gulp-coffee'
+rename  = require 'gulp-rename'
+uglify  = require 'gulp-uglify'
+plumber = require 'gulp-plumber'
+sketch  = require 'gulp-sketch'
+
 
 base = './'
 srcs =
@@ -58,6 +61,8 @@ gulp.task 'coffee', () ->
     .pipe coffee(bare: false)
     .on 'error', (err) ->
         console.log err.stack
+    .pipe uglify()
+    .pipe rename extname: '.min.js'
     .pipe gulp.dest base + 'js/'
 
 
@@ -67,7 +72,7 @@ gulp.task 'reload', ['compass', 'coffee'] , () ->
 
 
 gulp.task 'default', ['coffee','compass' ]
-gulp.task 'dev', ['compass','coffee','connect', 'watch' ]
+gulp.task 'dev', ['sketch', 'compass','coffee','connect', 'watch' ]
 
 gulp.task 'sketch', () ->
   gulp.src base + 'sketch/svg/*.sketch'
@@ -84,7 +89,6 @@ gulp.task 'sketch', () ->
 # ==========lower for data Initialization==========
 
 download  = require 'gulp-download'
-rename    = require 'gulp-rename'
 xml2json  = require 'gulp-xml2json'
 jeditor   = require 'gulp-json-editor'
 unzip     = require 'gulp-unzip'
