@@ -10,13 +10,26 @@ app.service 'urlParser', [
     ($location, $rootScope) ->
         return {
             parse: () ->
-                elements = $location.path().split('/').filter (e) -> e isnt ''
-                $rootScope.serial =
-                    npid: elements[0]
+                serial =
+                    npid: ''
                     mapPosition:
-                        zoom: parseInt elements[1]
-                        latitude: elements[2]
-                        longitude: elements[3]
+                        zoom: 10
+                        latitude: 35.680795
+                        longitude: 139.76721
+                elements = $location.path().split('/').filter (e) -> e isnt ''
+                if elements.length > 0
+                    serial.npid = elements[0]
+                if elements.length > 1
+                    zoom = parseInt elements[1]
+                    if zoom?
+                        serial.mapPosition.zoom = zoom
+                if elements.length > 3
+                    latitude = parseInt elements[2]
+                    longitude = parseInt elements[3]
+                    if latitude? and longitude?
+                        serial.mapPosition.latitude = elements[2]
+                        serial.mapPosition.longitude = elements[3]
+                $rootScope.serial = serial
         }
 ]
 
