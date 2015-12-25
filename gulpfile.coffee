@@ -4,7 +4,6 @@ path    = require 'path'
 compass = require 'gulp-compass'
 coffee  = require 'gulp-coffee'
 rename  = require 'gulp-rename'
-uglify  = require 'gulp-uglify'
 plumber = require 'gulp-plumber'
 sketch  = require 'gulp-sketch'
 
@@ -61,8 +60,6 @@ gulp.task 'coffee', () ->
     .pipe coffee(bare: false)
     .on 'error', (err) ->
         console.log err.stack
-    .pipe uglify()
-    .pipe rename extname: '.min.js'
     .pipe gulp.dest base + 'js/'
 
 

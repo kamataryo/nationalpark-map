@@ -2,78 +2,96 @@
 <html lang="ja" ng-app="nationalpark-map">
   <head>
     <meta charset="UTF-8">
-    <title>国立公園区域オンラインマップ</title>
+    <title>国立公園オンラインマップ</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
-    <script src="js/lib/angular/angular.min.js"></script>
-    <script src="js/lib/lodash/lodash.min.js"></script>
-    <script src="js/lib/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
-    <script src="js/lib/angular-google-maps/dist/angular-google-maps.min.js"></script>
-    <script src="js/lib/topojson/topojson.js"></script>
-    <script src="js/lib/ngmap/build/scripts/ng-map.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaIyiWRQe5ZjR1MPAWev0o_j9QPbTsM8E"></script>
-
-    <script src="js/app.min.js"></script>
+    <base href="/">
+    <style>
+      .active {
+        color: red;
+      }
+      html,body {
+        height:100%
+      }
+      #navigation {
+        position:static;
+        float:left;
+        width:20%;
+        height:100%;
+        overflow:scroll;
+      }
+      #content {
+        position:static;
+        float:right;
+        width:80%;
+        height:100%;
+      }
+      #content>div {height:100%}
+      ng-map {
+        height:100%;
+      }
+    </style>
   </head>
 
   <body ng-controller="mainCtrl">
-    <header>
+    <header id="navigation">
       <h1>国立公園区域オンラインマップ</h1>
-      <nav>
-				<p ng-show="selected">{{selected.name}}</p>
-        <p ng-hide="nps">http error</p>
+      <nav ng-controller="navCtrl">
+  			<p ng-show="selected" ng-bind="selected.name"></p>
         <ul id="#mainMenu">
           <li>
-            <h2>国立公園</h2>
-            <ul ng-show="nps" id="npList">
-              <li ng-repeat="(id, np) in nps">
-                <a ng-href="#/{{id}}" ng-click="onSelect(id)">{{np.name}}国立公園</a> [{{np.size}} {{np.unit}}]
-              </li>
+            <h2>国立公園のリスト</h2>
+            <ul>
+                <li ng-repeat="(id, np) in $parent.nplist">
+                  <a ng-href="#/{{id}}" ng-click="onSelect(id)" ng-class="{active: id===selected.id}" ng-bind="np.name + '国立公園'"></a><span ng-bind="'[' + np.size + ' ' + np.unit + ']'"></span>
+                </li>
             </ul><!--ul#npList-->
           </li>
-					<li>
-						<h2>凡例</h2>
-						<table ng-show="styles" id="legend">
-							<tr>
-								<th>地種区分</th>
-								<th>fill</th>
-							</tr>
-							<tr ng-repeat="(grade, style) in styles">
-								<td>{{grade}}</td>
-								<td style="background-color:white"><div style="
-                  background-color:{{style}};
-                  color:{{style}};
-                  opacity:{{opacity}};
-                  border:{{lineWidth}}px {{lineColor}} solid;
-                  ">{{style}}</div></td>
-							</tr>
-						</table>
-					</li>
+  				<li>
+  					<h2>凡例</h2>
+  					<table ng-show="styles" id="legend">
+  						<tr>
+  							<th>地種</th>
+  							<th>スタイル</th>
+  						</tr>
+  						<tr ng-repeat="(grade, style) in styles">
+  							<td ng-bind="grade"></td>
+  							<td style="background-color:white">
+                  <div style="
+                    background-color:{{style}};
+                    color:{{style}};
+                    opacity:{{opacity}};
+                    border:{{lineWidth}}px {{lineColor}} solid;
+                  " ng-bind="style"></div>
+                </td>
+  						</tr>
+  					</table>
+  				</li>
           <li>
             <h2>トラッキング</h2>
-            <form>
+            <form id="trackingForm">
               <input type="checkbox" id="tracking" ng-model="tracking">
               <label for="tracking">トラッキングを有効にする</label>
             </form>
           </li>
           <li>
             <h2>スタイル</h2>
-            <form>
+            <form id="styleForm">
               <ul>
                 <li>
                   <h3>不透明度</h3>
                     <input id="opacity-range" type="range" min="0" max="1" value="0.4" step="0.01" ng-model="opacity" ng-init="opacity=0.4">
-                    <span>[{{opacity * 100 | number:0}}%]</span>
+                    <span ng-bind="(opacity * 100 | number:0) + '%'"></span>
                 </li>
                 <li>
                   <h3>線色</h3>
                     <input id="line-color" type="color" value="#eeeeee" ng-model="lineColor" ng-init="lineColor='#eeeeee'">
-                    <span>[{{lineColor}}]</span>
+                    <span ng-bind="lineColor"></span>
                 </li>
                 <li>
                   <h3>幅</h3>
                     <input id="line-color" type="number" value="1.5" step="0.5" min="0" ng-model="lineWidth" ng-init="lineWidth=1.5">
-                    <span>[{{lineWidth}}px]</span>
+                    <span ng-bind="lineWidth + 'px'"></span>
                 </li>
               </ul>
             </form>
@@ -89,8 +107,17 @@
         </ul><!--mainMenu-->
       </nav>
     </header>
-    <div map-lazy-load="https://maps.google.com/maps/api/js">
-      <ng-map center="35.680795, 139.76721" zoom="5"></ng-map>
+
+    <div id="content">
+      <div map-lazy-load="https://maps.google.com/maps/api/js">
+        <ng-map center="35.680795, 139.76721" zoom="10"></ng-map>
+      </div>
     </div>
+
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/lib/topojson/topojson.js"></script>
+    <script src="js/lib/ngmap/build/scripts/ng-map.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaIyiWRQe5ZjR1MPAWev0o_j9QPbTsM8E"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

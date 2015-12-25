@@ -1,24 +1,85 @@
 'use strict'
 
-# angular controller definition
+# application definition
 app = angular.module 'nationalpark-map', ['ngMap']
 
+# Shared State Service
+app.factory 'SSS', () ->
+        return {
+            text: 'Shared State Service'
+        }
+
+
+# http request for abstract of topojson files
+app.service 'requestAbstract', [
+    'SSS'
+    '$http'
+    (SSS, $http) ->
+        #Angular create method `success` of this automatically.
+        $http
+            url: './topojson/abstract.json'
+            method: 'GET'
+        .success (list) ->
+            SSS.nplist = list
+]
+
+
+# bind map location and URL
+app.service 'clientSideRouting', [
+    'SSS'
+    '$location'
+    'requestAbstract'
+    (SSS, $location, requestAbstract) ->
+        service = this
+        requestAbstract.success (data) ->
+            # validate =
+            #     id: (id) -> id in Object.keys(data)
+            #     zoom: (zoom) -> zoom in [1..20]
+            #     latitude: (lat)  -> (-90 < lat) and (lat < 90)
+            #     longitude: (lng) -> return
+            locationElements = $location.path().split('/').filter (e) -> e isnt ''
+            SSS.located = {}
+            SSS.located.id = locationElements[0]
+            SSS.located.zoom = locationElements[1]
+            SSS.located.latitude = locationElements[2]
+            SSS.located.longitude = locationElements[3]
+]
+
+
+app.controller 'navCtrl', [
+    'SSS'
+    '$scope'
+    'requestAbstract'
+    (SSS, $scope, requestAbstract) ->
+        return
+]
+
+app.controller 'mapCtrl', [
+    '$scope'
+    ($scope) ->
+        return
+]
+
+
+
+
+
 app.controller 'mainCtrl', [
+    'SSS'
     '$scope'
     '$location'
     '$http'
+    'requestAbstract'
+    'clientSideRouting'
     'NgMap'
-    ($scope, $location, $http, NgMap) ->
+    (SSS, $scope, $location, $http,requestAbstract,clientSideRouting, NgMap) ->
         # read abstract json of national park datum
-        query =
-            url: './topojson/abstract.json'
-            method: 'GET'
-        $http(query).success (data, status) ->
-            $scope.nps = data
-            # hash routing
-            urlHash = if $location.path()[0] is '/' then $location.path()[1..] else ''
-            if urlHash in Object.keys $scope.nps
-                $scope.onSelect(urlHash)
+        $scope.selected = {}
+        requestAbstract.success (data) ->
+            $scope.nplist = SSS.nplist
+            id = SSS.located.id
+            $scope.onSelect(id)
+
 
         # define style
         $scope.styles =
@@ -32,44 +93,87 @@ app.controller 'mainCtrl', [
             "else": "#666"
 
 
+        mapStyler = (feature) ->
+            grade = feature.getProperty 'grade'
+            {
+                strokeColor: $scope.lineColor
+                strokeWeight: $scope.lineWidth
+                fillOpacity: $scope.opacity
+                fillColor: if grade? then $scope.styles[grade] else $scope.styles['else']
+            }
+
         # nationalpark selected
         $scope.onSelect = (id) ->
-            np = $scope.nps[id]
+            if $scope.selected
+                if id is $scope.selected.id then return
+
+            np = $scope.nplist[id]
+            console.log np
+            url = "./topojson/#{id}.topojson"
             $scope.selected =
-                url:  "./topojson/#{id}.topojson"
+                id: id
+                url:  url
                 name: np.name + '国立公園'
                 center:
                     lat: (np.left + np.right)  / 2
                     lng: (np.top  + np.bottom) / 2
             query =
-                url: $scope.selected.url
+                url: url
                 method: 'GET'
 
             $http(query).success (json, status) ->
-                $scope.geoJSON = (topojson.feature json, json.objects[id])#.features #TopoJSON -> GeoJSON
+                $scope.selected.geoJSON = (topojson.feature json, json.objects[id])# #TopoJSON -> GeoJSON
+
+                # google map manipulation
                 NgMap.getMap().then (map) ->
+                    map.data.forEach (feature) ->
+                        map.data.remove feature
+                    map.data.addGeoJson $scope.selected.geoJSON
+                    map.data.setStyle mapStyler
+                    unless $scope.tracking then map.panTo new google.maps.LatLng $scope.selected.center.lng, $scope.selected.center.lat
 
-                    mapStyler = (feature) ->
-                        grade = feature.getProperty 'grade'
-                        {
-                            strokeColor: $scope.lineColor
-                            strokeWeight: $scope.lineWidth
-                            fillOpacity: $scope.opacity
-                            fillColor: if grade? then $scope.styles[grade] else $scope.styles['else']
-                        }
 
-                    map.data.addGeoJson $scope.geoJSON
+
+        NgMap.getMap().then (map) ->
+            # bind style values
+            for style in ['opacity', 'lineColor', 'lineWidth']
+                $scope.$watch style ,() ->
                     map.data.setStyle mapStyler
 
-                    # bind style values
-                    for style in ['opacity', 'lineColor', 'lineWidth']
-                        $scope.$watch style ,() ->
-                            map.data.setStyle mapStyler
+            # for client side routing
+            map.addListener 'idle', () ->
+                $scope.selected.id = $scope.id
+                $scope.selected.zoom = map.zoom
+                $scope.selected.lat = map.center.lat()
+                $scope.selected.lng = map.center.lng()
 
+                $location.path [
+                    $scope.selected.id
+                    $scope.selected.zoom
+                    $scope.selected.lat
+                    $scope.selected.lng
+                ].join '/'
 
-
+                $location.search {
+                    id:$scope.selected.id
+                }
+                # console.log $scope.selected.id
+                console.log $location.path()
 
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
