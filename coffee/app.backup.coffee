@@ -3,75 +3,65 @@
 # application definition
 app = angular.module 'nationalpark-map', ['ngMap']
 
-
-app.service 'urlParser', [
-    '$location'
-    '$rootScope'
-    ($location, $rootScope) ->
+# Shared State Service
+app.factory 'SSS', () ->
         return {
-            parse: () ->
-                elements = $location.path().split('/').filter (e) -> e isnt ''
-                $rootScope.serial =
-                    npid: elements[0]
-                    mapPosition:
-                        zoom: parseInt elements[1]
-                        latitude: elements[2]
-                        longitude: elements[3]
+            text: 'Shared State Service'
         }
+
+
+# http request for abstract of topojson files
+app.service 'requestAbstract', [
+    'SSS'
+    '$http'
+    (SSS, $http) ->
+        #Angular create method `success` of this automatically.
+        $http
+            url: './topojson/abstract.json'
+            method: 'GET'
+        .success (list) ->
+            SSS.nplist = list
 ]
 
-app.service 'urlEncoder', [
+
+# bind map location and URL
+app.service 'clientSideRouting', [
+    'SSS'
     '$location'
-    '$rootScope'
-    ($location, $rootScope) ->
-        return {
-            encode: () ->
-                path = [
-                    $rootScope.serial.npid
-                    $rootScope.serial.mapPosition.zoom
-                    $rootScope.serial.mapPosition.latitude
-                    $rootScope.serial.mapPosition.longitude
-                ].join '/'
-                $location.path path
-                $rootScope.$apply()
-        }
+    'requestAbstract'
+    (SSS, $location, requestAbstract) ->
+        service = this
+        requestAbstract.success (data) ->
+            # validate =
+            #     id: (id) -> id in Object.keys(data)
+            #     zoom: (zoom) -> zoom in [1..20]
+            #     latitude: (lat)  -> (-90 < lat) and (lat < 90)
+            #     longitude: (lng) -> return
+            locationElements = $location.path().split('/').filter (e) -> e isnt ''
+            SSS.located = {}
+            SSS.located.id = locationElements[0]
+            SSS.located.zoom = locationElements[1]
+            SSS.located.latitude = locationElements[2]
+            SSS.located.longitude = locationElements[3]
 ]
 
-app.controller 'mainCtrl', [
-    '$scope'
-    'urlParser'
-    ($scope, urlParser) ->
-        urlParser.parse()
-]
 
 app.controller 'navCtrl', [
+    'SSS'
     '$scope'
-    ($scope) ->
+    'requestAbstract'
+    (SSS, $scope, requestAbstract) ->
         return
 ]
 
 app.controller 'mapCtrl', [
     '$scope'
-    '$rootScope'
-    'NgMap'
-    'urlEncoder'
-    ($scope, $rootScope, NgMap, urlEncoder) ->
-        $scope.zoom = $rootScope.serial.mapPosition.zoom
-        $scope.latlng = $rootScope.serial.mapPosition.latitude + ',' + $rootScope.serial.mapPosition.longitude
-        NgMap.getMap().then (map) ->
-            map.addListener 'idle', () ->
-                $rootScope.serial.mapPosition =
-                    zoom: map.getZoom()
-                    latitude : map.getCenter().lat()
-                    longitude: map.getCenter().lng()
-                urlEncoder.encode()
+    ($scope) ->
+        return
 ]
 
 
 
-
-
-return
 
 
 app.controller 'mainCtrl', [
