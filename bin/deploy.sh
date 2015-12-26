@@ -15,19 +15,19 @@ fi
 rm -rf .git
 rm -r .gitignore
 
-echo ".travis.yml
-.gitignore
-.config.rb
-README.md
-screenshot.png
-bin
+echo "bin
 coffee
-sass
+js/spec
+node_modules
 sketch
 bower.json
-.bowerrc
+config.rb
 gulpfile.coffee
-node_modules
+.bowerrc
+.travis.yml
+.gitignore
+README.md
+screenshot.png
 package.json" > .gitignore
 
 git init

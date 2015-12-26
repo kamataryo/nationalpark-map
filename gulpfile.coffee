@@ -6,7 +6,9 @@ coffee  = require 'gulp-coffee'
 rename  = require 'gulp-rename'
 plumber = require 'gulp-plumber'
 sketch  = require 'gulp-sketch'
-karma   = require 'gulp-karma'
+KarmaServer  = require('karma').Server;
+
+
 
 base = './'
 srcs =
@@ -42,7 +44,7 @@ gulp.task 'compass', () ->
 
 
 gulp.task 'coffee', () ->
-  gulp.src base + 'coffee/**/*.coffee'
+  gulp.src [base + 'coffee/**/*.coffee', '!' + base + 'coffee/spec/karma.conf.coffee']
     .pipe plumber()
     .pipe coffee(bare: false)
     .on 'error', (err) ->
@@ -56,19 +58,22 @@ gulp.task 'sketch', () ->
       formats: 'svg'
     .pipe gulp.dest base + 'img/'
 
-gulp.task 'karma',['coffee'], () ->
-    files = [
-        './js/lib/angular/angular.js'
-        './js/lib/angular-mocks/angular-mocks.js'
-        './js/lib/ngmap/build/scripts/ng-map.js'
-        './js/*.js'
-        './js/spec/*.js'
-    ]
-    gulp.src files
-      .pipe karma {
-        configFile: './karma.conf.coffee'
-        action: 'run'
-      }
+
+# !!!!use karma directory!!!!
+gulp.task 'karma',['coffee'], (done) ->
+    # files = [
+    #     './js/lib/angular/angular.js'
+    #     './js/lib/angular-mocks/angular-mocks.js'
+    #     './js/lib/ngmap/build/scripts/ng-map.js'
+    #     './js/*.js'
+    #     './js/spec/*.js'
+    # ]
+    new KarmaServer {
+        configFile: __dirname + '/coffee/spec/karma.conf.coffee'
+        singleRun: true
+    }, done
+        .start()
+
 # create server
 gulp.task 'connect', () ->
   options =
