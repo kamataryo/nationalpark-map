@@ -1,17 +1,12 @@
 'use strict'
 describe 'test of services', () ->
-    urlParserService = {}
-    urlEncoderService = {}
-    location = {}
-    rootScope = {}
     beforeEach module 'nationalpark-map'
-
-
-
-
 
 #=========================================================================================
     describe 'test of urlParser service', () ->
+        urlParserService = {}
+        location = {}
+        rootScope = {}
         beforeEach inject (_urlParser_, $location, $rootScope) ->
             urlParserService = _urlParser_
             location = $location
@@ -57,7 +52,6 @@ describe 'test of services', () ->
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
 
-
         # x/y/z (length=3)
         #    x -> zoom
         #    y -> latitude
@@ -78,9 +72,6 @@ describe 'test of services', () ->
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
 
-
-
-
         # x/y/z (length=3)
         #    y -> (zoom) *rejected
         #    z -> (latitude) *rejected
@@ -97,7 +88,6 @@ describe 'test of services', () ->
             # mapPosition serialization on rootScope success
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
-
 
         # x/y (lengh=2)
         #    x -> npid
@@ -143,15 +133,15 @@ describe 'test of services', () ->
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
 
-
-
 #=========================================================================================
     describe 'test of urlEncoder service', () ->
+        urlEncoderService = {}
+        location = {}
+        rootScope = {}
         beforeEach inject (_urlEncoder_, $location, $rootScope) ->
             urlEncoderService = _urlEncoder_
             location = $location
             rootScope = $rootScope
-
 
         it 'URL encode with npid & mapPosition', () ->
             #provide pseudo inner Page Information to rootScope
@@ -166,15 +156,36 @@ describe 'test of services', () ->
             expect location.path()
                 .toEqual pathExpected
 
+#=========================================================================================
+    describe 'test of abstractLoader service', () ->
+        abstractLoaderService ={}
+        rootScope = {}
+        beforeEach inject (_abstractLoader_, $rootScope) ->
+            abstractLoaderService = _abstractLoader_
+            rootScope = $rootScope
+
+        it 'ajax request success', () ->
+            abstractLoaderService.load()
+            rootScope.$on 'abstractLoaded', () ->
+                expect rootScope.abstract
+                    .not.toBeDefined()
 
 #=========================================================================================
-    describe 'test of googleMapWatcher service', () ->
-        it 'googleMapsWatcher service test is empty', () ->
-            expect false
-                .toEqual true
+    describe 'test of navCtrl controller', () ->
+        urlParserService = {}
+        $scope = {}
+        rootScope = {}
+        beforeEach inject (_urlParser_, _$controller_ , $rootScope) ->
+            urlParserService = _urlParser_
+            $controller = _$controller_
+            rootScope = $rootScope
+            navController = $controller 'navCtrl', {$scope: $scope}
+
+        it 'onSelect method change rootScope.selected', () ->
+            urlParserService.parse()
+            rootScope.$on 'urlParsed', () ->
+                $scope.onSelect 'NPS_dummy'
+                expect($scope.selected).toEqual 'NPS_dummy'
 
 
-
-
-
-    it '必ず失敗させるおまじない', () -> expect(false).toEqual true
+    #it '必ず失敗させるおまじない', () -> expect(false).toEqual true

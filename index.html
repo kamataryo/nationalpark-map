@@ -37,13 +37,13 @@
     <header id="navigation">
       <h1>国立公園区域オンラインマップ</h1>
       <nav ng-controller="navCtrl">
-  			<p ng-show="selected" ng-bind="selected.name"></p>
+  			<p ng-show="selected" ng-bind="npAbstract[selected].name + '国立公園'"></p>
         <ul id="#mainMenu">
           <li>
             <h2>国立公園のリスト</h2>
             <ul>
-                <li ng-repeat="(id, np) in $parent.nplist">
-                  <a ng-href="#/{{id}}" ng-click="onSelect(id)" ng-class="{active: id===selected.id}" ng-bind="np.name + '国立公園'"></a><span ng-bind="'[' + np.size + ' ' + np.unit + ']'"></span>
+                <li ng-repeat="(npid, npinfo) in npAbstract">
+                  <a ng-click="onSelect(npid)" ng-class="{active: npid===selected}" ng-bind="npinfo.name + '国立公園'"></a><span ng-bind="'[' + npinfo.size + ' ' + npinfo.unit + ']'"></span>
                 </li>
             </ul><!--ul#npList-->
           </li>
@@ -103,6 +103,7 @@
               国立公園のポリゴンデータには、<a href="http://www.biodic.go.jp/copyright/index.html">政府標準利用規約（第1.0版）</a>が適用されています。<br />
               このサイトに表示される公園区域は、あくまで目安に留めておくことをお勧めします。正確な国立公園の区域や地種区分等を調べる際は、当該国立公園を所管する環境省の自然保護官事務所等に問い合わせを行うことをお勧めします。
             </p>
+            <p>zoom > 17 程度から、割とずれる</p>
           </li>
         </ul><!--mainMenu-->
       </nav>
