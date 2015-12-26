@@ -6,14 +6,14 @@ coffee  = require 'gulp-coffee'
 rename  = require 'gulp-rename'
 plumber = require 'gulp-plumber'
 sketch  = require 'gulp-sketch'
-
+karma   = require 'gulp-karma'
 
 base = './'
 srcs =
   watching : [
     base + '*.html'
     base + 'sass/*.scss'
-    base + 'coffee/*.coffee'
+    base + 'coffee/**/*.coffee'
     base + 'sketch/**/*.sketch'
   ]
   uploading :　[
@@ -25,19 +25,6 @@ srcs =
 host = 'localhost'
 port = 8001
 
-
-# create server
-gulp.task 'connect', () ->
-  options =
-    root: path.resolve base
-    livereload: true
-    port: port
-    host: host
-  connect.server options
-
-
-gulp.task 'watch', () ->
-  gulp.watch srcs['watching'], ['compass', 'coffee', 'reload']
 
 gulp.task 'compass', () ->
   options =
@@ -55,21 +42,12 @@ gulp.task 'compass', () ->
 
 
 gulp.task 'coffee', () ->
-  gulp.src base + 'coffee/*.coffee'
+  gulp.src base + 'coffee/**/*.coffee'
     .pipe plumber()
     .pipe coffee(bare: false)
     .on 'error', (err) ->
         console.log err.stack
     .pipe gulp.dest base + 'js/'
-
-
-gulp.task 'reload', ['compass', 'coffee'] , () ->
-  gulp.src srcs['watching']
-    .pipe connect.reload()
-
-
-gulp.task 'default', ['coffee','compass' ]
-gulp.task 'dev', ['sketch', 'compass','coffee','connect', 'watch' ]
 
 gulp.task 'sketch', () ->
   gulp.src base + 'sketch/svg/*.sketch'
@@ -77,6 +55,41 @@ gulp.task 'sketch', () ->
       export: 'artboards'
       formats: 'svg'
     .pipe gulp.dest base + 'img/'
+
+gulp.task 'karma',['coffee'], () ->
+    files = [
+        './js/lib/angular/angular.js'
+        './js/lib/angular-mocks/angular-mocks.js'
+        './js/lib/ngmap/build/scripts/ng-map.js'
+        './js/*.js'
+        './js/spec/*.js'
+    ]
+    gulp.src files
+      .pipe karma {
+        configFile: './karma.conf.coffee'
+        action: 'run'
+      }
+# create server
+gulp.task 'connect', () ->
+  options =
+    root: path.resolve base
+    livereload: true
+    port: port
+    host: host
+  connect.server options
+
+gulp.task 'reload', ['compass', 'coffee'] , () ->
+  gulp.src srcs['watching']
+    .pipe connect.reload()
+
+gulp.task 'watch', () ->
+  gulp.watch srcs['watching'], ['compass', 'coffee','karma', 'reload']
+
+
+gulp.task 'default', ['coffee','compass' ] # exclude sketch
+gulp.task 'dev', ['sketch', 'compass','coffee','karma','connect', 'watch' ]
+
+
 
 # ==========upper for developing==========
 

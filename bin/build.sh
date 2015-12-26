@@ -5,3 +5,4 @@ set -e
 npm install -g topojson
 npm install
 npm run build
+npm test
