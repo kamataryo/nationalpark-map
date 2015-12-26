@@ -3,7 +3,8 @@
 # application definition
 app = angular.module 'nationalpark-map', ['ngMap']
 
-
+# The urlParserService parses and interprets $location as inner page information(npid & mapPosition).
+# The inner page information will be serialized as  on $rootScope.
 app.service 'urlParser', [
     '$location'
     '$rootScope'
@@ -18,13 +19,12 @@ app.service 'urlParser', [
             getDefaultPosition: () ->
                 defaultPosition
             parse: () ->
+                # get default values
                 npid = ''
                 zoom = defaultPosition.zoom
                 latitude = defaultPosition.latitude
                 longitude = defaultPosition.longitude
-
                 elements = $location.path().split('/').filter (e) -> e isnt ''
-
 
                 if elements.length > 3
                     npid = elements[0]
@@ -57,6 +57,10 @@ app.service 'urlParser', [
         }
 ]
 
+
+
+# The urlEncoder service read $rootScope and get serialized inner page information.
+# The URL will be rewrited with these values.
 app.service 'urlEncoder', [
     '$location'
     '$rootScope'
@@ -73,6 +77,9 @@ app.service 'urlEncoder', [
                 $rootScope.$apply()
         }
 ]
+
+
+
 
 app.controller 'mainCtrl', [
     '$scope'

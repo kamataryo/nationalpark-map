@@ -1,6 +1,7 @@
 'use strict'
 describe 'test of services', () ->
     urlParserService = {}
+    urlEncoderService = {}
     location = {}
     rootScope = {}
     beforeEach module 'nationalpark-map'
@@ -140,10 +141,20 @@ describe 'test of services', () ->
 #=========================================================================================
     describe 'test of urlEncoder service', () ->
         beforeEach inject (_urlEncoder_, $location, $rootScope) ->
-            urlParserService = _urlEncoder_
+            urlEncoderService = _urlEncoder_
             location = $location
             rootScope = $rootScope
 
-        it 'encoder test is empty', () ->
-            expect false
-                .toEqual true
+
+        it 'URL encode with npid & mapPosition', () ->
+            #provide pseudo inner Page Information to rootScope
+            rootScope.serial =
+                npid: 'NPS_pseudo'
+                mapPosition:
+                    zoom: 2
+                    latitude: 23.45
+                    longitude: 67.89
+            pathExpected = '/NPS_pseudo/2/23.45/67.89'
+            urlEncoderService.encode()
+            expect location.path()
+                .toEqual pathExpected
