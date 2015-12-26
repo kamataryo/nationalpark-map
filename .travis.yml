@@ -12,6 +12,9 @@ after_success:
   - npm run codecov
   - bash ./bin/deploy.sh
 
+after_failure:
+  - npm run codecov
+
 env:
   global:
   - GH_REF: github.com/kamataryo/nationalpark-map.git
