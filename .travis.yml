@@ -8,7 +8,9 @@ branches:
 
 before_script: bash ./bin/build.sh
 
-after_success: bash ./bin/deploy.sh
+after_success:
+  - npm run codecov
+  - bash ./bin/deploy.sh
 
 env:
   global:
