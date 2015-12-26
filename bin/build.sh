@@ -6,4 +6,3 @@ npm install -g topojson
 npm install
 bower install
 npm run build
-npm test
