@@ -59,20 +59,13 @@ gulp.task 'sketch', () ->
     .pipe gulp.dest base + 'img/'
 
 
-# !!!!use karma directory!!!!
 gulp.task 'karma',['coffee'], (done) ->
-    # files = [
-    #     './js/lib/angular/angular.js'
-    #     './js/lib/angular-mocks/angular-mocks.js'
-    #     './js/lib/ngmap/build/scripts/ng-map.js'
-    #     './js/*.js'
-    #     './js/spec/*.js'
-    # ]
     new KarmaServer {
         configFile: __dirname + '/coffee/spec/karma.conf.coffee'
         singleRun: true
     }, done
         .start()
+
 
 # create server
 gulp.task 'connect', () ->

@@ -30,6 +30,7 @@
     "karma": "^0.13.16",
     "karma-chrome-launcher": "^0.2.2",
     "karma-cli": "^0.1.2",
+    "karma-coverage": "^0.5.3",
     "karma-jasmine": "^0.3.6",
     "path": "^0.11.14",
     "underscore": "^1.8.3",

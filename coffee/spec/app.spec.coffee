@@ -138,6 +138,9 @@ describe 'test of services', () ->
             # mapPosition serialization on rootScope success
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
+
+
+
 #=========================================================================================
     describe 'test of urlEncoder service', () ->
         beforeEach inject (_urlEncoder_, $location, $rootScope) ->
@@ -158,3 +161,10 @@ describe 'test of services', () ->
             urlEncoderService.encode()
             expect location.path()
                 .toEqual pathExpected
+
+
+#=========================================================================================
+    describe 'test of googleMapWatcher service', () ->
+        it 'googleMapsWatcher service test is empty', () ->
+            expect false
+                .toEqual true
