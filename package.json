@@ -37,7 +37,7 @@
   },
   "scripts": {
     "build": "./node_modules/gulp/bin/gulp.js",
-    "test": "node ./node_modules/karma/bin/karma start ./coffee/spec/karma.conf.coffee --single-run"
+    "test": "karma start ./coffee/spec/karma.conf.coffee --single-run --browsers PhantomJS"
   },
   "author": "kamataryo",
   "license": "MIT",

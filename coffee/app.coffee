@@ -9,6 +9,7 @@ app.service 'urlParser', [
     '$rootScope'
     ($location, $rootScope) ->
         return {
+            test: 'test'
             parse: () ->
                 # default setting
                 npid = ''
@@ -25,6 +26,11 @@ app.service 'urlParser', [
                     console.log _zoom,_latitude,_longitude
                 if elements.length > 0
                     npid = elements.pop()
+
+                unless isNaN _zoom then zoom = _zoom
+                unless isNaN _latitude then latitude = _latitude
+                unless isNaN _longitude then longitude = _longitude
+
 
                 $rootScope.serial =
                     npid: npid
