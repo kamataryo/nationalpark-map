@@ -4,4 +4,4 @@ node_modules/
 js/
 css/
 npm-debug.log
-.coverage/
+coverage/

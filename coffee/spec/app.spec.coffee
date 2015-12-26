@@ -6,6 +6,10 @@ describe 'test of services', () ->
     rootScope = {}
     beforeEach module 'nationalpark-map'
 
+
+
+
+
 #=========================================================================================
     describe 'test of urlParser service', () ->
         beforeEach inject (_urlParser_, $location, $rootScope) ->
@@ -168,3 +172,9 @@ describe 'test of services', () ->
         it 'googleMapsWatcher service test is empty', () ->
             expect false
                 .toEqual true
+
+
+
+
+
+    it '必ず失敗させるおまじない', () -> expect(false).toEqual true

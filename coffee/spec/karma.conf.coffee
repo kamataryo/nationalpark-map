@@ -36,10 +36,11 @@ module.exports = (config) ->
         reporters: [
             {
                 type: 'lcov'
+                dir : 'coverage/'
             }
             {
                 type : 'html'
-                dir : '.coverage/'
+                dir : 'coverage/'
             }
         ]
     }
