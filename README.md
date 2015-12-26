@@ -1,6 +1,7 @@
 # nationalpark map-国立公園区域
 
 ![Build Status Images](https://travis-ci.org/KamataRyo/nationalpark-map.svg)
+![codecov.io](https://codecov.io/github/KamataRyo/nationalpark-map/coverage.svg?branch=master)
 
 ## Abstract-概要
 National park map in Japan (restriction area)
