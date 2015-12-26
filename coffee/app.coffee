@@ -8,36 +8,52 @@ app.service 'urlParser', [
     '$location'
     '$rootScope'
     ($location, $rootScope) ->
+        #TokyoStation
+        defaultPosition =
+            zoom:10
+            latitude: 35.680795
+            longitude: 139.76721
+
         return {
-            test: 'test'
+            getDefaultPosition: () ->
+                defaultPosition
             parse: () ->
-                # default setting
                 npid = ''
-                zoom = 10
-                latitude = 35.680795
-                longitude = 139.76721
+                zoom = defaultPosition.zoom
+                latitude = defaultPosition.latitude
+                longitude = defaultPosition.longitude
 
                 elements = $location.path().split('/').filter (e) -> e isnt ''
 
-                if elements.length > 2
-                    _longitude = parseFloat elements.pop()
-                    _latitude = parseFloat elements.pop()
-                    _zoom = parseInt elements.pop()
-                    console.log _zoom,_latitude,_longitude
-                if elements.length > 0
-                    npid = elements.pop()
 
-                unless isNaN _zoom then zoom = _zoom
-                unless isNaN _latitude then latitude = _latitude
-                unless isNaN _longitude then longitude = _longitude
+                if elements.length > 3
+                    npid = elements[0]
+                    _zoom = parseInt elements[1]
+                    _latitude = parseFloat elements[2]
+                    _longitude = parseFloat elements[3]
+                else if elements.length is 3
+                    _zoom = parseInt elements[0]
+                    _latitude = parseFloat elements[1]
+                    _longitude = parseFloat elements[2]
+                else if elements.length is 2
+                    npid = elements[0]
+                else if elements.length is 1
+                    npid = elements[0]
 
+                unless isNaN(_zoom) or isNaN(_latitude) or isNaN(_longitude)
+                    zoom = _zoom
+                    latitude = _latitude
+                    longitude = _longitude
 
-                $rootScope.serial =
+                serial =
                     npid: npid
                     mapPosition:
                         zoom: zoom
                         latitude: latitude
                         longitude: longitude
+
+                $rootScope.serial = serial
+                return serial
         }
 ]
 
