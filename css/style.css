@@ -54,10 +54,6 @@ html, body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.navClosed {
-  display: none;
-}
-
 .hide {
   display: none;
 }
@@ -75,6 +71,7 @@ header#navigation {
 header#navigation h1 {
   font-size: 18px;
   margin: 0;
+  padding: 0.5em;
   background-color: rgba(0, 15, 0, 0.6);
 }
 header#navigation ul {
@@ -97,6 +94,7 @@ header#navigation ul li.selectable:hover a {
 }
 header#navigation ul a {
   display: inline-block;
+  padding: .1em .5em;
 }
 header#navigation ul a.selectable {
   cursor: pointer;
@@ -117,17 +115,16 @@ header#navigation ul span.nav-size:after {
 header#navigation table {
   background-color: rgba(0, 15, 0, 0.36);
   display: inline-block;
-  padding: 0;
+  padding: 1em;
   display: block;
 }
-header#navigation table td {
+header#navigation table td:first-child {
+  padding: 0.2em;
   border: 1px solid white;
 }
 
-ul.stylers {
-  padding: 1em;
-}
 ul.stylers li {
+  padding-left: .5em;
   padding-bottom: .5em;
 }
 

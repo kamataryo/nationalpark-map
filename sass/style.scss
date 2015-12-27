@@ -48,10 +48,6 @@ html, body {
 	}
 }
 
-.navClosed {
-	display:none;
-}
-
 .hide {
 	display: none;
 }
@@ -69,6 +65,7 @@ header#navigation {
 	h1 {
 		font-size: $fs;
 		margin:0;
+		padding: 0.5em;
 		background-color: rgba(#000f00, .6);
 	}
 	ul {
@@ -88,6 +85,7 @@ header#navigation {
 		}
 		a {
 			display: inline-block;
+			padding: .1em .5em;
 			&.selectable {
 				cursor:pointer;
 			}
@@ -109,9 +107,10 @@ header#navigation {
 	table {
 		background-color: rgba(#000f00, .36);
 		display: inline-block;
-		padding:0;
+		padding:1em;
 		display:block;
-		td {
+		td:first-child {
+			padding:0.2em;
 			border:1px solid white;
 		}
 	}
@@ -119,8 +118,8 @@ header#navigation {
 }
 
 ul.stylers {
-	padding:1em;
 	li {
+		padding-left:.5em;
 		padding-bottom:.5em;
 	}
 }
