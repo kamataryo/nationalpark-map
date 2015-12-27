@@ -109,8 +109,11 @@ header#navigation {
 	table {
 		background-color: rgba(#000f00, .36);
 		display: inline-block;
-		width:100%;
-		padding: 1em;
+		padding:0;
+		display:block;
+		td {
+			border:1px solid white;
+		}
 	}
 
 }
@@ -120,14 +123,11 @@ ul.stylers {
 	li {
 		padding-bottom:.5em;
 	}
-	li:last-child {
-		padding-bottom:0;
-	}
 }
 
 li.konosai {
 	padding: 1em;
-	background-color: rgba(#000f00, .6);
+	background-color: rgba(#000f00, .36);
 }
 
 div#content {

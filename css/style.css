@@ -117,8 +117,11 @@ header#navigation ul span.nav-size:after {
 header#navigation table {
   background-color: rgba(0, 15, 0, 0.36);
   display: inline-block;
-  width: 100%;
-  padding: 1em;
+  padding: 0;
+  display: block;
+}
+header#navigation table td {
+  border: 1px solid white;
 }
 
 ul.stylers {
@@ -127,13 +130,10 @@ ul.stylers {
 ul.stylers li {
   padding-bottom: .5em;
 }
-ul.stylers li:last-child {
-  padding-bottom: 0;
-}
 
 li.konosai {
   padding: 1em;
-  background-color: rgba(0, 15, 0, 0.6);
+  background-color: rgba(0, 15, 0, 0.36);
 }
 
 div#content {

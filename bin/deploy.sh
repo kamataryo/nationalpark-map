@@ -17,6 +17,7 @@ rm -r .gitignore
 
 echo "bin
 coffee
+coverage
 js/spec
 node_modules
 sketch
