@@ -19,6 +19,8 @@ echo "bin
 coffee
 coverage
 js/spec
+js/lib/angular-animate
+js/lib/angular-mocks
 node_modules
 sketch
 bower.json
