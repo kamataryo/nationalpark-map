@@ -86,7 +86,7 @@ app.service 'abstractLoader', [
     '$rootScope'
     ($http, $rootScope) ->
         query =
-            url: '../topojson/abstract.json'
+            url: './topojson/abstract.json'
             method: 'GET'
         return {
             load: ()->
