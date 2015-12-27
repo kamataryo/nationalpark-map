@@ -106,7 +106,7 @@ app.service 'topojsonLoader', [
                 unless $rootScope.serial then return false
                 unless $rootScope.serial.npid then return false
                 query =
-                    url: "../topojson/#{$rootScope.serial.npid}.topojson"
+                    url: "./topojson/#{$rootScope.serial.npid}.topojson"
                     method: 'GET'
                 $http(query).success (json) ->
                     $rootScope.geojson = (topojson.feature json, json.objects[$rootScope.serial.npid]) #TopoJSON -> GeoJSON
