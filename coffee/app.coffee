@@ -93,11 +93,52 @@ app.service 'abstractLoader', [
         }
 ]
 
+#ajax load of topojson
+app.service 'topojsonLoader', [
+    '$http'
+    '$rootScope'
+    ($http, $rootScope) ->
+        return {
+            load: () ->
+                unless $rootScope.serial then return false
+                unless $rootScope.serial.npid then return false
+                query =
+                    url: "../topojson/#{$rootScope.serial.npid}.topojson"
+                    method: 'GET'
+                $http(query).success (json) ->
+                    $rootScope.geojson = (topojson.feature json, json.objects[$rootScope.serial.npid]) #TopoJSON -> GeoJSON
+        }
+]
+
+# app.service 'mapForcuser', [
+#     'NgMap'
+#     (NgMap) ->
+#         return {
+#             forcus: (lat, lng) ->
+#                 console.log 1
+#                 NgMap.getMap().then (map) ->
+#                     map.panTo new google.maps.LatLng 10,10#lat, lng
+#         }
+# ]
+
+
 app.controller 'mainCtrl', [
     '$scope'
+    '$rootScope'
     'urlParser'
     'abstractLoader'
-    ($scope, urlParser, abstractLoader) ->
+    ($scope,$rootScope, urlParser, abstractLoader) ->
+        $rootScope.fillStyles =
+            '特別保護地区': '#dddd66'
+            '海域公園地区': '#2233dd'
+            '海中公園地区': '#2233dd'
+            '第1種特別地域': '#dd66dd'
+            '第2種特別地域': '#dd6666'
+            '第3種特別地域': '#66dd66'
+            '特別地域': '#343265'
+            '普通地域': '#66dddd'
+            'else': '#666666'
+        $scope.fiiStyles = $rootScope.fillStyles
         urlParser.parse()
         abstractLoader.load()
 ]
@@ -105,21 +146,40 @@ app.controller 'mainCtrl', [
 app.controller 'navCtrl', [
     '$scope'
     '$rootScope'
+    'topojsonLoader'
     'urlEncoder'
-    ($scope, $rootScope,urlEncoder) ->
+    ($scope, $rootScope, topolsonLoader, urlEncoder) ->
         $rootScope.$on 'abstractLoaded', () ->
             $scope.npAbstract = $rootScope.abstract
-            $scope.selected = if $rootScope.serial then $rootScope.serial.npid
+            if $rootScope.serial then $scope.onSelect($rootScope.serial.npid)
 
         $scope.onSelect = (npid) ->
             if $scope.selected
                 if npid is $scope.selected then return
             $scope.selected = npid
             $rootScope.serial.npid = npid
-            urlEncoder.encode() # $apply()の意味がわかっていない。2度目以降は失敗する。一度$apply()しとけばいいのか..?
+            topolsonLoader.load()
+            urlEncoder.encode()
+            # https://docs.angularjs.org/error/$rootScope/inprog?p0=$apply
+            # $apply()の意味を私がわかっていない。2度目以降は失敗する。最初に一度$apply()しておけばいいのか..?
+        $rootScope.lineColor = $scope.lineColor
+        $rootScope.$watch ()->
+            return $scope.lineColor
+        ,() ->
+            $rootScope.lineColor = $scope.lineColor
+
+        $rootScope.lineWidth = $scope.lineWidth
+        $rootScope.$watch ()->
+            return $scope.lineWidth
+        ,() ->
+            $rootScope.lineWidth = $scope.lineWidth
+
+        $rootScope.opacity = $scope.opacity
+        $rootScope.$watch ()->
+            return $scope.opacity
+        ,() ->
+            $rootScope.opacity = $scope.opacity
 ]
-
-
 
 app.controller 'mapCtrl', [
     '$scope'
@@ -127,15 +187,46 @@ app.controller 'mapCtrl', [
     'NgMap'
     'urlEncoder'
     ($scope, $rootScope, NgMap, urlEncoder) ->
+        # reflect to the scope and initialize map
         $scope.zoom = $rootScope.serial.mapPosition.zoom
         $scope.latlng = $rootScope.serial.mapPosition.latitude + ',' + $rootScope.serial.mapPosition.longitude
+
         NgMap.getMap().then (map) ->
+
+            $scope.mapStyler = (feature) ->
+                grade = feature.getProperty 'grade'
+                return {
+                    strokeColor: $rootScope.lineColor
+                    strokeWeight: $rootScope.lineWidth
+                    fillOpacity: $rootScope.opacity
+                    fillColor: if grade? then $rootScope.fillStyles[grade] else $scope.styles['else']
+                }
+
+            $scope.addData = () ->
+                map.data.forEach (feature) -> map.data.remove feature # synchronous
+                map.data.addGeoJson $rootScope.geojson
+                map.data.setStyle $scope.mapStyler
+
+                # lat = ($rootScope.abstract[$rootScope.serial.npid].top + $rootScope.abstract[$rootScope.serial.npid].bottom) / 2
+                # lng = ($rootScope.abstract[$rootScope.serial.npid].left + $rootScope.abstract[$rootScope.serial.npid].right) / 2
+                # map.panTo new google.maps.LatLng lat, lng
+
             map.addListener 'idle', () ->
                 $rootScope.serial.mapPosition =
                     zoom: map.getZoom()
                     latitude : map.getCenter().lat()
                     longitude: map.getCenter().lng()
                 urlEncoder.encode()
+
+            $rootScope.$watch () -> # watch expression
+                return $rootScope.geojson
+            , $scope.addData # listener
+
+            # bind style values
+            for style in ['opacity', 'lineColor', 'lineWidth']
+                $rootScope.$watch style ,() ->
+                    map.data.setStyle $scope.mapStyler
+
 ]
 
 
@@ -162,16 +253,7 @@ return
 #             $scope.onSelect(id)
 #
 #
-#         # define style
-#         $scope.styles =
-#             "特別保護地区": "#dd6"
-#             "海域公園地区": "#23d"
-#             "海中公園地区": "#23d"
-#             "第1種特別地域": "#d6d"
-#             "第2種特別地域": "#d66"
-#             "第3種特別地域": "#6d6"
-#             "普通地域": "#6dd"
-#             "else": "#666"
+#
 #
 #
 #         mapStyler = (feature) ->
@@ -203,12 +285,7 @@ return
 #                 $scope.selected.geoJSON = (topojson.feature json, json.objects[id])# #TopoJSON -> GeoJSON
 #
 #                 # google map manipulation
-#                 NgMap.getMap().then (map) ->
-#                     map.data.forEach (feature) ->
-#                         map.data.remove feature
-#                     map.data.addGeoJson $scope.selected.geoJSON
-#                     map.data.setStyle mapStyler
-#                     unless $scope.tracking then map.panTo new google.maps.LatLng $scope.selected.center.lng, $scope.selected.center.lat
+
 #
 #
 #
@@ -218,45 +295,7 @@ return
 #                 $scope.$watch style ,() ->
 #                     map.data.setStyle mapStyler
 #
-#             # for client side routing
-#             map.addListener 'idle', () ->
-#                 $scope.selected.id = $scope.id
-#                 $scope.selected.zoom = map.zoom
-#                 $scope.selected.lat = map.center.lat()
-#                 $scope.selected.lng = map.center.lng()
-#
-#                 $location.path [
-#                     $scope.selected.id
-#                     $scope.selected.zoom
-#                     $scope.selected.lat
-#                     $scope.selected.lng
-#                 ].join '/'
-#
-#                 $location.search {
-#                     id:$scope.selected.id
-#                 }
-#                 # console.log $scope.selected.id
-#                 console.log $location.path()
-#
-# ]
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+
 #
 #
 #

@@ -49,31 +49,31 @@
           </li>
   				<li>
   					<h2>凡例</h2>
-  					<table ng-show="styles" id="legend">
+  					<table ng-show="fillStyles" id="legend">
   						<tr>
   							<th>地種</th>
   							<th>スタイル</th>
   						</tr>
-  						<tr ng-repeat="(grade, style) in styles">
+  						<tr ng-repeat="(grade, fillStyle) in fillStyles">
   							<td ng-bind="grade"></td>
   							<td style="background-color:white">
                   <div style="
-                    background-color:{{style}};
-                    color:{{style}};
+                    background-color:{{fillStyle}};
+                    color:{{fillStyle}};
                     opacity:{{opacity}};
                     border:{{lineWidth}}px {{lineColor}} solid;
-                  " ng-bind="style"></div>
+                  " ng-bind="fillStyle"></div>
                 </td>
   						</tr>
   					</table>
   				</li>
-          <li>
+          <!-- <li>
             <h2>トラッキング</h2>
             <form id="trackingForm">
               <input type="checkbox" id="tracking" ng-model="tracking">
               <label for="tracking">トラッキングを有効にする</label>
             </form>
-          </li>
+          </li> -->
           <li>
             <h2>スタイル</h2>
             <form id="styleForm">

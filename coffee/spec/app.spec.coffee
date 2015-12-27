@@ -4,11 +4,11 @@ describe 'test of services', () ->
 
 #=========================================================================================
     describe 'test of urlParser service', () ->
-        urlParserService = {}
+        urlParseService = {}
         location = {}
         rootScope = {}
         beforeEach inject (_urlParser_, $location, $rootScope) ->
-            urlParserService = _urlParser_
+            urlParseService = _urlParser_
             location = $location
             rootScope = $rootScope
 
@@ -29,8 +29,7 @@ describe 'test of services', () ->
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
-            serialized = urlParserService.parse()
-            # mapPosition serialization on rootScope success
+            serialized = urlParseService.parse()# mapPosition serialization on rootScope
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
 
@@ -43,12 +42,11 @@ describe 'test of services', () ->
             elements = ['NPS_uuu',6, 'contaminatedInvalidValue', 17.5]
             serialExpected =
                 npid: 'NPS_uuu'
-                mapPosition: urlParserService.getDefaultPosition()
+                mapPosition: urlParseService.getDefaultPosition()
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
-            serialized = urlParserService.parse()
-            # mapPosition serialization on rootScope success
+            serialized = urlParseService.parse()# mapPosition serialization on rootScope
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
 
@@ -67,8 +65,7 @@ describe 'test of services', () ->
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
-            serialized = urlParserService.parse()
-            # mapPosition serialization on rootScope success
+            serialized = urlParseService.parse()# mapPosition serialization on rootScope
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
 
@@ -80,12 +77,11 @@ describe 'test of services', () ->
             elements = [17, 14.5, "invalidvalue"]
             serialExpected =
                 npid: ''
-                mapPosition: urlParserService.getDefaultPosition()
+                mapPosition: urlParseService.getDefaultPosition()
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
-            serialized = urlParserService.parse()
-            # mapPosition serialization on rootScope success
+            serialized = urlParseService.parse()# mapPosition serialization on rootScope
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
 
@@ -96,12 +92,11 @@ describe 'test of services', () ->
             elements = ['NPS_yyy', 'value to be ignored']
             serialExpected =
                 npid: 'NPS_yyy'
-                mapPosition: urlParserService.getDefaultPosition()
+                mapPosition: urlParseService.getDefaultPosition()
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
-            serialized = urlParserService.parse()
-            # mapPosition serialization on rootScope success
+            serialized = urlParseService.parse()# mapPosition serialization on rootScope
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
 
@@ -111,12 +106,11 @@ describe 'test of services', () ->
             elements = ['NPS_zzz']
             serialExpected =
                 npid: 'NPS_zzz'
-                mapPosition: urlParserService.getDefaultPosition()
+                mapPosition: urlParseService.getDefaultPosition()
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
-            serialized = urlParserService.parse()
-            # mapPosition serialization on rootScope success
+            serialized = urlParseService.parse()# mapPosition serialization on rootScope
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
 
@@ -124,22 +118,21 @@ describe 'test of services', () ->
             elements = []
             serialExpected =
                 npid: ''
-                mapPosition: urlParserService.getDefaultPosition()
+                mapPosition: urlParseService.getDefaultPosition()
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
-            serialized = urlParserService.parse()
-            # mapPosition serialization on rootScope success
+            serialized = urlParseService.parse()# mapPosition serialization on rootScope
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
 
 #=========================================================================================
     describe 'test of urlEncoder service', () ->
-        urlEncoderService = {}
+        urlEncodeService = {}
         location = {}
         rootScope = {}
         beforeEach inject (_urlEncoder_, $location, $rootScope) ->
-            urlEncoderService = _urlEncoder_
+            urlEncodeService = _urlEncoder_
             location = $location
             rootScope = $rootScope
 
@@ -152,37 +145,85 @@ describe 'test of services', () ->
                     latitude: 23.45
                     longitude: 67.89
             pathExpected = '/NPS_pseudo/2/23.45/67.89'
-            urlEncoderService.encode()
+            urlEncodeService.encode()
             expect location.path()
                 .toEqual pathExpected
 
 #=========================================================================================
     describe 'test of abstractLoader service', () ->
-        abstractLoaderService ={}
+        abstractLoadService ={}
         rootScope = {}
         beforeEach inject (_abstractLoader_, $rootScope) ->
-            abstractLoaderService = _abstractLoader_
+            abstractLoadService = _abstractLoader_
             rootScope = $rootScope
 
-        it 'ajax request success', () ->
-            abstractLoaderService.load()
+        it 'ajax abstract request success', () ->
+            abstractLoadService.load()
             rootScope.$on 'abstractLoaded', () ->
                 expect rootScope.abstract
                     .not.toBeDefined()
 
 #=========================================================================================
+    describe 'failure case: test of topojsonLoader service', () ->
+        topojsonLoadService = {}
+        rootScope = {}
+        beforeEach inject (_topojsonLoader_, $rootScope) ->
+            topojsonLoadService = _topojsonLoader_
+            rootScope = $rootScope
+
+        it 'ajax topojson request failes without np selection', () ->
+                result = topojsonLoadService.load()
+                expect(result).toEqual false
+
+    describe 'success case: test of topojsonLoader service', () ->
+        topojsonLoadService = {}
+        rootScope = {}
+        beforeEach inject (_topojsonLoader_, $rootScope) ->
+            topojsonLoadService = _topojsonLoader_
+            rootScope = $rootScope
+            rootScope.serial = npid:'NPS_rishirirebun'
+
+        it 'ajax topojson request success with np selection', () ->
+            result = topojsonLoadService.load()
+            rootScope.$on 'topojsonLoaded', () ->
+                expect rootScope.geojson
+                    .not.toBeDefined()
+
+#=========================================================================================
+    # describe 'mapForcuser service', () ->
+    #     mapForcusService = {}
+    #     NgMap = {}
+    #     beforeEach inject (_mapForcuser_, _NgMap_) ->
+    #         mapForcusService = _mapForcuser_
+    #         NgMap = _NgMap_
+    #
+    #     it 'forcus success', () ->
+    #         id = 'aaa'
+    #         NgMap.initMap(id)
+    #         NgMap.getMap(id).then (map) ->
+    #             lat = 123
+    #             lng = 54
+    #             mapForcusService.forcus(lat, lng)
+    #             map.addListener 'idle', () ->
+    #                 expect map.getCenter().lat()
+    #                     .toEqual lat
+    #                 expect map.getCenter().lng()
+    #                     .toEqual lng
+
+
+#=========================================================================================
     describe 'test of navCtrl controller', () ->
-        urlParserService = {}
+        urlParseService = {}
         $scope = {}
         rootScope = {}
         beforeEach inject (_urlParser_, _$controller_ , $rootScope) ->
-            urlParserService = _urlParser_
+            urlParseService = _urlParser_
             $controller = _$controller_
             rootScope = $rootScope
             navController = $controller 'navCtrl', {$scope: $scope}
 
         it 'onSelect method change rootScope.selected', () ->
-            urlParserService.parse()
+            urlParseService.parse()
             rootScope.$on 'urlParsed', () ->
                 $scope.onSelect 'NPS_dummy'
                 expect($scope.selected).toEqual 'NPS_dummy'
