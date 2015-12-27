@@ -19,9 +19,9 @@ echo "bin
 coffee
 coverage
 js/spec
-js/lib/angular-animate
 js/lib/angular-mocks
 node_modules
+sass
 sketch
 bower.json
 config.rb
@@ -30,6 +30,7 @@ gulpfile.coffee
 .travis.yml
 .gitignore
 README.md
+settings.json
 screenshot.png
 package.json" > .gitignore
 

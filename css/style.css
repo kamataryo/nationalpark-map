@@ -25,8 +25,8 @@ html, body {
   -moz-border-radius-bottomright: 10px;
   -webkit-border-bottom-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 20px 10px;
-  font-size: 20px;
+  padding: 30px 15px;
+  font-size: 30px;
   color: #eee;
   z-index: 10000;
 }
@@ -46,8 +46,8 @@ html, body {
   -moz-border-radius-bottomleft: 10px;
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  padding: 20px 10px;
-  font-size: 20px;
+  padding: 30px 15px;
+  font-size: 30px;
 }
 .navCloser:hover {
   cursor: pointer;
@@ -62,7 +62,7 @@ header#navigation {
   position: absolute;
   z-index: 1000;
   max-width: 300px;
-  width: 60%;
+  width: 90%;
   height: 100%;
   overflow: scroll;
   color: #eee;
@@ -73,6 +73,9 @@ header#navigation h1 {
   margin: 0;
   padding: 0.5em;
   background-color: rgba(0, 15, 0, 0.6);
+}
+header#navigation h1 a {
+  color: #eee;
 }
 header#navigation ul {
   background-color: rgba(0, 15, 0, 0.36);
@@ -94,7 +97,7 @@ header#navigation ul li.selectable:hover a {
 }
 header#navigation ul a {
   display: inline-block;
-  padding: .1em .5em;
+  padding: .2em .5em .1em .5em;
 }
 header#navigation ul a.selectable {
   cursor: pointer;
@@ -119,10 +122,14 @@ header#navigation table {
   display: block;
 }
 header#navigation table td:first-child {
+  font-size: 13.5px;
   padding: 0.2em;
   border: 1px solid white;
 }
 
+ul.stylers {
+  font-size: 13.5px;
+}
 ul.stylers li {
   padding-left: .5em;
   padding-bottom: .5em;
@@ -131,6 +138,9 @@ ul.stylers li {
 li.konosai {
   padding: 1em;
   background-color: rgba(0, 15, 0, 0.36);
+}
+li.konosai a {
+  color: #eee;
 }
 
 div#content {

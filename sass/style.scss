@@ -24,8 +24,8 @@ html, body {
 	background-color: rgba(#000f00, .2);
 	@include border-top-right-radius(10px);
 	@include border-bottom-right-radius(10px);
-	padding: 20px 10px;
-	font-size: 20px;
+	padding: 30px 15px;
+	font-size: 30px;
 	color:$fc;
 	z-index:10000;
 	&:hover{
@@ -40,8 +40,8 @@ html, body {
 	background-color: rgba(#000f00, .6);
 	@include border-top-left-radius(10px);
 	@include border-bottom-left-radius(10px);
-	padding: 20px 10px;
-	font-size: 20px;
+	padding: 30px 15px;
+	font-size: 30px;
 	&:hover {
 		cursor:pointer;
 		background-color: rgba(#fff, .2);
@@ -56,7 +56,7 @@ header#navigation {
 	position:absolute;
 	z-index:1000;
 	max-width:300px;
-	width:60%;
+	width:90%;
 	height:100%;
 	overflow:scroll;
 	color: $fc;
@@ -67,6 +67,9 @@ header#navigation {
 		margin:0;
 		padding: 0.5em;
 		background-color: rgba(#000f00, .6);
+		a {
+			color: $fc;
+		}
 	}
 	ul {
 		background-color: rgba(#000f00, .36);
@@ -85,7 +88,7 @@ header#navigation {
 		}
 		a {
 			display: inline-block;
-			padding: .1em .5em;
+			padding: .2em .5em .1em .5em;
 			&.selectable {
 				cursor:pointer;
 			}
@@ -110,6 +113,7 @@ header#navigation {
 		padding:1em;
 		display:block;
 		td:first-child {
+			font-size: $fs * .75;
 			padding:0.2em;
 			border:1px solid white;
 		}
@@ -122,11 +126,15 @@ ul.stylers {
 		padding-left:.5em;
 		padding-bottom:.5em;
 	}
+	font-size: $fs * .75;
 }
 
 li.konosai {
 	padding: 1em;
 	background-color: rgba(#000f00, .36);
+	a {
+		color :$fc;
+	}
 }
 
 div#content {
