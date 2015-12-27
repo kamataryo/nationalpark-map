@@ -25,6 +25,7 @@ app.service 'urlParser', [
                 latitude = defaultPosition.latitude
                 longitude = defaultPosition.longitude
                 elements = $location.path().split('/').filter (e) -> e isnt ''
+                queries = $location.search()
 
                 if elements.length > 3
                     npid = elements[0]
@@ -51,7 +52,7 @@ app.service 'urlParser', [
                         zoom: zoom
                         latitude: latitude
                         longitude: longitude
-
+                    pin: if queries.pin? then queries.pin else ''
                 $rootScope.serial = serial
                 $rootScope.$emit 'urlParsed'
                 return serial
@@ -73,6 +74,8 @@ app.service 'urlEncoder', [
                     $rootScope.serial.mapPosition.longitude
                 ].join '/'
                 $location.path path
+                if $rootScope.serial.pin
+                    $location.search pin:$rootScope.serial.pin
                 $rootScope.$apply()
         }
 ]
@@ -141,6 +144,10 @@ app.controller 'mainCtrl', [
         $scope.fiiStyles = $rootScope.fillStyles
         urlParser.parse()
         abstractLoader.load()
+
+        $scope.navOpen = true
+        $scope.toggleNav = () ->
+            $scope.navOpen = ! $scope.navOpen
 ]
 
 app.controller 'navCtrl', [
@@ -162,6 +169,8 @@ app.controller 'navCtrl', [
             urlEncoder.encode()
             # https://docs.angularjs.org/error/$rootScope/inprog?p0=$apply
             # $apply()の意味を私がわかっていない。2度目以降は失敗する。最初に一度$apply()しておけばいいのか..?
+
+        # bind style values
         $rootScope.lineColor = $scope.lineColor
         $rootScope.$watch ()->
             return $scope.lineColor
@@ -190,6 +199,7 @@ app.controller 'mapCtrl', [
         # reflect to the scope and initialize map
         $scope.zoom = $rootScope.serial.mapPosition.zoom
         $scope.latlng = $rootScope.serial.mapPosition.latitude + ',' + $rootScope.serial.mapPosition.longitude
+        $scope.pin = ''
 
         NgMap.getMap().then (map) ->
 
@@ -202,14 +212,35 @@ app.controller 'mapCtrl', [
                     fillColor: if grade? then $rootScope.fillStyles[grade] else $scope.styles['else']
                 }
 
+
+            # set initial pin if queried
+            if $rootScope.serial.pin
+                 $scope.pin = $rootScope.serial.pin
+
+
+            $scope.setPinCallback = (event) ->
+                $scope.pin = [
+                    event.latLng.lat()
+                    event.latLng.lng()
+                ].join ','
+                $rootScope.serial.pin = $scope.pin
+                urlEncoder.encode()
+                $scope.$apply()
+
+
             $scope.addData = () ->
                 map.data.forEach (feature) -> map.data.remove feature # synchronous
                 map.data.addGeoJson $rootScope.geojson
                 map.data.setStyle $scope.mapStyler
 
+                map.data.addListener 'click', $scope.setPinCallback
                 # lat = ($rootScope.abstract[$rootScope.serial.npid].top + $rootScope.abstract[$rootScope.serial.npid].bottom) / 2
                 # lng = ($rootScope.abstract[$rootScope.serial.npid].left + $rootScope.abstract[$rootScope.serial.npid].right) / 2
                 # map.panTo new google.maps.LatLng lat, lng
+
+            map.addListener 'click', $scope.setPinCallback
+
+
 
             map.addListener 'idle', () ->
                 $rootScope.serial.mapPosition =
@@ -476,27 +507,7 @@ return
 # 		uodateLoadingState url,'finish'
 #
 #
-# #現在の座標位置をもとに、表示範囲内のgeojsonを全て読み込む
-# geojsonAutoload = () ->
-# 	if !abstract then return false
 #
-# 	margin = -0.2#margin = -20%
-# 	top = map.getBounds().getNorthEast().lat()
-# 	right = map.getBounds().getNorthEast().lng()
-# 	bottom = map.getBounds().getSouthWest().lat()
-# 	left = map.getBounds().getSouthWest().lng()
-# 	top += (1 + margin) * (top - bottom)
-# 	right += (1 + margin) * (right - left)
-# 	bottom -= (1 + margin) * (top - bottom)
-# 	left -= (1 + margin) * (right - left)
-#
-# 	for basename, information of abstract
-# 		c1 = information.top > bottom
-# 		c2 = information.bottom < top
-# 		c3 = information.right > left
-# 		c4 = information.left < right
-# 		if c1 and c2 and c3 and c4
-# 			loadTopojson basename
 #
 #
 # #自動読み込みのオンオフ

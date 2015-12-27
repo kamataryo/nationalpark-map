@@ -86,7 +86,7 @@ gulp.task 'watch', () ->
 
 gulp.task 'default', ['coffee','compass' ] # exclude sketch
 gulp.task 'dev', ['sketch', 'compass','coffee','karma','connect', 'watch' ]
-
+gulp.task 'devstyle', ['compass','coffee','connect','watch']
 
 
 # ==========upper for developing==========

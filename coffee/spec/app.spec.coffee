@@ -26,6 +26,7 @@ describe 'test of services', () ->
                     zoom:12
                     latitude: 34.5
                     longitude: 67.8
+                pin: ''
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
@@ -43,6 +44,7 @@ describe 'test of services', () ->
             serialExpected =
                 npid: 'NPS_uuu'
                 mapPosition: urlParseService.getDefaultPosition()
+                pin: ''
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
@@ -62,6 +64,7 @@ describe 'test of services', () ->
                     zoom:12
                     latitude: 34.5
                     longitude: 67.8
+                pin: ''
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
@@ -78,6 +81,7 @@ describe 'test of services', () ->
             serialExpected =
                 npid: ''
                 mapPosition: urlParseService.getDefaultPosition()
+                pin: ''
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
@@ -93,6 +97,7 @@ describe 'test of services', () ->
             serialExpected =
                 npid: 'NPS_yyy'
                 mapPosition: urlParseService.getDefaultPosition()
+                pin: ''
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
@@ -107,6 +112,7 @@ describe 'test of services', () ->
             serialExpected =
                 npid: 'NPS_zzz'
                 mapPosition: urlParseService.getDefaultPosition()
+                pin: ''
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
@@ -119,12 +125,27 @@ describe 'test of services', () ->
             serialExpected =
                 npid: ''
                 mapPosition: urlParseService.getDefaultPosition()
+                pin: ''
             localPath = elements.join '/'
             location.path localPath
             rootScope.$apply() # reflect to angular life
             serialized = urlParseService.parse()# mapPosition serialization on rootScope
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
+
+
+        it 'query strings detection success', () ->
+            elements = []
+            serialExpected =
+                npid: ''
+                mapPosition: urlParseService.getDefaultPosition()
+                pin: '12,34'
+            localPath = elements.join '/'
+            location.search pin:'12,34'
+            serialized = urlParseService.parse()# mapPosition serialization on rootScope
+            expect JSON.stringify serialized
+                .toEqual JSON.stringify serialExpected
+
 
 #=========================================================================================
     describe 'test of urlEncoder service', () ->
@@ -148,6 +169,8 @@ describe 'test of services', () ->
             urlEncodeService.encode()
             expect location.path()
                 .toEqual pathExpected
+
+
 
 #=========================================================================================
     describe 'test of abstractLoader service', () ->

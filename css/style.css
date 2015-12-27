@@ -1,98 +1,150 @@
+@charset "UTF-8";
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   position: relative;
   line-height: 1.4;
-  color: #111;
-  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  font-weight: lighter;
 }
 
-#map-canvas {
-  height: 100%;
-  z-index: 0;
+.sr-only {
+  display: none;
 }
 
-#controls {
+.navOpener {
   position: absolute;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.6);
-  top: 80px;
-  padding: 10px;
-  margin-left: 0;
-  -moz-border-radius-topright: 8px;
-  -webkit-border-top-right-radius: 8px;
-  border-top-right-radius: 8px;
-  -moz-border-radius-bottomright: 8px;
-  -webkit-border-bottom-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  left: 0;
+  top: 50%;
+  background-color: rgba(0, 15, 0, 0.2);
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px 10px;
+  font-size: 20px;
+  color: #eee;
+  z-index: 10000;
 }
-
-#opacity-control {
-  font-size: 0.8em;
-  padding: 1px 5px 0 5px;
-}
-#opacity-control #opacity-range {
-  padding-top: 2px;
-}
-
-#move-to-current {
-  position: relative;
-  opacity: 1;
-}
-#move-to-current:hover {
+.navOpener:hover {
   cursor: pointer;
+  background-color: rgba(0, 15, 0, 0.6);
 }
 
-#auto-overlay {
-  position: relative;
-  opacity: 1;
+.navCloser {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background-color: rgba(0, 15, 0, 0.6);
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 20px 10px;
+  font-size: 20px;
 }
-#auto-overlay:hover {
+.navCloser:hover {
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-label[for=auto-overlay] {
-  position: relative;
-  opacity: 1;
-}
-label[for=auto-overlay]:hover {
-  cursor: pointer;
+.navClosed {
+  display: none;
 }
 
-#handy-overlay {
-  position: relative;
-  opacity: 1;
+.hide {
+  display: none;
 }
 
-#load-statement {
-  position: relative;
-  opacity: 0.5;
+header#navigation {
+  position: absolute;
+  z-index: 1000;
+  max-width: 300px;
+  width: 60%;
+  height: 100%;
+  overflow: scroll;
+  color: #eee;
+  background-color: transparent;
 }
-
-#geolocation-statement {
-  position: relative;
-  opacity: 0.5;
+header#navigation h1 {
+  font-size: 18px;
+  margin: 0;
+  background-color: rgba(0, 15, 0, 0.6);
 }
-
-h1, h2 {
+header#navigation ul {
+  background-color: rgba(0, 15, 0, 0.36);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header#navigation ul li.active {
+  background-color: rgba(0, 15, 0, 0.8);
+}
+header#navigation ul li.selectable {
+  color: #d5d5d5;
+}
+header#navigation ul li.selectable:hover {
+  background-color: rgba(0, 15, 0, 0.8);
+}
+header#navigation ul li.selectable:hover a {
+  color: #eee;
+}
+header#navigation ul a {
   display: inline-block;
-  position: relative;
-  opacity: 1;
-  padding: 1px 5px 0 5px;
-  margin: 1px 0 0 0;
-  font-size: 0.8em;
 }
-h1:hover, h2:hover {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.2);
+header#navigation ul a.selectable {
   cursor: pointer;
 }
+header#navigation ul a.active {
+  color: #eee;
+}
+header#navigation ul span.nav-size {
+  font-size: 13.5px;
+  color: #a2a2a2;
+}
+header#navigation ul span.nav-size:before {
+  content: '[';
+}
+header#navigation ul span.nav-size:after {
+  content: ']';
+}
+header#navigation table {
+  background-color: rgba(0, 15, 0, 0.36);
+  display: inline-block;
+  width: 100%;
+  padding: 1em;
+}
 
-p {
-  margin: 2px;
-  padding: 0 0 0 10px;
-  font-size: 0.8em;
+ul.stylers {
+  padding: 1em;
+}
+ul.stylers li {
+  padding-bottom: .5em;
+}
+ul.stylers li:last-child {
+  padding-bottom: 0;
+}
+
+li.konosai {
+  padding: 1em;
+  background-color: rgba(0, 15, 0, 0.6);
+}
+
+div#content {
+  position: static;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+div#content > div {
+  height: 100%;
+}
+div#content ng-map {
+  height: 100%;
 }
