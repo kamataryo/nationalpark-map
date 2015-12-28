@@ -76,6 +76,7 @@ header#navigation h1 {
 }
 header#navigation h1 a {
   color: #eee;
+  text-decoration: none;
 }
 header#navigation ul {
   background-color: rgba(0, 15, 0, 0.36);
@@ -121,8 +122,10 @@ header#navigation table {
   padding: 1em;
   display: block;
 }
-header#navigation table td:first-child {
+header#navigation table td {
   font-size: 13.5px;
+}
+header#navigation table td:first-child {
   padding: 0.2em;
   border: 1px solid white;
 }

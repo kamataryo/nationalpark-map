@@ -69,6 +69,7 @@ header#navigation {
 		background-color: rgba(#000f00, .6);
 		a {
 			color: $fc;
+			text-decoration: none;
 		}
 	}
 	ul {
@@ -112,10 +113,12 @@ header#navigation {
 		display: inline-block;
 		padding:1em;
 		display:block;
-		td:first-child {
+		td {
 			font-size: $fs * .75;
-			padding:0.2em;
-			border:1px solid white;
+			&:first-child {
+				padding:0.2em;
+				border:1px solid white;
+			}
 		}
 	}
 

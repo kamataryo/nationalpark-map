@@ -9,17 +9,18 @@
   </head>
 
   <body ng-controller="mainCtrl">
+
     <div class="navOpener" ng-hide="navOpen" ng-click="toggleNav()">&gt;</div>
     <header id="navigation" ng-show="navOpen"  ng-controller="navCtrl">
       <div class="navCloser" ng-click="toggleNav()">&lt;</div>
         <nav>
-    			<h1><a href="#" onclick="console.log(window);">日本の国立公園</a></h1>
+    			<h1><a href="#">日本の国立公園</a></h1>
           <ul id="#mainMenu">
             <li>
               <h2 class="sr-only">国立公園のリスト</h2>
               <ul>
                   <li ng-repeat="(npid, npinfo) in npAbstract" ng-class="{active: npid===selected, selectable: npid!==selected}">
-                    <a ng-click="onSelect(npid)" ng-class="{active: npid===selected, selectable: npid!==selected}" ng-bind="npinfo.name + '国立公園'"></a>
+                    <a ng-click="onSelect(npid, true)" ng-class="{active: npid===selected, selectable: npid!==selected}" ng-bind="npinfo.name + '国立公園'"></a>
                     <!-- <span class="nav-size">
                       <span class="nav-size_value" ng-bind="npinfo.size"></span>
                       <span class="nav-size_unit" ng-bind="npinfo.unit"></span>
@@ -79,7 +80,7 @@
             <li class="konosai">
               <h2 style="font-size:18px">このサイトについて</h2>
               <p style="font-size:12px">
-              このサイト「国立公園区域オンラインマップ」は、<a href="http://www.biodic.go.jp/trialSystem/top.html">自然環境情報GIS</a> <a href="http://www.biodic.go.jp/trialSystem/info/nps.html">国立公園の区域等</a>（<a href="http://www.biodic.go.jp/">環境省生物多様性センター</a>）のデータを加工し作成したものです。国立公園のポリゴンデータには、<a href="http://www.biodic.go.jp/copyright/index.html">政府標準利用規約（第1.0版）</a>が適用されています。このサイトに表示される公園区域は、あくまで目安に留めておくことをお勧めします。正確な国立公園の区域や地種区分等を調べる際は、当該国立公園を所管する環境省の自然保護官事務所等に問い合わせを行うことをお勧めします。
+              このサイト「国立公園オンラインマップ」は、<a href="http://www.biodic.go.jp/trialSystem/top.html">自然環境情報GIS</a> <a href="http://www.biodic.go.jp/trialSystem/info/nps.html">国立公園の区域等</a>（<a href="http://www.biodic.go.jp/">環境省生物多様性センター</a>）のデータを加工し作成したものです。国立公園のポリゴンデータには、<a href="http://www.biodic.go.jp/copyright/index.html">政府標準利用規約（第1.0版）</a>が適用されています。このサイトに表示される公園区域は、あくまで目安に留めておくことをお勧めします。正確な国立公園の区域や地種区分等を調べる際は、当該国立公園を所管する環境省の自然保護官事務所等に問い合わせを行うことをお勧めします。
               </p>
             </li>
           </ul>

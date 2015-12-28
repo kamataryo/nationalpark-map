@@ -76,6 +76,7 @@ app.service 'urlEncoder', [
                 $location.path path
                 if $rootScope.serial.pin
                     $location.search pin:$rootScope.serial.pin
+                # TODO $applyを適切に使うようにする
                 $rootScope.$apply()
         }
 ]
@@ -112,18 +113,16 @@ app.service 'topojsonLoader', [
                     $rootScope.geojson = (topojson.feature json, json.objects[$rootScope.serial.npid]) #TopoJSON -> GeoJSON
         }
 ]
-
-# app.service 'mapForcuser', [
-#     'NgMap'
-#     (NgMap) ->
-#         return {
-#             forcus: (lat, lng) ->
-#                 console.log 1
-#                 NgMap.getMap().then (map) ->
-#                     map.panTo new google.maps.LatLng 10,10#lat, lng
-#         }
-# ]
-
+app.service 'mapfocuser', [
+    'NgMap'
+    (NgMap) ->
+        return {
+            focus: (lat, lng) ->
+                console.log 'aaa'
+                NgMap.getMap().then (map) ->
+                    map.panTo new google.maps.LatLng lat, lng
+        }
+]
 
 app.controller 'mainCtrl', [
     '$scope'
@@ -131,6 +130,7 @@ app.controller 'mainCtrl', [
     'urlParser'
     'abstractLoader'
     ($scope,$rootScope, urlParser, abstractLoader) ->
+        #define fill style
         $rootScope.fillStyles =
             '特別保護地区': '#dddd66'
             '海域公園地区': '#2233dd'
@@ -145,6 +145,7 @@ app.controller 'mainCtrl', [
         urlParser.parse()
         abstractLoader.load()
 
+        #toggle side nav
         $scope.navOpen = true
         $scope.toggleNav = () ->
             $scope.navOpen = ! $scope.navOpen
@@ -155,39 +156,40 @@ app.controller 'navCtrl', [
     '$rootScope'
     'topojsonLoader'
     'urlEncoder'
-    ($scope, $rootScope, topolsonLoader, urlEncoder) ->
+    'mapfocuser'
+    ($scope, $rootScope, topolsonLoader, urlEncoder, mapfocuser) ->
         $rootScope.$on 'abstractLoaded', () ->
             $scope.npAbstract = $rootScope.abstract
-            if $rootScope.serial then $scope.onSelect($rootScope.serial.npid)
+            if $rootScope.serial then $scope.onSelect($rootScope.serial.npid, false)
 
-        $scope.onSelect = (npid) ->
+        $scope.onSelect = (npid, focus) ->
             if $scope.selected
                 if npid is $scope.selected then return
             $scope.selected = npid
             $rootScope.serial.npid = npid
+
+            if focus
+                lat = ($scope.npAbstract[npid].top + $scope.npAbstract[npid].bottom) / 2
+                lng = ($scope.npAbstract[npid].right + $scope.npAbstract[npid].left) / 2
+                mapfocuser.focus lat,lng
+
             topolsonLoader.load()
             urlEncoder.encode()
             # https://docs.angularjs.org/error/$rootScope/inprog?p0=$apply
             # $apply()の意味を私がわかっていない。2度目以降は失敗する。最初に一度$apply()しておけばいいのか..?
+            # TODO encoderサービスを治す
 
-        # bind style values
-        $rootScope.lineColor = $scope.lineColor
-        $rootScope.$watch ()->
-            return $scope.lineColor
-        ,() ->
+        reflectStyles = () ->
             $rootScope.lineColor = $scope.lineColor
-
-        $rootScope.lineWidth = $scope.lineWidth
-        $rootScope.$watch ()->
-            return $scope.lineWidth
-        ,() ->
             $rootScope.lineWidth = $scope.lineWidth
-
-        $rootScope.opacity = $scope.opacity
-        $rootScope.$watch ()->
-            return $scope.opacity
-        ,() ->
             $rootScope.opacity = $scope.opacity
+        getStyleId = () ->
+            '' + $scope.lineColor + $scope.lineWidth + $scope.opacity
+        # for first
+        reflectStyles()
+        #bind style values
+        $rootScope.$watch getStyleId, reflectStyles
+
 ]
 
 app.controller 'mapCtrl', [
@@ -197,6 +199,7 @@ app.controller 'mapCtrl', [
     'urlEncoder'
     ($scope, $rootScope, NgMap, urlEncoder) ->
         # reflect to the scope and initialize map
+        # TODO:$watchで書き換え
         $scope.zoom = $rootScope.serial.mapPosition.zoom
         $scope.latlng = $rootScope.serial.mapPosition.latitude + ',' + $rootScope.serial.mapPosition.longitude
         $scope.pin = ''
@@ -212,13 +215,12 @@ app.controller 'mapCtrl', [
                     fillColor: if grade? then $rootScope.fillStyles[grade] else $scope.styles['else']
                 }
 
-
             # set initial pin if queried
+            # TODO:$watchで書き換え
             if $rootScope.serial.pin
                  $scope.pin = $rootScope.serial.pin
 
-
-            $scope.setPinCallback = (event) ->
+            $scope.pinSetCallback = (event) ->
                 $scope.pin = [
                     event.latLng.lat()
                     event.latLng.lng()
@@ -227,21 +229,19 @@ app.controller 'mapCtrl', [
                 urlEncoder.encode()
                 $scope.$apply()
 
-
             $scope.addData = () ->
                 map.data.forEach (feature) -> map.data.remove feature # synchronous
                 map.data.addGeoJson $rootScope.geojson
                 map.data.setStyle $scope.mapStyler
+                map.data.addListener 'click', $scope.pinSetCallback
 
-                map.data.addListener 'click', $scope.setPinCallback
-                # lat = ($rootScope.abstract[$rootScope.serial.npid].top + $rootScope.abstract[$rootScope.serial.npid].bottom) / 2
-                # lng = ($rootScope.abstract[$rootScope.serial.npid].left + $rootScope.abstract[$rootScope.serial.npid].right) / 2
-                # map.panTo new google.maps.LatLng lat, lng
+            $rootScope.$watch () ->
+                return $rootScope.geojson
+            , $scope.addData
 
-            map.addListener 'click', $scope.setPinCallback
+            map.addListener 'click', $scope.pinSetCallback
 
-
-
+            # rewrite URL when map have finished moving
             map.addListener 'idle', () ->
                 $rootScope.serial.mapPosition =
                     zoom: map.getZoom()
@@ -249,15 +249,10 @@ app.controller 'mapCtrl', [
                     longitude: map.getCenter().lng()
                 urlEncoder.encode()
 
-            $rootScope.$watch () -> # watch expression
-                return $rootScope.geojson
-            , $scope.addData # listener
-
             # bind style values
             for style in ['opacity', 'lineColor', 'lineWidth']
                 $rootScope.$watch style ,() ->
                     map.data.setStyle $scope.mapStyler
-
 ]
 
 
@@ -266,73 +261,6 @@ app.controller 'mapCtrl', [
 
 return
 
-#
-# app.controller 'mainCtrl', [
-#     'SSS'
-#     '$scope'
-#     '$location'
-#     '$http'
-#     'requestAbstract'
-#     'clientSideRouting'
-#     'NgMap'
-#     (SSS, $scope, $location, $http,requestAbstract,clientSideRouting, NgMap) ->
-#         # read abstract json of national park datum
-#         $scope.selected = {}
-#         requestAbstract.success (data) ->
-#             $scope.nplist = SSS.nplist
-#             id = SSS.located.id
-#             $scope.onSelect(id)
-#
-#
-#
-#
-#
-#         mapStyler = (feature) ->
-#             grade = feature.getProperty 'grade'
-#             {
-#                 strokeColor: $scope.lineColor
-#                 strokeWeight: $scope.lineWidth
-#                 fillOpacity: $scope.opacity
-#                 fillColor: if grade? then $scope.styles[grade] else $scope.styles['else']
-#             }
-#
-#         # nationalpark selected
-#         #$scope.onSelect = (id) ->
-#             np = $scope.nplist[id]
-#             console.log np
-#             url = "./topojson/#{id}.topojson"
-#             $scope.selected =
-#                 id: id
-#                 url:  url
-#                 name: np.name + '国立公園'
-#                 center:
-#                     lat: (np.left + np.right)  / 2
-#                     lng: (np.top  + np.bottom) / 2
-#             query =
-#                 url: url
-#                 method: 'GET'
-#
-#             $http(query).success (json, status) ->
-#                 $scope.selected.geoJSON = (topojson.feature json, json.objects[id])# #TopoJSON -> GeoJSON
-#
-#                 # google map manipulation
-
-#
-#
-#
-#         NgMap.getMap().then (map) ->
-#             # bind style values
-#             for style in ['opacity', 'lineColor', 'lineWidth']
-#                 $scope.$watch style ,() ->
-#                     map.data.setStyle mapStyler
-#
-
-#
-#
-#
-#
-#
-# return
 #
 #
 # # 一回だけ現在地を取得
@@ -439,48 +367,11 @@ return
 # 		if $('#auto-overlay').is ':checked' then geojsonAutoload()
 #
 #
-# 	#クリックで情報ウインドウを表示
-# 	map.data.addListener 'click', (e) ->
-# 		if infowindow isnt null
-# 			infowindow.close()
-# 			infowindow = null
-# 		if infomarker isnt null
-# 			infomarker.setMap null
-# 			infomarker = null
-# 		infowindow = new google.maps.InfoWindow
-# 			content: "#{e.feature.getProperty 'name'}国立公園<br>#{e.feature.getProperty 'grade'}"
-# 		infomarker = new google.maps.Marker
-# 			position: e.latLng
-# 			map: map
-# 			icon: './img/selected-feature.svg'
-# 		infowindow.addListener 'closeclick', () ->
-# 			infomarker.setMap null
-# 			infomarker = null
-# 		infowindow.open map,infomarker
+
 #
+
 #
-# # geojsonフィーチャーの地種とそれに対するイベントから適応するスタイルを決定する
-# featureStyle = (grade, opacity) ->
-# 	result =
-# 		strokeColor: '#eeeeee'
-# 		strokeWeight: 1.5
-# 		fillOpacity: 0.40
-# 	if opacity?
-# 		result.fillOpacity = opacity
-# 	if grade?
-# 		result.fillColor = gradeFill[grade]
-# 	return result
-#
-#
-# #topojson読み込み中の状態表示
-# uodateLoadingState = (loadStateID, state) ->
-# 	if state is 'start'
-# 		loadingque.push loadStateID
-# 		$('#load-statement').addClass 'fa-spin'
-# 	else if 'finish'
-# 		loadingque.pop loadStateID
-# 		if loadingque.length is 0
-# 			$('#load-statement').removeClass 'fa-spin'
+
 #
 #
 # # geojson layerの追加と設定
