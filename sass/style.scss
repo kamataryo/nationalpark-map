@@ -10,41 +10,44 @@ html, body {
 	line-height:1.4;
 	font-size: $fs;
 	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
-    font-weight: lighter;
+    font-weight: 100;
 }
 
 .sr-only {
 	display:none;
 }
 
-.navOpener{
+$navbar-max-width: 280px;
+
+@mixin toggle-button-appearance {
 	position:absolute;
-	left:0;
 	top:50%;
-	background-color: rgba(#000f00, .2);
 	@include border-top-right-radius(10px);
 	@include border-bottom-right-radius(10px);
-	padding: 30px 15px;
-	font-size: 30px;
+	padding: 30px 10px;
+	font-size: 20px;
 	color:$fc;
 	z-index:10000;
 	&:hover{
 		cursor:pointer;
+	}
+}
+
+.nav_opener{
+	@include toggle-button-appearance;
+	left:0;
+	background-color: rgba(#000f00, .36);
+	&:hover{
 		background-color: rgba(#000f00, .6);
 	}
 }
-.navCloser {
-	position:absolute;
-	right:0;
-	top:50%;
+
+.nav_closer {
+	@include toggle-button-appearance;
+	left:$navbar-max-width; //stick to navigation
 	background-color: rgba(#000f00, .6);
-	@include border-top-left-radius(10px);
-	@include border-bottom-left-radius(10px);
-	padding: 30px 15px;
-	font-size: 30px;
 	&:hover {
-		cursor:pointer;
-		background-color: rgba(#fff, .2);
+		background-color: rgba(#000f00, .8);
 	}
 }
 
@@ -55,8 +58,7 @@ html, body {
 header#navigation {
 	position:absolute;
 	z-index:1000;
-	max-width:300px;
-	width:90%;
+	width:$navbar-max-width;
 	height:100%;
 	overflow:scroll;
 	color: $fc;
@@ -65,16 +67,20 @@ header#navigation {
 	h1 {
 		font-size: $fs;
 		margin:0;
-		padding: 0.5em;
-		background-color: rgba(#000f00, .6);
+		padding: .6em .5em .4em .5em;
+		background-color: rgba(#000f00, .8);
 		a {
 			color: $fc;
 			text-decoration: none;
 		}
 	}
+
 	ul {
 		background-color: rgba(#000f00, .36);
 		margin:0;
+		padding:0;
+		list-style:none;
+
 		li.active {
 			background-color: rgba(#000f00, .8);
 		}
@@ -87,7 +93,8 @@ header#navigation {
 				}
 			}
 		}
-		a {
+
+		a.npitem {
 			display: inline-block;
 			padding: .2em .5em .1em .5em;
 			&.selectable {
@@ -97,18 +104,18 @@ header#navigation {
 				color: $fc;
 			}
 		}
-		padding:0;
-		list-style:none;
-		span.nav-size {
-			font-size: $fs * .75;
-			color: darken($fc, 30%);
-			&:before {content:'[';}
-			// &_value {}
-			// &_unit {}
-			&:after {content:']';}
-		}
+
+		// xxk国立公園 [yy kB]
+		// span.nav-size {
+		// 	font-size: $fs * .75;
+		// 	color: darken($fc, 30%);
+		// 	&:before {content:'[';}
+		// 	&:after {content:']';}
+		// }
+
 	}
-	table {
+
+	table.legend {
 		background-color: rgba(#000f00, .36);
 		display: inline-block;
 		padding:1em;
@@ -122,23 +129,52 @@ header#navigation {
 		}
 	}
 
+	ul.stylers {
+		list-style:none;
+		font-size: $fs * .75;
+		li {
+			display: block;
+			list-style:none;
+			padding: .5em .5em .5em 1em;
+		}
+		label {
+			display:inline-block;
+			margin-right: 10px;
+			width: 60px;
+		}
+		input {
+			display: inline-block;
+			&#opacity {
+				width: 90px;
+			}
+			&#line-color {
+				width: 45px;
+			}
+			&#line-width {
+				width: 45px;
+				text-align: right;
+			}
+		}
+	}
+
+	li.about {
+		padding: 1em;
+		background-color: rgba(#000f00, .36);
+		h2 {
+			font-size: $fs;
+		}
+		p {
+			font-size: $fs * .75;
+		}
+		a {
+			color :$fc;
+		}
+	}
 }
 
-ul.stylers {
-	li {
-		padding-left:.5em;
-		padding-bottom:.5em;
-	}
-	font-size: $fs * .75;
-}
 
-li.konosai {
-	padding: 1em;
-	background-color: rgba(#000f00, .36);
-	a {
-		color :$fc;
-	}
-}
+
+
 
 div#content {
 	position:static;

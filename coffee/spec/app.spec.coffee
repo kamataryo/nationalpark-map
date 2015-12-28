@@ -170,8 +170,6 @@ describe 'test of services', () ->
             expect location.path()
                 .toEqual pathExpected
 
-
-
 #=========================================================================================
     describe 'test of abstractLoader service', () ->
         abstractLoadService ={}
@@ -233,7 +231,6 @@ describe 'test of services', () ->
     #                 expect map.getCenter().lng()
     #                     .toEqual lng
 
-
 #=========================================================================================
     describe 'test of navCtrl controller', () ->
         urlParseService = {}
@@ -245,11 +242,10 @@ describe 'test of services', () ->
             rootScope = $rootScope
             navController = $controller 'navCtrl', {$scope: $scope}
 
-        it 'onSelect method change rootScope.selected', () ->
+        it 'method onSelect change rootScope.selected', () ->
             urlParseService.parse()
             rootScope.$on 'urlParsed', () ->
                 $scope.onSelect 'NPS_dummy'
                 expect($scope.selected).toEqual 'NPS_dummy'
-
 
     #it '必ず失敗させるおまじない', () -> expect(false).toEqual true

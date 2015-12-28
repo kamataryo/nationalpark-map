@@ -7,51 +7,57 @@ html, body {
   line-height: 1.4;
   font-size: 18px;
   font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
-  font-weight: lighter;
+  font-weight: 100;
 }
 
 .sr-only {
   display: none;
 }
 
-.navOpener {
+.nav_opener {
   position: absolute;
-  left: 0;
   top: 50%;
-  background-color: rgba(0, 15, 0, 0.2);
   -moz-border-radius-topright: 10px;
   -webkit-border-top-right-radius: 10px;
   border-top-right-radius: 10px;
   -moz-border-radius-bottomright: 10px;
   -webkit-border-bottom-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 30px 15px;
-  font-size: 30px;
+  padding: 30px 10px;
+  font-size: 20px;
   color: #eee;
   z-index: 10000;
+  left: 0;
+  background-color: rgba(0, 15, 0, 0.36);
 }
-.navOpener:hover {
+.nav_opener:hover {
   cursor: pointer;
+}
+.nav_opener:hover {
   background-color: rgba(0, 15, 0, 0.6);
 }
 
-.navCloser {
+.nav_closer {
   position: absolute;
-  right: 0;
   top: 50%;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 30px 10px;
+  font-size: 20px;
+  color: #eee;
+  z-index: 10000;
+  left: 280px;
   background-color: rgba(0, 15, 0, 0.6);
-  -moz-border-radius-topleft: 10px;
-  -webkit-border-top-left-radius: 10px;
-  border-top-left-radius: 10px;
-  -moz-border-radius-bottomleft: 10px;
-  -webkit-border-bottom-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  padding: 30px 15px;
-  font-size: 30px;
 }
-.navCloser:hover {
+.nav_closer:hover {
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.2);
+}
+.nav_closer:hover {
+  background-color: rgba(0, 15, 0, 0.8);
 }
 
 .hide {
@@ -61,8 +67,7 @@ html, body {
 header#navigation {
   position: absolute;
   z-index: 1000;
-  max-width: 300px;
-  width: 90%;
+  width: 280px;
   height: 100%;
   overflow: scroll;
   color: #eee;
@@ -71,8 +76,8 @@ header#navigation {
 header#navigation h1 {
   font-size: 18px;
   margin: 0;
-  padding: 0.5em;
-  background-color: rgba(0, 15, 0, 0.6);
+  padding: .6em .5em .4em .5em;
+  background-color: rgba(0, 15, 0, 0.8);
 }
 header#navigation h1 a {
   color: #eee;
@@ -96,53 +101,67 @@ header#navigation ul li.selectable:hover {
 header#navigation ul li.selectable:hover a {
   color: #eee;
 }
-header#navigation ul a {
+header#navigation ul a.npitem {
   display: inline-block;
   padding: .2em .5em .1em .5em;
 }
-header#navigation ul a.selectable {
+header#navigation ul a.npitem.selectable {
   cursor: pointer;
 }
-header#navigation ul a.active {
+header#navigation ul a.npitem.active {
   color: #eee;
 }
-header#navigation ul span.nav-size {
-  font-size: 13.5px;
-  color: #a2a2a2;
-}
-header#navigation ul span.nav-size:before {
-  content: '[';
-}
-header#navigation ul span.nav-size:after {
-  content: ']';
-}
-header#navigation table {
+header#navigation table.legend {
   background-color: rgba(0, 15, 0, 0.36);
   display: inline-block;
   padding: 1em;
   display: block;
 }
-header#navigation table td {
+header#navigation table.legend td {
   font-size: 13.5px;
 }
-header#navigation table td:first-child {
+header#navigation table.legend td:first-child {
   padding: 0.2em;
   border: 1px solid white;
 }
-
-ul.stylers {
+header#navigation ul.stylers {
+  list-style: none;
   font-size: 13.5px;
 }
-ul.stylers li {
-  padding-left: .5em;
-  padding-bottom: .5em;
+header#navigation ul.stylers li {
+  display: block;
+  list-style: none;
+  padding: .5em .5em .5em 1em;
 }
-
-li.konosai {
+header#navigation ul.stylers label {
+  display: inline-block;
+  margin-right: 10px;
+  width: 60px;
+}
+header#navigation ul.stylers input {
+  display: inline-block;
+}
+header#navigation ul.stylers input#opacity {
+  width: 90px;
+}
+header#navigation ul.stylers input#line-color {
+  width: 45px;
+}
+header#navigation ul.stylers input#line-width {
+  width: 45px;
+  text-align: right;
+}
+header#navigation li.about {
   padding: 1em;
   background-color: rgba(0, 15, 0, 0.36);
 }
-li.konosai a {
+header#navigation li.about h2 {
+  font-size: 18px;
+}
+header#navigation li.about p {
+  font-size: 13.5px;
+}
+header#navigation li.about a {
   color: #eee;
 }
 

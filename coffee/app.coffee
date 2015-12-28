@@ -14,7 +14,6 @@ app.service 'urlParser', [
             zoom:10
             latitude: 35.680795
             longitude: 139.76721
-
         return {
             getDefaultPosition: () ->
                 defaultPosition
@@ -118,7 +117,6 @@ app.service 'mapfocuser', [
     (NgMap) ->
         return {
             focus: (lat, lng) ->
-                console.log 'aaa'
                 NgMap.getMap().then (map) ->
                     map.panTo new google.maps.LatLng lat, lng
         }
@@ -145,10 +143,13 @@ app.controller 'mainCtrl', [
         urlParser.parse()
         abstractLoader.load()
 
-        #toggle side nav
+        #navbar firstsetting
         $scope.navOpen = true
+        $scope.toggleCharacter = '<'
+        #toggle side navbar
         $scope.toggleNav = () ->
             $scope.navOpen = ! $scope.navOpen
+            $scope.toggleCharacter = if $scope.navOpen then '<' else '>'
 ]
 
 app.controller 'navCtrl', [
@@ -162,6 +163,7 @@ app.controller 'navCtrl', [
             $scope.npAbstract = $rootScope.abstract
             if $rootScope.serial then $scope.onSelect($rootScope.serial.npid, false)
 
+
         $scope.onSelect = (npid, focus) ->
             if $scope.selected
                 if npid is $scope.selected then return
@@ -169,9 +171,12 @@ app.controller 'navCtrl', [
             $rootScope.serial.npid = npid
 
             if focus
-                lat = ($scope.npAbstract[npid].top + $scope.npAbstract[npid].bottom) / 2
-                lng = ($scope.npAbstract[npid].right + $scope.npAbstract[npid].left) / 2
-                mapfocuser.focus lat,lng
+                top = $scope.npAbstract[npid].top
+                bottom = $scope.npAbstract[npid].bottom
+                left = $scope.npAbstract[npid].left
+                right = $scope.npAbstract[npid].right
+
+                mapfocuser.focus  (top + bottom) / 2, (right + left) / 2
 
             topolsonLoader.load()
             urlEncoder.encode()
