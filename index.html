@@ -14,13 +14,13 @@
       ng-click="toggleNav()">
       <ng-md-icon icon="keyboard_arrow_left" style="fill:#efefee" size="32"></ng-md-icon>
     </div>
-    <header ng-class="{nav_open:navOpen, nav_close:!navOpen}" ng-swipe-left="toggleNav()">
+    <header ng-class="{nav_open:navOpen, nav_close:!navOpen}">
         <nav id="navigation" ng-controller="navCtrl">
-          <h1><a href="#">日本の国立公園</a></h1>
+          <h1 ng-swipe-left="toggleNav()"><a href="#">日本の国立公園</a></h1>
           <ul id="#mainMenu">
             <li>
               <h2 class="sr-only">国立公園のリスト</h2>
-              <ul>
+              <ul ng-swipe-left="toggleNav()">
                   <li ng-repeat="(npid, npinfo) in npAbstract" ng-class="{active: npid===selected, selectable: npid!==selected}">
                     <a class="npitem" ng-click="onSelect(npid, true)" ng-class="{active: npid===selected, selectable: npid!==selected}" ng-bind="npinfo.name + '国立公園'"></a>
                     <!-- <span class="nav-size">
@@ -31,7 +31,7 @@
                   </li>
               </ul>
             </li>
-            <li class="table-wrapper">
+            <li class="table-wrapper" ng-swipe-left="toggleNav()">
               <h2 class="sr-only">凡例</h2>
               <table class="legend" ng-show="fillStyles" id="legend">
                 <tr class="sr-only">
@@ -70,11 +70,11 @@
                       <input id="opacity" type="range" min="0" max="1" value="0.4" step="0.01" ng-model="opacity" ng-init="opacity=0.4">
                       <span ng-bind="(opacity * 100 | number:0) + '%'"></span>
                   </li>
-                  <li class="selectable line-color">
+                  <li class="selectable line-color" ng-swipe-left="toggleNav()">
                     <label for="line-color">線色</label>
                       <input id="line-color" type="color" value="#eeeeee" ng-model="lineColor" ng-init="lineColor='#eeeeee'">
                   </li>
-                  <li class="selectable line-width">
+                  <li class="selectable line-width" ng-swipe-left="toggleNav()">
                     <label for="line-width">線幅</label>
                       <input id="line-width" type="number" value="1.5" step="0.5" min="0" ng-model="lineWidth" ng-init="lineWidth=1.5">
                       <span>px</span>
@@ -82,7 +82,7 @@
                 </ul>
               </form>
             </li>
-            <li class="about">
+            <li class="about" ng-swipe-left="toggleNav()">
               <h2>このサイトについて</h2>
               <p>
               このサイト「国立公園オンラインマップ」は、<a href="http://www.biodic.go.jp/trialSystem/top.html">自然環境情報GIS</a> <a href="http://www.biodic.go.jp/trialSystem/info/nps.html">国立公園の区域等</a>（<a href="http://www.biodic.go.jp/">環境省生物多様性センター</a>）のデータを加工し作成したものです。国立公園のポリゴンデータには、<a href="http://www.biodic.go.jp/copyright/index.html">政府標準利用規約（第1.0版）</a>が適用されています。このサイトに表示される公園区域は、あくまで目安に留めておくことをお勧めします。正確な国立公園の区域や地種区分等を調べる際は、当該国立公園を所管する環境省の自然保護官事務所等に問い合わせを行うことをお勧めします。
