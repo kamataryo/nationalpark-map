@@ -1,6 +1,6 @@
 {
   "name": "japanese-national-park-map",
-  "description": "## Abstract-概要 National park map in Japan (restriction area)",
+  "description": "National park map in Japan (restriction area)",
   "main": "index.js",
   "authors": [
     "kamataryo"

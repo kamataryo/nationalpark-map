@@ -14,6 +14,8 @@ module.exports = (config) ->
         'js/lib/angular/angular.js'
         'js/lib/angular-mocks/angular-mocks.js'
         'js/lib/ngmap/build/scripts/ng-map.js'
+        'https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js'
+        'https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.4.8/angular-touch.min.js'
         'js/*.js'
         'js/spec/*.js'
     ]

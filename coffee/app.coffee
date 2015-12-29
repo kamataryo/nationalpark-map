@@ -1,7 +1,7 @@
 'use strict'
 
 # application definition
-app = angular.module 'nationalpark-map', ['ngMap']
+app = angular.module 'nationalpark-map', ['ngMap','ngMdIcons','ngTouch']
 
 # The urlParserService parses and interprets $location as inner page information(npid & mapPosition).
 # The inner page information will be serialized as  on $rootScope.
@@ -145,11 +145,9 @@ app.controller 'mainCtrl', [
 
         #navbar firstsetting
         $scope.navOpen = true
-        $scope.toggleCharacter = '<'
         #toggle side navbar
         $scope.toggleNav = () ->
             $scope.navOpen = ! $scope.navOpen
-            $scope.toggleCharacter = if $scope.navOpen then '<' else '>'
 ]
 
 app.controller 'navCtrl', [
@@ -459,17 +457,6 @@ return
 # 		console.log '位置情報使用不可'
 #
 #
-# # toggle機能の定義
-# ##toggleアイコンをprepend
-# ##初期状態でtoggleにするにはstyle=display:none
-# $('.toggle-next').each (i, elem) ->
-# 	$(elem).prepend '<i class="fa"></i>'
-# 	$i = $(elem).children 'i'
-# 	display = $(elem).next().css 'display'
-# 	if display is 'none'
-# 		$i.addClass 'fa-angle-double-right'
-# 	else
-# 		$i.addClass 'fa-angle-double-down'
 #
 #
 # ## toggleの動作の定義

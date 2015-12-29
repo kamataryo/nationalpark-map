@@ -10,13 +10,13 @@
 
   <body ng-controller="mainCtrl">
     <div
-      ng-class="{nav_closer:navOpen, nav_opener:!navOpen}"
-      ng-click="toggleNav()"
-      ng-bind="toggleCharacter">
+      ng-class="{nav_toggler_close:navOpen, nav_toggler_open:!navOpen}"
+      ng-click="toggleNav()">
+      <ng-md-icon icon="keyboard_arrow_left" style="fill:#efefee" size="32"></ng-md-icon>
     </div>
-    <header id="navigation" ng-show="navOpen"  ng-controller="navCtrl">
-        <nav>
-    			<h1><a href="#">日本の国立公園</a></h1>
+    <header ng-class="{nav_open:navOpen, nav_close:!navOpen}" ng-swipe-left="toggleNav()">
+        <nav id="navigation" ng-controller="navCtrl">
+          <h1><a href="#">日本の国立公園</a></h1>
           <ul id="#mainMenu">
             <li>
               <h2 class="sr-only">国立公園のリスト</h2>
@@ -32,15 +32,15 @@
               </ul>
             </li>
             <li class="table-wrapper">
-    					<h2 class="sr-only">凡例</h2>
-    					<table class="legend" ng-show="fillStyles" id="legend">
-    						<tr class="sr-only">
-    							<th>地種</th>
-    							<th>スタイル</th>
-    						</tr>
-    						<tr ng-repeat="(grade, fillStyle) in fillStyles">
-    							<td ng-bind="grade"></td>
-    							<td style="background-color:white">
+              <h2 class="sr-only">凡例</h2>
+              <table class="legend" ng-show="fillStyles" id="legend">
+                <tr class="sr-only">
+                  <th>地種</th>
+                  <th>スタイル</th>
+                </tr>
+                <tr ng-repeat="(grade, fillStyle) in fillStyles">
+                  <td class="grade" ng-bind="grade"></td>
+                  <td class="color-template">
                     <div
                       style="
                         background-color:{{fillStyle}};
@@ -51,9 +51,9 @@
                        ng-bind="fillStyle">
                      </div>
                   </td>
-    						</tr>
-    					</table>
-    				</li>
+                </tr>
+              </table>
+            </li>
             <!-- <li>
               <h2>トラッキング</h2>
               <form id="trackingForm">
@@ -89,7 +89,7 @@
               </p>
               <p>
                 <a href="https://github.com/KamataRyo/nationalpark-map">
-                  <ng-md-icon icon="github-circle" style="fill: white;" size="32px"></ng-md-icon>
+                  <ng-md-icon icon="github-circle" style="fill: #efefee;" size="32px"></ng-md-icon>
                 </a>
             </li>
           </ul>
@@ -104,14 +104,14 @@
       </div>
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
-    <!-- <script src="./js/lib/angular/angular.min.js"></script> -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
-    <!-- <script src="./js/lib/topojson/topojson.js"></script> -->
-    <script src="./js/lib/ngmap/build/scripts/ng-map.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
 
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCaIyiWRQe5ZjR1MPAWev0o_j9QPbTsM8E"></script>
+    <script src="./js/lib/ngmap/build/scripts/ng-map.min.js"></script><!-- cdn? -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-touch/1.4.8/angular-touch.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
