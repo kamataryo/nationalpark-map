@@ -1,7 +1,12 @@
 'use strict'
 
 # application definition
-app = angular.module 'nationalpark-map', ['ngMap','ngMdIcons','ngTouch']
+app = angular.module 'nationalpark-map', [
+    'ngMap'
+    'ngMdIcons'
+    'ngTouch'
+    # 'angular-loading-bar'
+]
 
 # The urlParserService parses and interprets $location as inner page information(npid & mapPosition).
 # The inner page information will be serialized as  on $rootScope.

@@ -8,6 +8,7 @@ $font-size2 : 14px;
 $font-color1 : #efefee;
 $base-color1: #0f0f00;
 
+
 html, body {
 	margin:0;
 	padding:0;
@@ -38,7 +39,7 @@ $navbar-max-width: 280px;
 	font-size: 20px;
 	color:$font-color1;
 	z-index:10000;
-	@include transition-duration(.3s);
+	@include transition-duration(.2s);
 	&:hover{
 		cursor:pointer;
 	}
@@ -47,12 +48,12 @@ $navbar-max-width: 280px;
 .nav_toggler_open{
 	@include toggle-button-appearance;
 	left:0;
-	background-color: rgba($base-color1, .36);
+	@include background(linear-gradient(left,rgba($base-color1, .36), rgba($base-color1, .6)));
 	svg {
 		@include rotate(180deg);
 	}
 	&:hover{
-		background-color: rgba($base-color1, .6);
+		@include background(linear-gradient(left,rgba($base-color1, .6), rgba($base-color1, .72)));
 	}
 }
 
@@ -71,7 +72,7 @@ header {
 	display:block;
 	z-index:1000;
 	width:$navbar-max-width;
-	@include transition-duration(.3s);
+	@include transition-duration(.2s);
 	&.nav_open {
 		left:0;
 	}
@@ -153,22 +154,40 @@ nav#navigation {
 		display: inline-block;
 		padding:1em;
 		display:block;
-		td {
-			font-size: $font-size2;
-			&.grade {
-				text-align:right;
-				padding:0.2em 0.5em;
-			}
-			&.color-template {
-				padding:0;
-				background-color: #fff;
+		th.grade {
+			position:absolute;
+			float:right;
+			font-size: $font-size1;
+			padding:0.2em 0.5em;
+			font-weight: 100;
+			margin-left:35px;
+
+		}
+		td.color-template-background {
+			display:block;
+			float:left;
+			border: 1px solid rgba($base-color1, .36);
+			background-color: #fff;
+			padding:0;
+			.color-template {
+				display:block;
+				position:relative;
+				top:0;
+				bottom:0;
+				right:0;
+				left:0;
+				margin:auto;
+				padding: -1;
+				font-size:0;
+				height:20px;
+				width:20px;
 			}
 		}
 	}
 
 	ul.stylers {
 		list-style:none;
-		font-size: $font-size2;
+		font-size: $font-size1;
 		li {
 			display: block;
 			list-style:none;
@@ -177,7 +196,7 @@ nav#navigation {
 		label {
 			display:inline-block;
 			margin-right: 10px;
-			width: 60px;
+			width: 80px;
 			&:hover {
 				cursor:pointer;
 			}
@@ -192,16 +211,22 @@ nav#navigation {
 			}
 			&#line-color {
 				width: 45px;
-				background-color: rgba($base-color1, 0);
+				height: 20px;
+				background-color: rgba($base-color1, .2);
 				border: 1px solid rgba($base-color1, .36);
 			}
 			&#line-width {
 				width: 45px;
+				height: 20px;
 				text-align: right;
 				color: $font-color1;
-				background-color: rgba($base-color1, 0);
+				font-size: $font-size2;
+				background-color: rgba($base-color1, .2);
 				border: 1px solid rgba($base-color1, .36);
 			}
+		}
+		span.style-unit {
+			font-size: $font-size2;
 		}
 	}
 
@@ -219,7 +244,6 @@ nav#navigation {
 		}
 	}
 }
-
 
 div#content {
 	position:static;

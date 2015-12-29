@@ -16,6 +16,7 @@ module.exports = (config) ->
         'js/lib/ngmap/build/scripts/ng-map.js'
         'https://cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js'
         'https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.4.8/angular-touch.min.js'
+        # 'https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.7.1/loading-bar.min.js'
         'js/*.js'
         'js/spec/*.js'
     ]
