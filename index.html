@@ -15,6 +15,11 @@
       ng-click="toggleNav()">
       <ng-md-icon icon="keyboard_arrow_left" style="fill:#efefee" size="32"></ng-md-icon>
     </div>
+    <div
+      ng-class="{my_location_close:navOpen, my_location_open:!navOpen}"
+      ng-click="locateMe()">
+        <ng-md-icon icon="{{locatingIcon}}" ng-style="{'fill':'#efefee', 'opacity':locationIconColorOpacity}" size="32"></ng-md-icon>
+    </div>
     <header ng-class="{nav_open:navOpen, nav_close:!navOpen}">
         <nav id="navigation" ng-controller="navCtrl">
           <h1 ng-swipe-left="toggleNav()"><a href="#">日本の国立公園</a></h1>

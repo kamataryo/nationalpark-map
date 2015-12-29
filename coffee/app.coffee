@@ -153,6 +153,18 @@ app.controller 'mainCtrl', [
         #toggle side navbar
         $scope.toggleNav = () ->
             $scope.navOpen = ! $scope.navOpen
+
+        $scope.locating = false
+        $scope.locatingIcon = 'my_location'
+        $scope.locationIconColorOpacity = 1
+        $scope.locateMe = () ->
+            $scope.locating = ! $scope.locating
+            if $scope.locating
+                $scope.locatingIcon = 'gps_off'
+                $scope.locationIconColorOpacity = .5
+            else
+                $scope.locatingIcon = 'my_location'
+                $scope.locationIconColorOpacity = 1
 ]
 
 app.controller 'navCtrl', [
