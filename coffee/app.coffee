@@ -117,12 +117,8 @@ app.service 'topojsonLoader', [
                     $rootScope.geojson = (topojson.feature json, json.objects[$rootScope.serial.npid]) #TopoJSON -> GeoJSON
         }
 ]
-<<<<<<< HEAD
 
 app.service 'mapFocuser', [
-=======
-app.service 'mapfocuser', [
->>>>>>> parent of 9ddc773... some fix
     'NgMap'
     (NgMap) ->
         return {
