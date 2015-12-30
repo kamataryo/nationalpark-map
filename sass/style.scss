@@ -98,6 +98,7 @@ $navbar-max-width: 280px;
 }
 
 
+<<<<<<< HEAD
 @mixin pin-button-appearance {
 	@include basic-button-appearance;
 	top:160px;
@@ -127,6 +128,8 @@ $navbar-max-width: 280px;
 
 
 
+=======
+>>>>>>> parent of 9ddc773... some fix
 
 header {
 	height:100%;
@@ -149,8 +152,6 @@ nav#navigation {
 	display:block;
 	z-index:1000;
 	width:$navbar-max-width;
-	@include border-top-right-radius(3px);
-	@include border-bottom-right-radius(3px);
 	height:100%;
 	overflow:scroll;
 	color: $font-color1;
