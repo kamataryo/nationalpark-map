@@ -117,6 +117,7 @@ app.service 'topojsonLoader', [
                     $rootScope.geojson = (topojson.feature json, json.objects[$rootScope.serial.npid]) #TopoJSON -> GeoJSON
         }
 ]
+
 app.service 'mapfocuser', [
     'NgMap'
     (NgMap) ->
@@ -127,12 +128,58 @@ app.service 'mapfocuser', [
         }
 ]
 
+app.service 'geolocator', [
+    '$rootScope'
+    ($rootScope) ->
+        watchState =
+            id: null
+            count: 0
+            lastUpdated: 0
+            map: null
+            marker: null
+        return {
+            locateMe: () ->
+                geolocatorOptions =
+                    enableHighAccuracy: true
+                    timeout: 8000
+                    maximumAge: 1000
+                # 現在地をwatch
+                if navigator.geolocation
+                    # the device offer geolocation
+                    watchState.id = navigator.geolocation.watchPosition (pos) ->
+                        # geolocation success
+                        watchState.count++
+                        now = Math.floor(new Date() / 1000)
+                        if watchState.lastUpdated + 3 > now
+                            return false
+                        else
+                            watchState.lastUpdate = now
+                         $rootScope.myLocation = 'pos.coords.latitude' + ',' + 'pos.coords.longitude'
+                        # return new google.maps.LatLng pos.coords.latitude, pos.coords.longitude
+                    ,(error) ->
+                        # geolocation failed
+                        msg=
+                            0:'unknown error'
+                            1:'access permission denied'
+                            2:'due to device or environment'
+                            3:'timeout'
+                        console.log "error #{error.code}:#{msg[error.code]}"
+                    ,geolocatorOptions
+                else
+                    # the device donot offer geolocation
+                    console.log 'your device donot offer geolocation.'
+            unlocateMe : () ->
+                watchState.id = null
+        }
+]
+
 app.controller 'mainCtrl', [
     '$scope'
     '$rootScope'
     'urlParser'
     'abstractLoader'
-    ($scope,$rootScope, urlParser, abstractLoader) ->
+    'geolocator'
+    ($scope,$rootScope, urlParser, abstractLoader, geolocator) ->
         #define fill style
         $rootScope.fillStyles =
             '特別保護地区': '#dddd66'
@@ -154,17 +201,37 @@ app.controller 'mainCtrl', [
         $scope.toggleNav = () ->
             $scope.navOpen = ! $scope.navOpen
 
-        $scope.locating = false
-        $scope.locatingIcon = 'my_location'
-        $scope.locationIconColorOpacity = 1
-        $scope.locateMe = () ->
-            $scope.locating = ! $scope.locating
-            if $scope.locating
+        $scope.locatingStatus = false
+        $scope.locatingIcon = 'gps_off'
+        $scope.locationIconColorOpacity = .5
+        $scope.toggleGeolocationActivity = () ->
+            if $scope.locatingStatus is false
+                $scope.locatingStatus = true
+                $scope.locatingIcon = 'gps_fixed'
+                $scope.locationIconColorOpacity = 1
+                geolocator.locateMe()
+            else
+                $scope.locatingStatus = false
                 $scope.locatingIcon = 'gps_off'
                 $scope.locationIconColorOpacity = .5
-            else
-                $scope.locatingIcon = 'my_location'
-                $scope.locationIconColorOpacity = 1
+
+        $scope.pinStatus = false
+        $scope.pinIcon = 'location_off'
+        $scope.pinButtonIconColorOpacity = .5
+
+        $scope.pushPinButton = () ->
+                if $scope.pinStatus is false
+                    $scope.pinStatus = true
+                    $scope.pinIcon = 'location_on'
+                    $scope.pinButtonIconColorOpacity = 1
+                else
+                    $scope.pinStatus = false
+                    $scope.pinIcon = 'location_off'
+                    $scope.pinButtonIconColorOpacity = .5
+                    $rootScope.serial.pin = ''
+
+
+
 ]
 
 app.controller 'navCtrl', [
@@ -223,6 +290,7 @@ app.controller 'mapCtrl', [
         $scope.zoom = $rootScope.serial.mapPosition.zoom
         $scope.latlng = $rootScope.serial.mapPosition.latitude + ',' + $rootScope.serial.mapPosition.longitude
         $scope.pin = ''
+        $scope.myLocation = ''
 
         NgMap.getMap().then (map) ->
 
@@ -273,6 +341,10 @@ app.controller 'mapCtrl', [
             for style in ['opacity', 'lineColor', 'lineWidth']
                 $rootScope.$watch style ,() ->
                     map.data.setStyle $scope.mapStyler
+
+            # $rootScope.$watch $rootScope.myLocation, () ->
+            #     $scope.myLocation = $rootScope.myLocation
+            #     $scope.$apply()
 ]
 
 
@@ -284,63 +356,9 @@ return
 #
 #
 # # 一回だけ現在地を取得
-# geolocatorOptions =
-#     enableHighAccuracy: true
-#     timeout: 8000
-#     maximumAge: 1000
+
 #
-# if navigator.geolocation
-#     # the device offer geolocation
-#     navigator.geolocation.getCurrentPosition (pos) ->
-#         # geolocation success
-#         console.log pos.coords.latitude, pos.coords.longitude
-#         # return new google.maps.LatLng pos.coords.latitude, pos.coords.longitude
-#     ,(error) ->
-#         # geolocation failed
-#         msg=
-#             0:'unknown error'
-#             1:'access permission denied'
-#             2:'due to device or environment'
-#             3:'timeout'
-#         console.log "error #{error.code}:#{msg[error.code]}"
-#     ,geolocatorOptions
-# else
-#     # the device donot offer geolocation
-#     console.log 'your device donot offer geolocation.'
-#
-#
-# # 現在地をwatch
-# watchState =
-#     id: null
-#     count: 0
-#     lastUpdated: 0
-#     map: null
-#     marker: null
-# if navigator.geolocation
-#     # the device offer geolocation
-#     watchState.id = navigator.geolocation.watchPosition (pos) ->
-#         # geolocation success
-#         watchState.count++
-#         now = Math.floor(new Date() / 1000)
-#         if watchState.lastUpdated + 3 > now
-#             return false
-#         else
-#             watchState.lastUpdate = now
-#         console.log pos.coords.latitude, pos.coords.longitude
-#         # return new google.maps.LatLng pos.coords.latitude, pos.coords.longitude
-#     ,(error) ->
-#         # geolocation failed
-#         msg=
-#             0:'unknown error'
-#             1:'access permission denied'
-#             2:'due to device or environment'
-#             3:'timeout'
-#         console.log "error #{error.code}:#{msg[error.code]}"
-#     ,geolocatorOptions
-# else
-#     # the device donot offer geolocation
-#     console.log 'your device donot offer geolocation.'
-#
+
 #
 #
 #

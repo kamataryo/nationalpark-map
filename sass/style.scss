@@ -104,6 +104,46 @@ $navbar-max-width: 280px;
 }
 
 
+@mixin pin-button-appearance {
+	position:absolute;
+	display:block;
+	top:160px;
+	bottom:0;
+	margin:auto 0;
+	height:30px;
+	@include border-top-right-radius(6px);
+	@include border-bottom-right-radius(6px);
+	padding: 8px 5px 10px 3px;
+	font-size: 20px;
+	color:$font-color1;
+	z-index:10000;
+	@include transition-duration(.2s);
+	&:hover{
+		cursor:pointer;
+	}
+}
+
+.pin_button_open{
+	@include pin-button-appearance;
+	left:0;
+	@include background(linear-gradient(left,rgba($base-color1, .36), rgba($base-color1, .6)));
+	&:hover{
+		@include background(linear-gradient(left,rgba($base-color1, .6), rgba($base-color1, .72)));
+	}
+}
+
+.pin_button_close {
+	@include pin-button-appearance;
+	left:$navbar-max-width; //stick to navigation
+	@include background(linear-gradient(left,rgba($base-color1, .6), rgba($base-color1, .72)));
+	&:hover {
+		@include background(linear-gradient(left,rgba($base-color1, .6), rgba($base-color1, .9)));
+	}
+}
+
+
+
+
 
 header {
 	height:100%;
@@ -126,6 +166,8 @@ nav#navigation {
 	display:block;
 	z-index:1000;
 	width:$navbar-max-width;
+	@include border-top-right-radius(3px);
+	@include border-bottom-right-radius(3px);
 	height:100%;
 	overflow:scroll;
 	color: $font-color1;
