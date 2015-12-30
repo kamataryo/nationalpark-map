@@ -26,16 +26,13 @@ html, body {
 
 $navbar-max-width: 280px;
 
-@mixin toggle-button-appearance {
+
+@mixin basic-button-appearance {
 	position:absolute;
 	display:block;
-	top:0;
-	bottom:0;
 	margin:auto 0;
-	height:30px;
 	@include border-top-right-radius(6px);
 	@include border-bottom-right-radius(6px);
-	padding: 30px 4px;
 	font-size: 20px;
 	color:$font-color1;
 	z-index:10000;
@@ -43,6 +40,14 @@ $navbar-max-width: 280px;
 	&:hover{
 		cursor:pointer;
 	}
+}
+
+@mixin toggle-button-appearance {
+	@include basic-button-appearance;
+	top:0;
+	bottom:0;
+	height:30px;
+	padding: 30px 4px;
 }
 
 .nav_toggler_open{
@@ -67,22 +72,11 @@ $navbar-max-width: 280px;
 }
 
 @mixin my_location-button-appearance {
-	position:absolute;
-	display:block;
+	@include basic-button-appearance;
 	top:0;
 	bottom:160px;
-	margin:auto 0;
 	height:30px;
-	@include border-top-right-radius(6px);
-	@include border-bottom-right-radius(6px);
 	padding: 8px 5px 10px 3px;
-	font-size: 20px;
-	color:$font-color1;
-	z-index:10000;
-	@include transition-duration(.2s);
-	&:hover{
-		cursor:pointer;
-	}
 }
 
 .my_location_open{
@@ -105,22 +99,11 @@ $navbar-max-width: 280px;
 
 
 @mixin pin-button-appearance {
-	position:absolute;
-	display:block;
+	@include basic-button-appearance;
 	top:160px;
 	bottom:0;
-	margin:auto 0;
 	height:30px;
-	@include border-top-right-radius(6px);
-	@include border-bottom-right-radius(6px);
 	padding: 8px 5px 10px 3px;
-	font-size: 20px;
-	color:$font-color1;
-	z-index:10000;
-	@include transition-duration(.2s);
-	&:hover{
-		cursor:pointer;
-	}
 }
 
 .pin_button_open{

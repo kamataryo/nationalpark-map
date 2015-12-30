@@ -211,27 +211,6 @@ describe 'test of services', () ->
                     .not.toBeDefined()
 
 #=========================================================================================
-    # describe 'mapForcuser service', () ->
-    #     mapForcusService = {}
-    #     NgMap = {}
-    #     beforeEach inject (_mapForcuser_, _NgMap_) ->
-    #         mapForcusService = _mapForcuser_
-    #         NgMap = _NgMap_
-    #
-    #     it 'forcus success', () ->
-    #         id = 'aaa'
-    #         NgMap.initMap(id)
-    #         NgMap.getMap(id).then (map) ->
-    #             lat = 123
-    #             lng = 54
-    #             mapForcusService.forcus(lat, lng)
-    #             map.addListener 'idle', () ->
-    #                 expect map.getCenter().lat()
-    #                     .toEqual lat
-    #                 expect map.getCenter().lng()
-    #                     .toEqual lng
-
-#=========================================================================================
     describe 'test of navCtrl controller', () ->
         urlParseService = {}
         $scope = {}

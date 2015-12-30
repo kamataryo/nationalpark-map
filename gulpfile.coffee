@@ -61,7 +61,7 @@ gulp.task 'sketch', () ->
 
 gulp.task 'karma',['coffee'], (done) ->
     new KarmaServer {
-        configFile: __dirname + '/coffee/spec/karma.conf.coffee'
+        configFile: __dirname + '/bin/karma.conf.coffee'
         singleRun: true
     }, done
         .start()

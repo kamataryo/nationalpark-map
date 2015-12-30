@@ -94,7 +94,7 @@ app.service 'abstractLoader', [
             url: './topojson/abstract.json'
             method: 'GET'
         return {
-            load: ()->
+            load: () ->
                 $http(query).success (data) ->
                     $rootScope.abstract = data
                     $rootScope.$emit 'abstractLoaded'
@@ -118,7 +118,7 @@ app.service 'topojsonLoader', [
         }
 ]
 
-app.service 'mapfocuser', [
+app.service 'mapFocuser', [
     'NgMap'
     (NgMap) ->
         return {
@@ -239,8 +239,8 @@ app.controller 'navCtrl', [
     '$rootScope'
     'topojsonLoader'
     'urlEncoder'
-    'mapfocuser'
-    ($scope, $rootScope, topolsonLoader, urlEncoder, mapfocuser) ->
+    'mapFocuser'
+    ($scope, $rootScope, topolsonLoader, urlEncoder, mapFocuser) ->
         $rootScope.$on 'abstractLoaded', () ->
             $scope.npAbstract = $rootScope.abstract
             if $rootScope.serial then $scope.onSelect($rootScope.serial.npid, false)
@@ -258,7 +258,7 @@ app.controller 'navCtrl', [
                 left = $scope.npAbstract[npid].left
                 right = $scope.npAbstract[npid].right
 
-                mapfocuser.focus  (top + bottom) / 2, (right + left) / 2
+                mapFocuser.focus  (top + bottom) / 2, (right + left) / 2
 
             topolsonLoader.load()
             urlEncoder.encode()
