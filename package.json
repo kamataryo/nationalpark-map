@@ -1,7 +1,7 @@
 {
   "name": "japanese-national-park-map",
   "version": "1.0.0",
-  "description": "## Abstract-概要 National park map in Japan (restriction area)",
+  "description": "## National park map of Japan",
   "main": "index.js",
   "devDependencies": {
     "bower": "^1.7.1",
@@ -43,7 +43,7 @@
   },
   "scripts": {
     "build": "./node_modules/gulp/bin/gulp.js",
-    "test": "karma start ./coffee/spec/karma.conf.coffee --single-run --browsers PhantomJS",
+    "test": "karma start ./bin/karma.conf.coffee --single-run --browsers PhantomJS",
     "codecov": "cat ./coverage/*/lcov.info | codecov"
   },
   "author": "kamataryo",
