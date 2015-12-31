@@ -2,5 +2,6 @@ node_modules/
 .sass-cache/
 .geojson/
 js/
+# css/
 npm-debug.log
 coverage/

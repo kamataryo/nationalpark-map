@@ -1,7 +1,9 @@
 'use strict'
 describe 'test of services', () ->
-    beforeEach module 'nationalpark-map'
+    app = module 'nationalpark-map'
+    beforeEach app
 
+#=========================================================================================
 #=========================================================================================
     describe 'test of urlParser service', () ->
         urlParseService = {}

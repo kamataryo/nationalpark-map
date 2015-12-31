@@ -179,7 +179,6 @@ app.controller 'navCtrl', [
             $scope.npAbstract = $rootScope.abstract
             if $rootScope.serial then $scope.onSelect($rootScope.serial.npid, false)
 
-
         $scope.onSelect = (npid, focus) ->
             if $scope.selected
                 if npid is $scope.selected then return
@@ -191,7 +190,6 @@ app.controller 'navCtrl', [
                 bottom = $scope.npAbstract[npid].bottom
                 left = $scope.npAbstract[npid].left
                 right = $scope.npAbstract[npid].right
-
                 mapFocuser.focus  (top + bottom) / 2, (right + left) / 2
 
             topolsonLoader.load()
@@ -206,6 +204,8 @@ app.controller 'navCtrl', [
             $rootScope.opacity = $scope.opacity
         getStyleId = () ->
             '' + $scope.lineColor + $scope.lineWidth + $scope.opacity
+        $scope.getRGBA = (color, a) ->
+            return "rgba(#{color},#{a}"
         # for first
         reflectStyles()
         #bind style values

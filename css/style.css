@@ -27,10 +27,11 @@ html, body {
   font-size: 20px;
   color: #efefee;
   z-index: 10000;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
   top: 0;
   bottom: 0;
   height: 30px;
@@ -72,10 +73,11 @@ html, body {
   font-size: 20px;
   color: #efefee;
   z-index: 10000;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
   top: 0;
   bottom: 0;
   height: 30px;
@@ -111,12 +113,13 @@ html, body {
   font-size: 20px;
   color: #efefee;
   z-index: 10000;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
   top: 0;
-  bottom: 160px;
+  bottom: 150px;
   height: 30px;
   padding: 8px 5px 10px 3px;
   left: 0;
@@ -150,12 +153,13 @@ html, body {
   font-size: 20px;
   color: #efefee;
   z-index: 10000;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
   top: 0;
-  bottom: 160px;
+  bottom: 150px;
   height: 30px;
   padding: 8px 5px 10px 3px;
   left: 280px;
@@ -189,11 +193,12 @@ html, body {
   font-size: 20px;
   color: #efefee;
   z-index: 10000;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  top: 160px;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  top: 150px;
   bottom: 0;
   height: 30px;
   padding: 8px 5px 10px 3px;
@@ -228,11 +233,12 @@ html, body {
   font-size: 20px;
   color: #efefee;
   z-index: 10000;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  top: 160px;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  top: 150px;
   bottom: 0;
   height: 30px;
   padding: 8px 5px 10px 3px;
@@ -260,10 +266,11 @@ header {
   display: block;
   z-index: 1000;
   width: 280px;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
 }
 header.nav_open {
   left: 0;
@@ -276,10 +283,15 @@ nav#navigation {
   position: relative;
   display: block;
   z-index: 1000;
-  width: 280px;
   height: 100%;
   overflow: scroll;
   color: #efefee;
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 nav#navigation h1 {
   font-size: 18px;
@@ -351,6 +363,9 @@ nav#navigation table.legend th.grade {
 nav#navigation table.legend td.color-template-background {
   display: block;
   float: left;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   border: 1px solid rgba(15, 15, 0, 0.36);
   background-color: #fff;
   padding: 0;
@@ -399,6 +414,9 @@ nav#navigation ul.stylers input#line-color {
   height: 20px;
   background-color: rgba(15, 15, 0, 0.2);
   border: 1px solid rgba(15, 15, 0, 0.36);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 nav#navigation ul.stylers input#line-width {
   width: 45px;
@@ -408,6 +426,9 @@ nav#navigation ul.stylers input#line-width {
   font-size: 14px;
   background-color: rgba(15, 15, 0, 0.2);
   border: 1px solid rgba(15, 15, 0, 0.36);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 nav#navigation ul.stylers span.style-unit {
   font-size: 14px;
