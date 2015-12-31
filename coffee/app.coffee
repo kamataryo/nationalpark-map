@@ -358,7 +358,7 @@ app.controller 'mapCtrl', [
             # Dragging must not interrupts geolocational.
             map.addListener 'dragstart', () ->
                 $rootScope.dragging = true
-            map.addListener 'dragend'
+            map.addListener 'dragend', () ->
                 $rootScope.dragging = false
 
             # rewrite URL when map have finished moving
