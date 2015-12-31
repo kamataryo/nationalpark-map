@@ -118,7 +118,6 @@ html, body {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   transition-timing-function: ease;
-  display: none;
   top: 0;
   bottom: 150px;
   height: 30px;
@@ -159,7 +158,6 @@ html, body {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   transition-timing-function: ease;
-  display: none;
   top: 0;
   bottom: 150px;
   height: 30px;

@@ -77,7 +77,7 @@ $navbar-max-width: 280px;
 
 @mixin my_location-button-appearance {
 	@include basic-button-appearance;
-	display:none;//this function havenot been released
+	//display:none;//this function havenot been released
 	top:0;
 	bottom:150px;
 	height:30px;
