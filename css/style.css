@@ -299,55 +299,52 @@ nav#navigation h1 {
   padding: .5em .5em .2em .5em;
   color: #efefee;
   background-color: rgba(15, 15, 0, 0.6);
-  border-bottom: 1px solid rgba(15, 15, 0, 0.1);
 }
 nav#navigation h1 a {
   color: #efefee;
   text-decoration: none;
 }
-nav#navigation ul {
-  background-color: rgba(15, 15, 0, 0.36);
+nav#navigation ul#mainMenu {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-nav#navigation ul li.active {
+nav#navigation ul#mainMenu ul.nplist {
+  padding: 0;
+}
+nav#navigation ul#mainMenu ul.nplist li.active {
   background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBmMGYwMCIgc3RvcC1vcGFjaXR5PSIwLjgiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZjBmMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(15, 15, 0, 0.8)), color-stop(100%, rgba(15, 15, 0, 0)));
   background: -moz-linear-gradient(left, rgba(15, 15, 0, 0.8), rgba(15, 15, 0, 0));
   background: -webkit-linear-gradient(left, rgba(15, 15, 0, 0.8), rgba(15, 15, 0, 0));
   background: linear-gradient(to right, rgba(15, 15, 0, 0.8), rgba(15, 15, 0, 0));
 }
-nav#navigation ul li.selectable {
+nav#navigation ul#mainMenu ul.nplist li.selectable {
   color: #d6d6d4;
 }
-nav#navigation ul li.selectable:hover {
+nav#navigation ul#mainMenu ul.nplist li.selectable:hover {
   background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzBmMGYwMCIgc3RvcC1vcGFjaXR5PSIwLjgiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZjBmMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(15, 15, 0, 0.8)), color-stop(100%, rgba(15, 15, 0, 0)));
   background: -moz-linear-gradient(left, rgba(15, 15, 0, 0.8), rgba(15, 15, 0, 0));
   background: -webkit-linear-gradient(left, rgba(15, 15, 0, 0.8), rgba(15, 15, 0, 0));
   background: linear-gradient(to right, rgba(15, 15, 0, 0.8), rgba(15, 15, 0, 0));
 }
-nav#navigation ul li.selectable:hover a {
+nav#navigation ul#mainMenu ul.nplist li.selectable:hover a {
   color: #efefee;
 }
-nav#navigation ul .npicon-wrapper {
-  display: block;
-  position: absolute;
-  left: 5px;
-}
-nav#navigation ul a.npitem {
+nav#navigation ul#mainMenu ul.nplist li a.npitem {
   display: block;
   padding: .2em .5em .1em .5em;
+  background-color: rgba(15, 15, 0, 0.6);
 }
-nav#navigation ul a.npitem.selectable {
+nav#navigation ul#mainMenu ul.nplist li a.npitem.selectable {
   cursor: pointer;
 }
-nav#navigation ul a.npitem.active {
+nav#navigation ul#mainMenu ul.nplist li a.npitem.active {
   color: #efefee;
 }
 nav#navigation table.legend {
-  background-color: rgba(15, 15, 0, 0.36);
+  background-color: rgba(15, 15, 0, 0.6);
   display: inline-block;
   padding: 1em;
   display: block;
@@ -383,9 +380,13 @@ nav#navigation table.legend td.color-template-background .color-template {
   height: 20px;
   width: 20px;
 }
+nav#navigation form#styleForm {
+  background-color: rgba(15, 15, 0, 0.6);
+}
 nav#navigation ul.stylers {
   list-style: none;
   font-size: 18px;
+  padding: 0;
 }
 nav#navigation ul.stylers li {
   display: block;
@@ -435,7 +436,7 @@ nav#navigation ul.stylers span.style-unit {
 }
 nav#navigation li.about {
   padding: 1em;
-  background-color: rgba(15, 15, 0, 0.36);
+  background-color: rgba(15, 15, 0, 0.6);
 }
 nav#navigation li.about h2 {
   font-size: 18px;

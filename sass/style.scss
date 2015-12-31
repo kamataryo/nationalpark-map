@@ -13,6 +13,7 @@ $base-color1: #0f0f00;
 	transition-timing-function: ease;
 }
 
+
 html, body {
 	margin:0;
 	padding:0;
@@ -155,52 +156,50 @@ nav#navigation {
 	color: $font-color1;
 	@include border-top-right-radius(2px);
 	@include border-bottom-right-radius(2px);
+
 	h1 {
 		font-size: $font-size1;
 		margin:0;
 		padding: .5em .5em .2em .5em;
 		color: $font-color1;
 		background-color: rgba($base-color1, .6);
-		border-bottom: 1px solid rgba($base-color1, .1);
 		a {
 			color: $font-color1;
 			text-decoration: none;
 		}
 	}
 
-	ul {
-		background-color: rgba($base-color1, .36);
+	ul#mainMenu {
 		margin:0;
 		padding:0;
 		list-style:none;
 
-		li.active {
-			@include background(linear-gradient(left,rgba($base-color1, .8), rgba($base-color1, 0)));
-		}
-		li.selectable {
-			color: darken($font-color1, 10%);
-			&:hover {
-				@include background(linear-gradient(left,rgba($base-color1, .8), rgba($base-color1, 0)));
-				a {
-					color: $font-color1;
+		ul.nplist {
+			padding:0;
+			li {
+				&.active {
+					@include background(linear-gradient(left,rgba($base-color1, .8), rgba($base-color1, 0)));
 				}
-			}
-		}
-
-		.npicon-wrapper {
-			display:block;
-			position:absolute;
-			left:5px;
-		}
-
-		a.npitem {
-			display: block;
-			padding: .2em .5em .1em .5em;
-			&.selectable {
-				cursor:pointer;
-			}
-			&.active {
-				color: $font-color1;
+				&.selectable {
+					color: darken($font-color1, 10%);
+					&:hover {
+						@include background(linear-gradient(left,rgba($base-color1, .8), rgba($base-color1, 0)));
+						a {
+							color: $font-color1;
+						}
+					}
+				}
+				a.npitem {
+					display: block;
+					padding: .2em .5em .1em .5em;
+					background-color: rgba($base-color1, .6);
+					&.selectable {
+						cursor:pointer;
+					}
+					&.active {
+						color: $font-color1;
+					}
+				}
 			}
 		}
 
@@ -215,7 +214,7 @@ nav#navigation {
 	}
 
 	table.legend {
-		background-color: rgba($base-color1, .36);
+		background-color: rgba($base-color1, .6);
 		display: inline-block;
 		padding:1em;
 		display:block;
@@ -251,9 +250,14 @@ nav#navigation {
 		}
 	}
 
+	form#styleForm {
+		background-color: rgba($base-color1, .6);
+	}
+
 	ul.stylers {
 		list-style:none;
 		font-size: $font-size1;
+		padding:0;
 		li {
 			display: block;
 			list-style:none;
@@ -300,7 +304,7 @@ nav#navigation {
 
 	li.about {
 		padding: 1em;
-		background-color: rgba($base-color1, .36);
+		background-color: rgba($base-color1, .6);
 		h2 {
 			font-size: $font-size1;
 		}

@@ -32,10 +32,10 @@
     <header ng-class="{nav_open:navOpen, nav_close:!navOpen}">
         <nav id="navigation" ng-controller="navCtrl">
           <h1 ng-swipe-left="toggleNav()"><a href="#">日本の国立公園</a></h1>
-          <ul id="#mainMenu">
+          <ul id="mainMenu">
             <li>
               <h2 class="sr-only">国立公園のリスト</h2>
-              <ul ng-swipe-left="toggleNav()">
+              <ul class="nplist" ng-swipe-left="toggleNav()">
                   <li ng-repeat="(npid, npinfo) in npAbstract | orderBy:'npinfo.top'" ng-class="{active: npid===selected, selectable: npid!==selected}">
                     <a class="npitem" ng-click="onSelect(npid, true)" ng-class="{active: npid===selected, selectable: npid!==selected}" ng-bind="npinfo.name + '国立公園'"></a>
                     <!-- <span class="nav-size">
