@@ -154,6 +154,8 @@ app.service 'geoLocator', [
                         now = Math.floor(new Date() / 1000)
                         if watchState.lastUpdated + 3 > now
                             return false
+                        else if $rootScope.dragging
+                            return false
                         else
                             watchState.lastUpdate = now
                             $rootScope.current = (pos.coords.latitude + ',' + pos.coords.longitude)
@@ -353,6 +355,12 @@ app.controller 'mapCtrl', [
 
             map.addListener 'click', $scope.pinSetCallback
 
+            # Dragging must not interrupts geolocational.
+            map.addListener 'dragstart', () ->
+                $rootScope.dragging = true
+            map.addListener 'dragend'
+                $rootScope.dragging = false
+
             # rewrite URL when map have finished moving
             map.addListener 'idle', () ->
                 $rootScope.serial.mapPosition =
@@ -360,6 +368,9 @@ app.controller 'mapCtrl', [
                     latitude : map.getCenter().lat()
                     longitude: map.getCenter().lng()
                 urlEncoder.encode()
+
+
+
 
 
             #current position marker move
@@ -374,70 +385,3 @@ app.controller 'mapCtrl', [
                 $rootScope.$watch style ,() ->
                     map.data.setStyle $scope.mapStyler
 ]
-
-
-
-
-
-return
-
-#
-#
-# # 一回だけ現在地を取得
-# geolocatorOptions =
-#     enableHighAccuracy: true
-#     timeout: 8000
-#     maximumAge: 1000
-#
-# if navigator.geolocation
-#     # the device offer geolocation
-#     navigator.geolocation.getCurrentPosition (pos) ->
-#         # geolocation success
-#         console.log pos.coords.latitude, pos.coords.longitude
-#         # return new google.maps.LatLng pos.coords.latitude, pos.coords.longitude
-#     ,(error) ->
-#         # geolocation failed
-#         msg=
-#             0:'unknown error'
-#             1:'access permission denied'
-#             2:'due to device or environment'
-#             3:'timeout'
-#         console.log "error #{error.code}:#{msg[error.code]}"
-#     ,geolocatorOptions
-# else
-#     # the device donot offer geolocation
-#     console.log 'your device donot offer geolocation.'
-#
-#
-# # 現在地をwatch
-# watchState =
-#     id: null
-#     count: 0
-#     lastUpdated: 0
-#     map: null
-#     marker: null
-# if navigator.geolocation
-#     # the device offer geolocation
-#     watchState.id = navigator.geolocation.watchPosition (pos) ->
-#         # geolocation success
-#         watchState.count++
-#         now = Math.floor(new Date() / 1000)
-#         if watchState.lastUpdated + 3 > now
-#             return false
-#         else
-#             watchState.lastUpdate = now
-#         console.log pos.coords.latitude, pos.coords.longitude
-#         # return new google.maps.LatLng pos.coords.latitude, pos.coords.longitude
-#     ,(error) ->
-#         # geolocation failed
-#         msg=
-#             0:'unknown error'
-#             1:'access permission denied'
-#             2:'due to device or environment'
-#             3:'timeout'
-#         console.log "error #{error.code}:#{msg[error.code]}"
-#     ,geolocatorOptions
-# else
-#     # the device donot offer geolocation
-#     console.log 'your device donot offer geolocation.'
-#
