@@ -10,16 +10,25 @@
   </head>
 
   <body ng-controller="mainCtrl">
+
     <div
-      ng-class="{nav_toggler_close:navOpen, nav_toggler_open:!navOpen}"
+      ng-class="{'nav-toggler_on_nav-open':navOpen, 'nav-toggler_on_nav-close':!navOpen}"
       ng-click="toggleNav()">
       <ng-md-icon icon="keyboard_arrow_left" style="fill:#efefee" size="32"></ng-md-icon>
     </div>
+
     <div
-      ng-class="{my_location_close:navOpen, my_location_open:!navOpen}"
-      ng-click="locateMe()">
-        <ng-md-icon icon="{{locatingIcon}}" ng-style="{'fill':'#efefee', 'opacity':locationIconColorOpacity}" size="32"></ng-md-icon>
+      ng-class="{my_location_on_close:navOpen, my_location_on_open:!navOpen}"
+      ng-click="toggleLocator()">
+        <ng-md-icon icon="{{locatingButtonIcon}}" ng-style="{'fill':'#efefee'}" size="32"></ng-md-icon>
     </div>
+
+    <div
+      ng-class="{pin_button_on_close:navOpen, pin_button_on_open:!navOpen}"
+      ng-click="togglePin()">
+        <ng-md-icon icon="{{pinButtonIcon}}" ng-style="{'fill':'#efefee'}" size="32"></ng-md-icon>
+    </div>
+
     <header ng-class="{nav_open:navOpen, nav_close:!navOpen}">
         <nav id="navigation" ng-controller="navCtrl">
           <h1 ng-swipe-left="toggleNav()"><a href="#">日本の国立公園</a></h1>

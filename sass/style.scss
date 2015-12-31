@@ -13,7 +13,6 @@ $base-color1: #0f0f00;
 	transition-timing-function: ease;
 }
 
-
 html, body {
 	margin:0;
 	padding:0;
@@ -55,7 +54,7 @@ $navbar-max-width: 280px;
 	padding: 30px 4px;
 }
 
-.nav_toggler_open{
+.nav-toggler_on_nav-close{
 	@include nav-toggle-button-appearance;
 	left:0;
 	@include background(linear-gradient(left,rgba($base-color1, .36), rgba($base-color1, .6)));
@@ -67,7 +66,7 @@ $navbar-max-width: 280px;
 	}
 }
 
-.nav_toggler_close {
+.nav-toggler_on_nav-open {
 	@include nav-toggle-button-appearance;
 	left:$navbar-max-width; //stick to navigation
 	@include background(linear-gradient(left,rgba($base-color1, .6), rgba($base-color1, .72)));
@@ -78,13 +77,14 @@ $navbar-max-width: 280px;
 
 @mixin my_location-button-appearance {
 	@include basic-button-appearance;
+	display:none;//this function havenot been released
 	top:0;
 	bottom:150px;
 	height:30px;
 	padding: 8px 5px 10px 3px;
 }
 
-.my_location_open{
+.my_location_on_open{
 	@include my_location-button-appearance;
 	left:0;
 	@include background(linear-gradient(left,rgba($base-color1, .36), rgba($base-color1, .6)));
@@ -93,7 +93,7 @@ $navbar-max-width: 280px;
 	}
 }
 
-.my_location_close {
+.my_location_on_close {
 	@include my_location-button-appearance;
 	left:$navbar-max-width; //stick to navigation
 	@include background(linear-gradient(left,rgba($base-color1, .6), rgba($base-color1, .72)));
@@ -111,7 +111,7 @@ $navbar-max-width: 280px;
 	padding: 8px 5px 10px 3px;
 }
 
-.pin_button_open{
+.pin_button_on_open{
 	@include pin-button-appearance;
 	left:0;
 	@include background(linear-gradient(left,rgba($base-color1, .36), rgba($base-color1, .6)));
@@ -120,7 +120,7 @@ $navbar-max-width: 280px;
 	}
 }
 
-.pin_button_close {
+.pin_button_on_close {
 	@include pin-button-appearance;
 	left:$navbar-max-width; //stick to navigation
 	@include background(linear-gradient(left,rgba($base-color1, .6), rgba($base-color1, .72)));

@@ -9,7 +9,7 @@ app = angular.module 'nationalpark-map', [
 ]
 
 # The urlParserService parses and interprets $location as inner page information(npid & mapPosition).
-# The inner page information will be serialized as  on $rootScope.
+# The inner page information will be serialized as on $rootScope.
 app.service 'urlParser', [
     '$location'
     '$rootScope'
@@ -23,20 +23,22 @@ app.service 'urlParser', [
             getDefaultPosition: () ->
                 defaultPosition
             parse: () ->
+                #get location data
+                elements = $location.path().split('/').filter (e) -> e isnt ''
+                queries = $location.search()
                 # get default values
                 npid = ''
                 zoom = defaultPosition.zoom
                 latitude = defaultPosition.latitude
                 longitude = defaultPosition.longitude
-                elements = $location.path().split('/').filter (e) -> e isnt ''
-                queries = $location.search()
-
-                if elements.length > 3
+                pin = ''
+                # support multiple type arguments from /a/b/c/..
+                if elements.length > 3 # id, zoom, lat, lng
                     npid = elements[0]
                     _zoom = parseInt elements[1]
                     _latitude = parseFloat elements[2]
                     _longitude = parseFloat elements[3]
-                else if elements.length is 3
+                else if elements.length is 3 # zoom, lat, lng
                     _zoom = parseInt elements[0]
                     _latitude = parseFloat elements[1]
                     _longitude = parseFloat elements[2]
@@ -45,21 +47,20 @@ app.service 'urlParser', [
                 else if elements.length is 1
                     npid = elements[0]
 
+                # override
                 unless isNaN(_zoom) or isNaN(_latitude) or isNaN(_longitude)
                     zoom = _zoom
                     latitude = _latitude
                     longitude = _longitude
+                pin = if queries.pin? then queries.pin else ''
 
-                serial =
+                $rootScope.serial =
                     npid: npid
                     mapPosition:
                         zoom: zoom
                         latitude: latitude
                         longitude: longitude
-                    pin: if queries.pin? then queries.pin else ''
-                $rootScope.serial = serial
-                $rootScope.$emit 'urlParsed'
-                return serial
+                    pin: pin
         }
 ]
 
@@ -78,8 +79,10 @@ app.service 'urlEncoder', [
                     $rootScope.serial.mapPosition.longitude
                 ].join '/'
                 $location.path path
-                if $rootScope.serial.pin
-                    $location.search pin:$rootScope.serial.pin
+                if $rootScope.serial.pin is ''
+                    $location.search pin: null
+                else
+                    $location.search pin: $rootScope.serial.pin
                 # TODO $applyを適切に使うようにする
                 $rootScope.$apply()
         }
@@ -155,17 +158,32 @@ app.controller 'mainCtrl', [
         $scope.toggleNav = () ->
             $scope.navOpen = ! $scope.navOpen
 
-        $scope.locating = false
-        $scope.locatingIcon = 'my_location'
-        $scope.locationIconColorOpacity = 1
-        $scope.locateMe = () ->
-            $scope.locating = ! $scope.locating
-            if $scope.locating
-                $scope.locatingIcon = 'gps_off'
-                $scope.locationIconColorOpacity = .5
+        $scope.locatingButtonIcon = 'gps_fixed'
+        $scope.toggleLocator = () ->
+            if $scope.locatingButtonIcon is 'gps_fixed'
+                $scope.locatingButtonIcon = 'gps_off'
             else
-                $scope.locatingIcon = 'my_location'
-                $scope.locationIconColorOpacity = 1
+                $scope.locatingButtonIcon = 'gps_fixed'
+
+
+        $scope.pinButtonIcon = if $rootScope.serial.pin is '' then 'location_on' else 'location_off'
+        $scope.togglePin = () ->
+            if $scope.pinButtonIcon is 'location_on'
+                $scope.$broadcast 'force:pinSet'
+                $scope.pinButtonIcon = 'location_off'
+            else
+                $scope.$broadcast 'force:pinRemove'
+                $scope.pinButtonIcon = 'location_on'
+
+        $scope.$on 'pinSet', () ->
+            if $scope.pinButtonIcon is 'location_on'
+                $scope.pinButtonIcon = 'location_off'
+
+        $scope.$on 'pinRemove', () ->
+            if $scope.pinStatus then $scope.togglePin()
+            if $scope.pinButtonIcon is 'location_off'
+                $scope.pinButtonIcon = 'location_on'
+
 ]
 
 app.controller 'navCtrl', [
@@ -202,12 +220,16 @@ app.controller 'navCtrl', [
             $rootScope.lineColor = $scope.lineColor
             $rootScope.lineWidth = $scope.lineWidth
             $rootScope.opacity = $scope.opacity
+
         getStyleId = () ->
             '' + $scope.lineColor + $scope.lineWidth + $scope.opacity
+
         $scope.getRGBA = (color, a) ->
             return "rgba(#{color},#{a}"
+
         # for first
         reflectStyles()
+
         #bind style values
         $rootScope.$watch getStyleId, reflectStyles
 
@@ -237,9 +259,19 @@ app.controller 'mapCtrl', [
                 }
 
             # set initial pin if queried
-            # TODO:$watchで書き換え
             if $rootScope.serial.pin
-                 $scope.pin = $rootScope.serial.pin
+                $scope.pin = $rootScope.serial.pin
+
+            $scope.$on 'force:pinSet', () ->
+                $scope.pin = $rootScope.serial.mapPosition.latitude + ',' + $rootScope.serial.mapPosition.longitude
+                $rootScope.serial.pin = $scope.pin
+                urlEncoder.encode()
+
+            $scope.$on 'force:pinRemove', () ->
+                $scope.pin = '1000000,1000000'
+                $rootScope.serial.pin = ''
+                urlEncoder.encode()
+
 
             $scope.pinSetCallback = (event) ->
                 $scope.pin = [
@@ -248,6 +280,7 @@ app.controller 'mapCtrl', [
                 ].join ','
                 $rootScope.serial.pin = $scope.pin
                 urlEncoder.encode()
+                $scope.$emit 'pinSet'
                 $scope.$apply()
 
             $scope.addData = () ->
