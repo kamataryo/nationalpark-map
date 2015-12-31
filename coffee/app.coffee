@@ -48,7 +48,7 @@ app.service 'urlParser', [
 
                 # override
                 unless isNaN(_zoom) or isNaN(_latitude) or isNaN(_longitude)
-                    zoom = _zoom
+                    zoom = Math.min(_zoom, 18)
                     latitude = _latitude
                     longitude = _longitude
                 pin = if queries.pin? then queries.pin else ''

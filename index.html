@@ -108,7 +108,11 @@
 
     <div ng-controller="mapCtrl" id="content">
       <div map-lazy-load="https://maps.google.com/maps/api/js">
-        <ng-map zoom="{{zoom}}" center="{{latlng}}">
+        <ng-map
+          zoom="{{zoom}}"
+          center="{{latlng}}"
+          max-zoom="18"
+          map-type-id="TERRAIN">
           <marker position="{{pin}}"></marker>
           <custom-marker position="{{current}}">
             <img src="img/marker-current.svg" alt="current position">
