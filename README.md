@@ -5,9 +5,9 @@
 
 ## Abstract / 概要
 
-National park map in Japan (restriction area)
+This is a web application to brows National park area of in Japan (restriction area).
 
-日本の国立公園（規制区域）の区域図です。
+日本の国立公園（規制区域）の区域図を閲覧するためのウェブアプリケーションです。
 
 ## How does it work? / どんなものか？
 
@@ -21,7 +21,7 @@ URLは表示の変化に応じて書き換えられ、現在の表示を人と�
 
 ## Purpose of this project / このプロジェクトの目的
 
-Provide a platform to share geolocational information of Japanese National Park.
+To provide a platform to share geolocational information of Japanese National Park.
 
 日本の国立公園について、その地理情報を共有するためのプラットフォームを提供することです。
 
@@ -31,12 +31,14 @@ Provide a platform to share geolocational information of Japanese National Park.
 - (done) Overlay national park poligon on Webmap service.
 - (done) Support geolocation.
 - Apply test in high coverage and keep code maintainable.
+- i18n
 
 
 - (不完全) gulpを使い、公式に提供されているKMLファイルからTopoJSONを生成するコンバーターを作成すること
 - (完了) 国立公園のポリゴンをウェブマップのサービスにオーバレイできること
 - (完了) ジオローケーションをサポートすること
 - 高カバレッジのユニットテストを作成し、コードをメンテナブルに保つこと
+- 他言語対応
 
 ## License / ライセンス
 MIT
