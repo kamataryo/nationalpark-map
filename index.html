@@ -3,7 +3,7 @@
   <head prefix="og:http://ogp.me/ns#">
     <meta charset="UTF-8">
     <meta name="author" content="KamataRyo">
-    <meta name="keywords" content="国立公園 規制区域">
+    <meta name="keywords" content="国立公園,地図,規制,区域">
     <meta name="description" content="国立公園の規制区域を閲覧し、これを共有するサービスです。">
     <title>国立公園オンラインマップ</title>
     <meta property="og:title" content="国立公園オンラインマップ">
@@ -14,7 +14,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="" href="">
   </head>
 
   <body ng-controller="mainCtrl">
@@ -37,6 +36,7 @@
           <ng-md-icon icon="{{pinButtonIcon}}" ng-style="{'fill':'#efefee'}" size="32"></ng-md-icon>
       </div>
     </div>
+
     <header ng-class="{nav_open:navOpen, nav_close:!navOpen}">
         <nav id="navigation" ng-controller="navCtrl">
           <h1 ng-swipe-left="toggleNav()"><a href="#">日本の国立公園</a></h1>
@@ -131,7 +131,6 @@
         </ng-map>
       </div>
     </div>
-
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCaIyiWRQe5ZjR1MPAWev0o_j9QPbTsM8E"></script>

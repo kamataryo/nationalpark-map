@@ -82,8 +82,6 @@ app.service 'urlEncoder', [
                     $location.search pin: null
                 else
                     $location.search pin: $rootScope.serial.pin
-                # TODO $applyを適切に使うようにする
-                $rootScope.$apply()
         }
 ]
 
@@ -228,8 +226,6 @@ app.controller 'mainCtrl', [
         $scope.$on 'geolocationFailed', () ->
             $rootScope.locatingButtonIcon = 'gps_fixed'
 
-
-
         $scope.pinButtonIcon = if $rootScope.serial.pin is '' then 'location_on' else 'location_off'
         $scope.togglePin = () ->
             if $scope.pinButtonIcon is 'location_on'
@@ -244,7 +240,6 @@ app.controller 'mainCtrl', [
 
         $scope.$on 'pinRemove', () ->
             $scope.pinButtonIcon = 'location_on'
-
 ]
 
 app.controller 'navCtrl', [
@@ -273,9 +268,6 @@ app.controller 'navCtrl', [
 
             topolsonLoader.load()
             urlEncoder.encode()
-            # https://docs.angularjs.org/error/$rootScope/inprog?p0=$apply
-            # $apply()の意味を私がわかっていない。2度目以降は失敗する。最初に一度$apply()しておけばいいのか..?
-            # TODO encoderサービスを治す
 
         reflectStyles = () ->
             $rootScope.lineColor = $scope.lineColor
@@ -320,10 +312,11 @@ app.controller 'mapCtrl', [
                 }
 
             # set initial pin if queried
-            if $rootScope.serial.pin
+            if $rootScope.serial.pin isnt ''
                 $scope.pin = $rootScope.serial.pin
 
             $scope.$on 'force:pinSet', () ->
+                # set pin at map center
                 $scope.pin = $rootScope.serial.mapPosition.latitude + ',' + $rootScope.serial.mapPosition.longitude
                 $rootScope.serial.pin = $scope.pin
                 urlEncoder.encode()
@@ -355,12 +348,6 @@ app.controller 'mapCtrl', [
 
             map.addListener 'click', $scope.pinSetCallback
 
-            # Dragging must not interrupts geolocational.
-            map.addListener 'dragstart', () ->
-                $rootScope.dragging = true
-            map.addListener 'dragend', () ->
-                $rootScope.dragging = false
-
             # rewrite URL when map have finished moving
             map.addListener 'idle', () ->
                 $rootScope.serial.mapPosition =
@@ -368,17 +355,19 @@ app.controller 'mapCtrl', [
                     latitude : map.getCenter().lat()
                     longitude: map.getCenter().lng()
                 urlEncoder.encode()
+                $rootScope.$apply()
 
-
-
-
+            # Dragging must not interrupts geolocational.
+            map.addListener 'dragstart', () ->
+                $rootScope.dragging = true
+            map.addListener 'dragend', () ->
+                $rootScope.dragging = false
 
             #current position marker move
             $rootScope.$on 'currentMoved', () ->
                 $scope.current = $rootScope.current
             $rootScope.$on 'geolocationStopped', () ->
                 $scope.current = '100000,100000'
-
 
             # bind style values
             for style in ['opacity', 'lineColor', 'lineWidth']
