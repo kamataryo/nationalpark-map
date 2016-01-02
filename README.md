@@ -27,18 +27,18 @@ To provide a platform to share geolocational information of Japanese National Pa
 
 ## Goal of the development / 開発のゴール
 
-- (incomplete) Auto-transformation of national from official KML to TopoJSON with gulp.
-- (done) Overlay national park poligon on Webmap service.
-- (done) Support geolocation.
-- Apply test in high coverage and keep code maintainable.
-- i18n
+1. (incomplete) provide a convertor from official KML to TopoJSON.
+2. (done) Overlay national park poligon on Webmap service.
+3. (done) Support geolocation.
+4. Apply test in high coverage.
+5. i18n
 
 
-- (不完全) gulpを使い、公式に提供されているKMLファイルからTopoJSONを生成するコンバーターを作成すること
-- (完了) 国立公園のポリゴンをウェブマップのサービスにオーバレイできること
-- (完了) ジオローケーションをサポートすること
-- 高カバレッジのユニットテストを作成し、コードをメンテナブルに保つこと
-- 他言語対応
+1. (不完全) 公式に提供されているKMLファイルからTopoJSONを生成するコンバーターを作成すること
+2. (完了) 国立公園のポリゴンをウェブマップのサービスにオーバレイできること
+3. (完了) ジオローケーションをサポートすること
+4. 高カバレッジのユニットテストを備えること
+5. 多言語対応
 
 ## License / ライセンス
 MIT
