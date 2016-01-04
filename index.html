@@ -14,6 +14,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-71934254-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </head>
 
   <body ng-controller="mainCtrl">
@@ -94,14 +102,16 @@
             </li>
             <li class="about" ng-swipe-left="toggleNav()">
               <h2>このサイトについて</h2>
-              <p class="text">
-              このサイト「国立公園オンラインマップ」は、<a href="http://www.biodic.go.jp/trialSystem/top.html">自然環境情報GIS</a> <a href="http://www.biodic.go.jp/trialSystem/info/nps.html">国立公園の区域等</a>（<a href="http://www.biodic.go.jp/">環境省生物多様性センター</a>）のデータを加工し作成したものです。国立公園のポリゴンデータには、<a href="http://www.biodic.go.jp/copyright/index.html">政府標準利用規約（第1.0版）</a>が適用されています。このサイトに表示される公園区域は、あくまで目安に留めておくことをお勧めします。正確な国立公園の区域や地種区分等を調べる際は、当該国立公園を所管する環境省の自然保護官事務所等に問い合わせを行うことをお勧めします。
-              </p>
-              <p class="icons">
+              <p class="text">このサイト「国立公園オンラインマップ」は、国立公園に関する位置情報を共有するためのサービスです。</p>
+              <p class="text">このサービスの作成にあたっては、<a href="http://www.biodic.go.jp/trialSystem/top.html">自然環境情報GIS</a> <a href="http://www.biodic.go.jp/trialSystem/info/nps.html">国立公園の区域等</a>（<a href="http://www.biodic.go.jp/">環境省生物多様性センター</a>）のデータを加工し、使用しました。このデータ（国立公園のポリゴン）には、<a href="http://www.biodic.go.jp/copyright/index.html">政府標準利用規約（第1.0版）</a>が適用されています。</p>
+              <p class="text">このサイトに表示される国立公園規制区域については、高い精度を保証しません。正確な国立公園の区域や地種区分等を調べる際は、当該国立公園を所管する環境省の自然保護官事務所等に問い合わせを行うことをお勧めします。</p>
+              <p class="links">
                 <a href="https://github.com/KamataRyo/nationalpark-map">
+                  <span class="linked-text">githubリポジトリ</span>
                   <ng-md-icon icon="github-circle" style="fill: #efefee;" size="32px"></ng-md-icon>
                 </a>
                 <a href="https://github.com/KamataRyo/nationalpark-map/issues">
+                  <span class="linked-text">バグレポート</span>
                   <ng-md-icon icon="bug_report" style="fill: #efefee" size="32px"></ng-md-icon>
                 </a>
               </p>
@@ -125,12 +135,24 @@
       </div>
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCaIyiWRQe5ZjR1MPAWev0o_j9QPbTsM8E"></script>
-    <script src="./js/lib/ngmap/build/scripts/ng-map.min.js"></script><!-- cdn? -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script>window.topojson || document.write('<script src="./js/lib/topojson/topojson.js"><\/script>')</script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script>window.angular || document.write('<script src="./js/lib/angular/angular.min.js"><\/script>')</script>
+
+    <script src="./js/lib/ngmap/build/scripts/ng-map.min.js"></script><!-- cdn not found -->
+    <!-- <script>angular.module('ngMap')) || document.write('<script src="./js/lib/ngmap/build/scripts/ng-map.min.js"><\/script>')</script> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
+    <script>window.topojson || document.write('<script src="./js/lib/angular-material-icons/angular-material-icons.min.js"><\/script>')</script>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-touch/1.4.8/angular-touch.min.js"></script>
+    <script>window.topojson || document.write('<script src="./js/lib/angular-touch/angular-touch.min.js"><\/script>')</script>
+
     <script src="./js/app.js"></script>
+
   </body>
 </html>
