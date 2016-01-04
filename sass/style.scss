@@ -323,7 +323,7 @@ nav#navigation {
                 color :$font-color1;
             }
         }
-        p.icons {
+        p.links {
             text-align:right;
             margin:0;
             a {
@@ -332,9 +332,13 @@ nav#navigation {
                         opacity: .6;
                 }
             }
+            span.linked-text {
+                display:none;
+            }
         }
     }
 }
+
 
 div#content {
     position:static;

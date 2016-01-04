@@ -7,6 +7,7 @@ app = angular.module 'nationalpark-map', [
     'ngTouch'
 ]
 
+
 # The urlParserService parses and interprets $location as inner page information(npid & mapPosition).
 # The inner page information will be serialized as on $rootScope.
 app.service 'urlParser', [
@@ -19,9 +20,9 @@ app.service 'urlParser', [
             latitude: 35.680795
             longitude: 139.76721
         return {
-            getDefaultPosition: () ->
+            getDefaultPosition: ->
                 defaultPosition
-            parse: () ->
+            parse: ->
                 #get location data
                 elements = $location.path().split('/').filter (e) -> e isnt ''
                 queries = $location.search()
@@ -70,7 +71,7 @@ app.service 'urlEncoder', [
     '$rootScope'
     ($location, $rootScope) ->
         return {
-            encode: () ->
+            encode: ->
                 path = [
                     $rootScope.serial.npid
                     $rootScope.serial.mapPosition.zoom
@@ -94,7 +95,7 @@ app.service 'abstractLoader', [
             url: './topojson/abstract.json'
             method: 'GET'
         return {
-            load: () ->
+            load: ->
                 $http(query).success (data) ->
                     $rootScope.abstract = data
                     $rootScope.$emit 'abstractLoaded'
@@ -107,7 +108,7 @@ app.service 'topojsonLoader', [
     '$rootScope'
     ($http, $rootScope) ->
         return {
-            load: () ->
+            load: ->
                 unless $rootScope.serial then return false
                 unless $rootScope.serial.npid then return false
                 query =
@@ -178,7 +179,7 @@ app.service 'geoLocator', [
                     console.log 'your device donot offer geolocation.'
                     $rootScope.$emit 'geolocationFailed'
 
-            stop: () ->
+            stop: ->
                 if navigator.geolocation
                     # the device offer geolocation
                     navigator.geolocation.clearWatch watchState.id
@@ -212,22 +213,22 @@ app.controller 'mainCtrl', [
         #navbar firstsetting
         $scope.navOpen = true
         #toggle side navbar
-        $scope.toggleNav = () ->
+        $scope.toggleNav = ->
             $scope.navOpen = ! $scope.navOpen
 
         $scope.locatingButtonIcon = 'gps_fixed'
-        $scope.toggleLocator = () ->
+        $scope.toggleLocator = ->
             if $scope.locatingButtonIcon is 'gps_fixed'
                 geoLocator.start(true)
                 $scope.locatingButtonIcon = 'gps_off'
             else
                 $scope.locatingButtonIcon = 'gps_fixed'
                 geoLocator.stop()
-        $scope.$on 'geolocationFailed', () ->
+        $scope.$on 'geolocationFailed', ->
             $rootScope.locatingButtonIcon = 'gps_fixed'
 
         $scope.pinButtonIcon = if $rootScope.serial.pin is '' then 'location_on' else 'location_off'
-        $scope.togglePin = () ->
+        $scope.togglePin = ->
             if $scope.pinButtonIcon is 'location_on'
                 $scope.$broadcast 'force:pinSet'
                 $scope.pinButtonIcon = 'location_off'
@@ -235,10 +236,10 @@ app.controller 'mainCtrl', [
                 $scope.$broadcast 'force:pinRemove'
                 $scope.pinButtonIcon = 'location_on'
 
-        $scope.$on 'pinSet', () ->
+        $scope.$on 'pinSet', ->
             $scope.pinButtonIcon = 'location_off'
 
-        $scope.$on 'pinRemove', () ->
+        $scope.$on 'pinRemove', ->
             $scope.pinButtonIcon = 'location_on'
 ]
 
@@ -249,7 +250,7 @@ app.controller 'navCtrl', [
     'urlEncoder'
     'mapFocuser'
     ($scope, $rootScope, topolsonLoader, urlEncoder, mapFocuser) ->
-        $rootScope.$on 'abstractLoaded', () ->
+        $rootScope.$on 'abstractLoaded', ->
             $scope.npAbstract = $rootScope.abstract
             if $rootScope.serial then $scope.onSelect($rootScope.serial.npid, false)
 
@@ -269,12 +270,12 @@ app.controller 'navCtrl', [
             topolsonLoader.load()
             urlEncoder.encode()
 
-        reflectStyles = () ->
+        reflectStyles = ->
             $rootScope.lineColor = $scope.lineColor
             $rootScope.lineWidth = $scope.lineWidth
             $rootScope.opacity = $scope.opacity
 
-        getStyleId = () ->
+        getStyleId = ->
             '' + $scope.lineColor + $scope.lineWidth + $scope.opacity
 
         $scope.getRGBA = (color, a) ->
@@ -315,13 +316,13 @@ app.controller 'mapCtrl', [
             if $rootScope.serial.pin isnt ''
                 $scope.pin = $rootScope.serial.pin
 
-            $scope.$on 'force:pinSet', () ->
+            $scope.$on 'force:pinSet', ->
                 # set pin at map center
                 $scope.pin = $rootScope.serial.mapPosition.latitude + ',' + $rootScope.serial.mapPosition.longitude
                 $rootScope.serial.pin = $scope.pin
                 urlEncoder.encode()
 
-            $scope.$on 'force:pinRemove', () ->
+            $scope.$on 'force:pinRemove', ->
                 $scope.pin = '1000000,1000000'
                 $rootScope.serial.pin = ''
                 urlEncoder.encode()
@@ -336,20 +337,20 @@ app.controller 'mapCtrl', [
                 $scope.$emit 'pinSet'
                 $scope.$apply()
 
-            $scope.addData = () ->
+            $scope.addData = ->
                 map.data.forEach (feature) -> map.data.remove feature # synchronous
                 map.data.addGeoJson $rootScope.geojson
                 map.data.setStyle $scope.mapStyler
                 map.data.addListener 'click', $scope.pinSetCallback
 
-            $rootScope.$watch () ->
+            $rootScope.$watch ->
                 return $rootScope.geojson
             , $scope.addData
 
             map.addListener 'click', $scope.pinSetCallback
 
             # rewrite URL when map have finished moving
-            map.addListener 'idle', () ->
+            map.addListener 'idle', ->
                 $rootScope.serial.mapPosition =
                     zoom: map.getZoom()
                     latitude : map.getCenter().lat()
@@ -358,19 +359,19 @@ app.controller 'mapCtrl', [
                 $rootScope.$apply()
 
             # Dragging must not interrupts geolocational.
-            map.addListener 'dragstart', () ->
+            map.addListener 'dragstart', ->
                 $rootScope.dragging = true
-            map.addListener 'dragend', () ->
+            map.addListener 'dragend', ->
                 $rootScope.dragging = false
 
             #current position marker move
-            $rootScope.$on 'currentMoved', () ->
+            $rootScope.$on 'currentMoved', ->
                 $scope.current = $rootScope.current
-            $rootScope.$on 'geolocationStopped', () ->
+            $rootScope.$on 'geolocationStopped', ->
                 $scope.current = '100000,100000'
 
             # bind style values
             for style in ['opacity', 'lineColor', 'lineWidth']
-                $rootScope.$watch style ,() ->
+                $rootScope.$watch style ,->
                     map.data.setStyle $scope.mapStyler
 ]

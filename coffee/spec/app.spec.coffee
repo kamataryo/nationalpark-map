@@ -1,11 +1,11 @@
 'use strict'
-describe 'test of services', () ->
+describe 'test of services', ->
     app = module 'nationalpark-map'
     beforeEach app
 
 #=========================================================================================
 #=========================================================================================
-    describe 'test of urlParser service', () ->
+    describe 'test of urlParser service', ->
         urlParseService = {}
         location = {}
         rootScope = {}
@@ -20,7 +20,7 @@ describe 'test of services', () ->
         #    z -> latitude
         #    w -> longitude
         #    u -> () *rejected
-        it 'urlParser interpet >3 elements as npid & mapPosition', () ->
+        it 'urlParser interpet >3 elements as npid & mapPosition', ->
             elements = ['NPS_xxx',12, 34.5, 67.8]
             serialExpected =
                 npid: 'NPS_xxx'
@@ -41,7 +41,7 @@ describe 'test of services', () ->
         #    y -> (zoom) *rejected
         #    z -> (latitude) *rejected
         #    w -> (longitude) *rejected
-        it 'urlParser interpet >3 elements including invalid value(s) as npid & default mapPosition', () ->
+        it 'urlParser interpet >3 elements including invalid value(s) as npid & default mapPosition', ->
             elements = ['NPS_uuu',6, 'contaminatedInvalidValue', 17.5]
             serialExpected =
                 npid: 'NPS_uuu'
@@ -58,7 +58,7 @@ describe 'test of services', () ->
         #    x -> zoom
         #    y -> latitude
         #    z -> longitude
-        it 'urlParser interpet 3 elements as mapPosition', () ->
+        it 'urlParser interpet 3 elements as mapPosition', ->
             elements = [12, 34.5, 67.8]
             serialExpected =
                 npid: ''
@@ -78,7 +78,7 @@ describe 'test of services', () ->
         #    y -> (zoom) *rejected
         #    z -> (latitude) *rejected
         #    w -> (longitude) *rejected
-        it 'urlParser interpet 3 elements including invalid value(s) as default mapPosition', () ->
+        it 'urlParser interpet 3 elements including invalid value(s) as default mapPosition', ->
             elements = [17, 14.5, "invalidvalue"]
             serialExpected =
                 npid: ''
@@ -94,7 +94,7 @@ describe 'test of services', () ->
         # x/y (lengh=2)
         #    x -> npid
         #    y -> () * rejected
-        it 'urlParser interpet 2 elements as npid & default mapPosition', () ->
+        it 'urlParser interpet 2 elements as npid & default mapPosition', ->
             elements = ['NPS_yyy', 'value to be ignored']
             serialExpected =
                 npid: 'NPS_yyy'
@@ -109,7 +109,7 @@ describe 'test of services', () ->
 
         # x (legth=1)
         #   x -> npid
-        it 'urlParser interpet 1 element as npid & default mapPosition', () ->
+        it 'urlParser interpet 1 element as npid & default mapPosition', ->
             elements = ['NPS_zzz']
             serialExpected =
                 npid: 'NPS_zzz'
@@ -122,7 +122,7 @@ describe 'test of services', () ->
             expect JSON.stringify serialized
                 .toEqual JSON.stringify serialExpected
 
-        it 'urlParser interpet 0 elements as default mapPosition', () ->
+        it 'urlParser interpet 0 elements as default mapPosition', ->
             elements = []
             serialExpected =
                 npid: ''
@@ -136,7 +136,7 @@ describe 'test of services', () ->
                 .toEqual JSON.stringify serialExpected
 
 
-        it 'query strings detection success', () ->
+        it 'query strings detection success', ->
             elements = []
             serialExpected =
                 npid: ''
@@ -150,7 +150,7 @@ describe 'test of services', () ->
 
 
 #=========================================================================================
-    describe 'test of urlEncoder service', () ->
+    describe 'test of urlEncoder service', ->
         urlEncodeService = {}
         location = {}
         rootScope = {}
@@ -159,7 +159,7 @@ describe 'test of services', () ->
             location = $location
             rootScope = $rootScope
 
-        it 'URL encode with npid & mapPosition', () ->
+        it 'URL encode with npid & mapPosition', ->
             #provide pseudo inner Page Information to rootScope
             rootScope.serial =
                 npid: 'NPS_pseudo'
@@ -173,32 +173,32 @@ describe 'test of services', () ->
                 .toEqual pathExpected
 
 #=========================================================================================
-    describe 'test of abstractLoader service', () ->
+    describe 'test of abstractLoader service', ->
         abstractLoadService ={}
         rootScope = {}
         beforeEach inject (_abstractLoader_, $rootScope) ->
             abstractLoadService = _abstractLoader_
             rootScope = $rootScope
 
-        it 'ajax abstract request success', () ->
+        it 'ajax abstract request success', ->
             abstractLoadService.load()
-            rootScope.$on 'abstractLoaded', () ->
+            rootScope.$on 'abstractLoaded', ->
                 expect rootScope.abstract
                     .not.toBeDefined()
 
 #=========================================================================================
-    describe 'failure case: test of topojsonLoader service', () ->
+    describe 'failure case: test of topojsonLoader service', ->
         topojsonLoadService = {}
         rootScope = {}
         beforeEach inject (_topojsonLoader_, $rootScope) ->
             topojsonLoadService = _topojsonLoader_
             rootScope = $rootScope
 
-        it 'ajax topojson request failes without np selection', () ->
+        it 'ajax topojson request failes without np selection', ->
                 result = topojsonLoadService.load()
                 expect(result).toEqual false
 
-    describe 'success case: test of topojsonLoader service', () ->
+    describe 'success case: test of topojsonLoader service', ->
         topojsonLoadService = {}
         rootScope = {}
         beforeEach inject (_topojsonLoader_, $rootScope) ->
@@ -206,14 +206,14 @@ describe 'test of services', () ->
             rootScope = $rootScope
             rootScope.serial = npid:'NPS_rishirirebun'
 
-        it 'ajax topojson request success with np selection', () ->
+        it 'ajax topojson request success with np selection', ->
             result = topojsonLoadService.load()
-            rootScope.$on 'topojsonLoaded', () ->
+            rootScope.$on 'topojsonLoaded', ->
                 expect rootScope.geojson
                     .not.toBeDefined()
 
 #=========================================================================================
-    describe 'test of navCtrl controller', () ->
+    describe 'test of navCtrl controller', ->
         urlParseService = {}
         $scope = {}
         rootScope = {}
@@ -223,10 +223,10 @@ describe 'test of services', () ->
             rootScope = $rootScope
             navController = $controller 'navCtrl', {$scope: $scope}
 
-        it 'method onSelect change rootScope.selected', () ->
+        it 'method onSelect change rootScope.selected', ->
             urlParseService.parse()
-            rootScope.$on 'urlParsed', () ->
+            rootScope.$on 'urlParsed', ->
                 $scope.onSelect 'NPS_dummy'
                 expect($scope.selected).toEqual 'NPS_dummy'
 
-    #it '必ず失敗させるおまじない', () -> expect(false).toEqual true
+    #it '必ず失敗させるおまじない', -> expect(false).toEqual true

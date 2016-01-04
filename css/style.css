@@ -474,15 +474,18 @@ nav#navigation li.about p.text {
 nav#navigation li.about p.text a {
   color: #efefee;
 }
-nav#navigation li.about p.icons {
+nav#navigation li.about p.links {
   text-align: right;
   margin: 0;
 }
-nav#navigation li.about p.icons a {
+nav#navigation li.about p.links a {
   text-decoration: none;
 }
-nav#navigation li.about p.icons a:hover {
+nav#navigation li.about p.links a:hover {
   opacity: .6;
+}
+nav#navigation li.about p.links span.linked-text {
+  display: none;
 }
 
 div#content {
