@@ -30,14 +30,14 @@ To provide a platform to share geolocational information of Japanese National Pa
 1. (incomplete) provide a convertor from official KML to TopoJSON.
 2. (done) Overlay national park poligon on Webmap service.
 3. (done) Support geolocation.
-4. Apply test in high coverage.
+4. test in high coverage.
 5. i18n
 
 
 1. (不完全) 公式に提供されているKMLファイルからTopoJSONを生成するコンバーターを作成すること
 2. (完了) 国立公園のポリゴンをウェブマップのサービスにオーバレイできること
-3. (完了) ジオローケーションをサポートすること
-4. 高カバレッジのユニットテストを備えること
+3. (完了) ジオローケーションのサポート
+4. 高カバレッジのテスト
 5. 多言語対応
 
 ## License / ライセンス
