@@ -35,11 +35,11 @@ app.service 'urlParser', [
                 # support multiple type arguments from /a/b/c/..
                 if elements.length > 3 # id, zoom, lat, lng
                     npid = elements[0]
-                    _zoom = parseInt elements[1]
+                    _zoom = parseInt elements[1],10
                     _latitude = parseFloat elements[2]
                     _longitude = parseFloat elements[3]
                 else if elements.length is 3 # zoom, lat, lng
-                    _zoom = parseInt elements[0]
+                    _zoom = parseInt elements[0],10
                     _latitude = parseFloat elements[1]
                     _longitude = parseFloat elements[2]
                 else if elements.length is 2
@@ -243,6 +243,18 @@ app.controller 'mainCtrl', [
             $scope.pinButtonIcon = 'location_on'
 ]
 
+
+# app.controller 'headCtrl', [
+#     '$scope'
+#     '$rootScope'
+#     ($scope, $rootScope) ->
+#         poststring = '国立公園の規制区域を閲覧し、これを共有するサービスです。'
+#         if $rootScope.selectedNpName
+#             $scope.description = $rootScope.selectedNpName + poststring
+#         else
+#             $scope.description = poststring
+# ]
+
 app.controller 'navCtrl', [
     '$scope'
     '$rootScope'
@@ -259,6 +271,7 @@ app.controller 'navCtrl', [
                 if npid is $scope.selected then return
             $scope.selected = npid
             $rootScope.serial.npid = npid
+            $scope.description = $scope.npAbstract[npid].name + '国立公園の区域を閲覧し、位置情報を共有するためのサービスです。'
 
             if focus
                 top = $scope.npAbstract[npid].top

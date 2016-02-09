@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja" ng-app="nationalpark-map">
-  <head prefix="og:http://ogp.me/ns#">
+  <head prefix="og:http://ogp.me/ns#" ng-controller="navCtrl">
     <meta charset="UTF-8">
     <meta name="author" content="KamataRyo">
     <meta name="keywords" content="国立公園,地図,規制,区域">
-    <meta name="description" content="国立公園の規制区域を閲覧し、これを共有するサービスです。">
+    <meta name="description" content="{{description}}">
     <title>国立公園オンラインマップ</title>
     <meta property="og:title" content="国立公園オンラインマップ">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="国立公園の規制区域を閲覧し、これを共有するサービスです。">
+    <meta property="og:description" content="{{description}}">
     <meta property="og:image" content="./img/apple-touch-icon.png" >
     <meta property="og:url" content="http://http://kamataryo.github.io/nationalpark-map/">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -52,7 +52,7 @@
             <li>
               <h2 class="sr-only">国立公園のリスト</h2>
               <ul class="nplist" ng-swipe-left="toggleNav()">
-                  <li ng-repeat="(npid, npinfo) in npAbstract | orderBy:'npinfo.top'" ng-class="{active: npid===selected, selectable: npid!==selected}">
+                  <li ng-repeat="(npid, npinfo) in npAbstract" ng-class="{active: npid===selected, selectable: npid!==selected}">
                     <a class="npitem" ng-click="onSelect(npid, true)" ng-class="{active: npid===selected, selectable: npid!==selected}" ng-bind="npinfo.name + '国立公園'"></a>
                     <!-- <span class="nav-size">
                       <span class="nav-size_value" ng-bind="npinfo.size"></span>
