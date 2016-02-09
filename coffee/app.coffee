@@ -244,16 +244,6 @@ app.controller 'mainCtrl', [
 ]
 
 
-# app.controller 'headCtrl', [
-#     '$scope'
-#     '$rootScope'
-#     ($scope, $rootScope) ->
-#         poststring = '国立公園の規制区域を閲覧し、これを共有するサービスです。'
-#         if $rootScope.selectedNpName
-#             $scope.description = $rootScope.selectedNpName + poststring
-#         else
-#             $scope.description = poststring
-# ]
 
 app.controller 'navCtrl', [
     '$scope'
@@ -266,12 +256,18 @@ app.controller 'navCtrl', [
             $scope.npAbstract = $rootScope.abstract
             if $rootScope.serial then $scope.onSelect($rootScope.serial.npid, false)
 
+        $scope.description = '国立公園の区域を閲覧し、位置情報を共有するためのサービスです。'
+        $scope.keywords = '国立公園,地図,マップ,規制,区域'
+        $scope.ogurl = "http://kamataryo.github.io/nationalpark-map/"
+
         $scope.onSelect = (npid, focus) ->
             if $scope.selected
                 if npid is $scope.selected then return
             $scope.selected = npid
             $rootScope.serial.npid = npid
             $scope.description = $scope.npAbstract[npid].name + '国立公園の区域を閲覧し、位置情報を共有するためのサービスです。'
+            $scope.keywords = $scope.npAbstract[npid].name + '国立公園,地図,マップ,規制,区域'
+            $scope.ogurl = "http://kamataryo.github.io/nationalpark-map/\#/#{npid}"
 
             if focus
                 top = $scope.npAbstract[npid].top
