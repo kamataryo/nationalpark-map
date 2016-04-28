@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="nationalpark-map">
+  <head prefix="og:http://ogp.me/ns#" ng-controller="navCtrl">
+    <meta charset="UTF-8">
+    <meta name="author" content="KamataRyo">
+    <meta name="keywords" content="{{keywords}}">
+    <meta name="description" content="{{description}}">
+    <title>国立公園オンラインマップ</title>
+    <meta property="og:title" content="国立公園オンラインマップ">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:image" content="./img/apple-touch-icon.png" >
+    <meta property="og:url" content="{{ogurl}}">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-71934254-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+
+  <body ng-controller="mainCtrl">
+    <div class="nav-controllers">
+      <div
+        ng-class="{'nav-toggler_on_nav-open':navOpen, 'nav-toggler_on_nav-close':!navOpen}"
+        ng-click="toggleNav()">
+        <ng-md-icon icon="keyboard_arrow_left" style="fill:#efefee" size="32"></ng-md-icon>
+      </div>
+
+      <div
+        ng-class="{my_location_on_close:navOpen, my_location_on_open:!navOpen}"
+        ng-click="toggleLocator()">
+          <ng-md-icon icon="{{locatingButtonIcon}}" ng-style="{'fill':'#efefee'}" size="32"></ng-md-icon>
+      </div>
+
+      <div
+        ng-class="{pin_button_on_close:navOpen, pin_button_on_open:!navOpen}"
+        ng-click="togglePin()">
+          <ng-md-icon icon="{{pinButtonIcon}}" ng-style="{'fill':'#efefee'}" size="32"></ng-md-icon>
+      </div>
+    </div>
+
+    <header ng-class="{nav_open:navOpen, nav_close:!navOpen}">
+        <nav id="navigation" ng-controller="navCtrl">
+          <h1 ng-swipe-left="toggleNav()"><a href="#">日本の国立公園</a></h1>
+          <ul id="mainMenu">
+            <li>
+              <h2 class="sr-only">国立公園のリスト</h2>
+              <ul class="nplist" ng-swipe-left="toggleNav()">
+                  <li ng-repeat="(npid, npinfo) in npAbstract" ng-class="{active: npid===selected, selectable: npid!==selected}">
+                    <a class="npitem" ng-click="onSelect(npid, true)" ng-class="{active: npid===selected, selectable: npid!==selected}" ng-bind="npinfo.name + '国立公園'"></a>
+                    <!-- <span class="nav-size">
+                      <span class="nav-size_value" ng-bind="npinfo.size"></span>
+                      <span class="nav-size_unit" ng-bind="npinfo.unit"></span>
+                    </span> -->
+                    </a>
+                  </li>
+              </ul>
+            </li>
+            <li class="table-wrapper" ng-swipe-left="toggleNav()">
+              <h2 class="sr-only">凡例</h2>
+              <table class="legend" ng-show="fillStyles" id="legend">
+                <tbody>
+                  <tr ng-repeat="(grade, fillStyle) in fillStyles">
+                    <th class="grade" ng-bind="grade"></th>
+                    <td class="color-template-background">
+                      <div
+                        class="color-template"
+                        ng-style="{'background-color': fillStyle,'opacity':opacity, 'background-opacity': opacity, 'border-width':'3px', 'border-color': lineColor ,'border-style': 'solid'}"
+                        ng-bind="fillStyle">
+                       </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li>
+              <h2 class="sr-only">スタイル</h2>
+              <form id="styleForm">
+                <ul class="stylers">
+                  <li class="selectable opacity">
+                    <label for="opacity">不透明度</label>
+                      <input id="opacity" type="range" min="0" max="1" value="0.4" step="0.01" ng-model="opacity" ng-init="opacity=0.4">
+                      <span class="style-unit" ng-bind="(opacity * 100 | number:0) + '%'"></span>
+                  </li>
+                  <li class="selectable line-color" ng-swipe-left="toggleNav()">
+                    <label for="line-color">線色</label>
+                      <input id="line-color" type="color" value="#eeeeee" ng-model="lineColor" ng-style="{color: lineColor}" ng-init="lineColor='#eeeeee'">
+                  </li>
+                  <li class="selectable line-width" ng-swipe-left="toggleNav()">
+                    <label for="line-width">線幅</label>
+                      <input id="line-width" type="number" value="1.5" step="0.5" min="0" ng-model="lineWidth" ng-init="lineWidth=1.5">
+                      <span class="style-unit">px</span>
+                  </li>
+                </ul>
+              </form>
+            </li>
+            <li class="about" ng-swipe-left="toggleNav()">
+              <h2>このサイトについて</h2>
+              <p class="text">このサイト「国立公園オンラインマップ」は、国立公園に関する位置情報を共有するためのサービスです。</p>
+              <p class="text">このサービスの作成にあたっては、<a href="http://www.biodic.go.jp/trialSystem/top.html">自然環境情報GIS</a> <a href="http://www.biodic.go.jp/trialSystem/info/nps.html">国立公園の区域等</a>（<a href="http://www.biodic.go.jp/">環境省生物多様性センター</a>）のデータを加工し、使用しました。このデータ（国立公園のポリゴン）には、<a href="http://www.biodic.go.jp/copyright/index.html">政府標準利用規約（第1.0版）</a>が適用されています。</p>
+              <p class="text">このサイトに表示される国立公園規制区域については、高い精度を保証しません。正確な国立公園の区域や地種区分等を調べる際は、当該国立公園を所管する環境省の自然保護官事務所等に問い合わせを行うことをお勧めします。</p>
+              <p class="links">
+                <a href="https://github.com/KamataRyo/nationalpark-map">
+                  <span class="linked-text">githubリポジトリ</span>
+                  <ng-md-icon icon="github-circle" style="fill: #efefee;" size="32px"></ng-md-icon>
+                </a>
+                <a href="https://github.com/KamataRyo/nationalpark-map/issues">
+                  <span class="linked-text">バグレポート</span>
+                  <ng-md-icon icon="bug_report" style="fill: #efefee" size="32px"></ng-md-icon>
+                </a>
+              </p>
+            </li>
+          </ul>
+      </nav>
+    </header>
+
+    <div ng-controller="mapCtrl" id="content">
+      <div map-lazy-load="https://maps.google.com/maps/api/js">
+        <ng-map
+          zoom="{{zoom}}"
+          center="{{latlng}}"
+          max-zoom="18"
+          map-type-id="TERRAIN">
+          <marker position="{{pin}}"></marker>
+          <custom-marker position="{{current}}">
+            <img src="./img/marker-current.svg" alt="current position">
+          </custom-marker>
+        </ng-map>
+      </div>
+    </div>
+
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCaIyiWRQe5ZjR1MPAWev0o_j9QPbTsM8E"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script>window.topojson || document.write('<script src="./js/lib/topojson/topojson.js"><\/script>')</script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script>window.angular || document.write('<script src="./js/lib/angular/angular.min.js"><\/script>')</script>
+
+    <script src="./js/lib/ngmap/build/scripts/ng-map.min.js"></script><!-- cdn not found -->
+    <!-- <script>angular.module('ngMap')) || document.write('<script src="./js/lib/ngmap/build/scripts/ng-map.min.js"><\/script>')</script> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script>
+    <script>window.topojson || document.write('<script src="./js/lib/angular-material-icons/angular-material-icons.min.js"><\/script>')</script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-touch/1.4.8/angular-touch.min.js"></script>
+    <script>window.topojson || document.write('<script src="./js/lib/angular-touch/angular-touch.min.js"><\/script>')</script>
+
+    <script src="./js/app.js"></script>
+
+  </body>
+</html>

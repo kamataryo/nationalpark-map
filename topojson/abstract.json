@@ -1,0 +1,281 @@
+{
+    "NPS_akan": {
+        "name": "阿寒",
+        "top": 43.727696,
+        "right": 144.669091,
+        "bottom": 43.350097,
+        "left": 143.913115,
+        "size": 237,
+        "unit": "kB"
+    },
+    "NPS_ashizuriuwakai": {
+        "name": "足摺宇和海",
+        "top": 33.339303,
+        "right": 133.036692,
+        "bottom": 32.69386,
+        "left": 132.248376,
+        "size": 739,
+        "unit": "kB"
+    },
+    "NPS_asokuju": {
+        "name": "阿蘇くじゅう",
+        "top": 33.310982,
+        "right": 131.470309,
+        "bottom": 32.783724,
+        "left": 130.920195,
+        "size": 674,
+        "unit": "kB"
+    },
+    "NPS_bandaiasahi": {
+        "name": "磐梯朝日",
+        "top": 38.711394,
+        "right": 140.367959,
+        "bottom": 37.41137,
+        "left": 139.49929,
+        "size": 506,
+        "unit": "kB"
+    },
+    "NPS_chichibutama": {
+        "name": "秩父多摩",
+        "top": 36.038832,
+        "right": 139.228927,
+        "bottom": 35.689177,
+        "left": 138.495846,
+        "size": 605,
+        "unit": "kB"
+    },
+    "NPS_chubusangaku": {
+        "name": "中部山岳",
+        "top": 36.900235,
+        "right": 137.860722,
+        "bottom": 36.060752,
+        "left": 137.422903,
+        "size": 312,
+        "unit": "kB"
+    },
+    "NPS_daisen": {
+        "name": "大山隠岐",
+        "top": 36.36622290590223,
+        "right": 133.9720669518606,
+        "bottom": 35.09314407254354,
+        "left": 132.5589036675264,
+        "size": 1.4,
+        "unit": "MB"
+    },
+    "NPS_daisetsuzan": {
+        "name": "大雪山",
+        "top": 43.805662,
+        "right": 143.314812,
+        "bottom": 43.217839,
+        "left": 142.559397,
+        "size": 573,
+        "unit": "kB"
+    },
+    "NPS_fujihakoneizu": {
+        "name": "富士箱根伊豆",
+        "top": 35.572259,
+        "right": 139.869902,
+        "bottom": 33.036272,
+        "left": 138.528285,
+        "size": 1.2,
+        "unit": "MB"
+    },
+    "NPS_hakusan": {
+        "name": "白山",
+        "top": 36.37474962306193,
+        "right": 136.8851361782092,
+        "bottom": 35.99140366335239,
+        "left": 136.5230277555198,
+        "size": 148,
+        "unit": "kB"
+    },
+    "NPS_iriomoteishigaki": {
+        "name": "西表石垣",
+        "top": 24.630266,
+        "right": 124.360701,
+        "bottom": 24.027582,
+        "left": 123.545283,
+        "size": 960,
+        "unit": "kB"
+    },
+    "NPS_iseshima": {
+        "name": "伊勢志摩",
+        "top": 34.559794,
+        "right": 136.998858,
+        "bottom": 34.210557,
+        "left": 136.436207,
+        "size": 710,
+        "unit": "kB"
+    },
+    "NPS_joshinetsu": {
+        "name": "上信越高原",
+        "top": 36.986518,
+        "right": 138.998046,
+        "bottom": 36.336468,
+        "left": 137.943154,
+        "size": 578,
+        "unit": "kB"
+    },
+    "NPS_keramashotou": {
+        "name": "慶良間諸島",
+        "top": 26.33018747455019,
+        "right": 127.6536603084227,
+        "bottom": 26.07341590841694,
+        "left": 127.1587624732298,
+        "size": 1.4,
+        "unit": "MB"
+    },
+    "NPS_kirishimakinkowan": {
+        "name": "霧島錦江湾",
+        "top": 31.997441,
+        "right": 130.990586,
+        "bottom": 30.981693,
+        "left": 130.495625,
+        "size": 657,
+        "unit": "kB"
+    },
+    "NPS_kushiro": {
+        "name": "釧路湿原",
+        "top": 43.257795,
+        "right": 144.618063,
+        "bottom": 43.014008,
+        "left": 144.294261,
+        "size": 297,
+        "unit": "kB"
+    },
+    "NPS_nikkou": {
+        "name": "日光",
+        "top": 37.217768,
+        "right": 140.089067,
+        "bottom": 36.645629,
+        "left": 139.29068,
+        "size": 481,
+        "unit": "kB"
+    },
+    "NPS_nishikai": {
+        "name": "西海",
+        "top": 33.454399,
+        "right": 129.764118,
+        "bottom": 32.575688,
+        "left": 128.578548,
+        "size": 3,
+        "unit": "MB"
+    },
+    "NPS_ogasawara": {
+        "name": "小笠原",
+        "top": 27.270134,
+        "right": 142.299881,
+        "bottom": 25.400859,
+        "left": 140.852224,
+        "size": 2.4,
+        "unit": "MB"
+    },
+    "NPS_oze": {
+        "name": "尾瀬",
+        "top": 37.094266,
+        "right": 139.50465,
+        "bottom": 36.839636,
+        "left": 139.153167,
+        "size": 124,
+        "unit": "kB"
+    },
+    "NPS_rishirirebun": {
+        "name": "利尻礼文サロベツ",
+        "top": 45.488892,
+        "right": 141.742291,
+        "bottom": 44.898649,
+        "left": 140.949618,
+        "size": 186,
+        "unit": "kB"
+    },
+    "NPS_saninkaigan": {
+        "name": "山陰海岸",
+        "top": 35.74053958103639,
+        "right": 135.0276831384999,
+        "bottom": 35.53216446652368,
+        "left": 134.159301502145,
+        "size": 3.2,
+        "unit": "MB"
+    },
+    "NPS_sanrikufukkou": {
+        "name": "三陸復興",
+        "top": 40.5192243320683,
+        "right": 142.0369168124584,
+        "bottom": 38.80951078676914,
+        "left": 141.5404340518334,
+        "size": 1.8,
+        "unit": "MB"
+    },
+    "NPS_setonaikai": {
+        "name": "瀬戸内海",
+        "top": 34.811728,
+        "right": 135.324648,
+        "bottom": 33.244139,
+        "left": 130.953767,
+        "size": 2.6,
+        "unit": "MB"
+    },
+    "NPS_shikotsutouya": {
+        "name": "支笏洞爺",
+        "top": 43.016698,
+        "right": 141.458706,
+        "bottom": 42.470162,
+        "left": 140.729738,
+        "size": 376,
+        "unit": "kB"
+    },
+    "NPS_shiretoko": {
+        "name": "知床",
+        "top": 44.374063,
+        "right": 145.404721,
+        "bottom": 43.980186,
+        "left": 144.978109,
+        "size": 192,
+        "unit": "kB"
+    },
+    "NPS_southalps": {
+        "name": "南アルプス",
+        "top": 35.81035,
+        "right": 138.342291,
+        "bottom": 35.324635,
+        "left": 138.078965,
+        "size": 203,
+        "unit": "kB"
+    },
+    "NPS_towadahatimantai": {
+        "name": "十和田八幡平",
+        "top": 40.727308,
+        "right": 141.053086,
+        "bottom": 39.707535,
+        "left": 140.672983,
+        "size": 414,
+        "unit": "kB"
+    },
+    "NPS_unzenamakusa": {
+        "name": "雲仙天草",
+        "top": 32.830673,
+        "right": 130.478324,
+        "bottom": 32.133413,
+        "left": 129.930598,
+        "size": 880,
+        "unit": "kB"
+    },
+    "NPS_yakushima": {
+        "name": "屋久島",
+        "top": 30.499702,
+        "right": 130.680971,
+        "bottom": 30.221832,
+        "left": 130.132273,
+        "size": 527,
+        "unit": "kB"
+    },
+    "NPS_yoshinokumano": {
+        "name": "吉野熊野",
+        "top": 34.386564,
+        "right": 136.315076,
+        "bottom": 33.424588,
+        "left": 135.706063,
+        "size": 905,
+        "unit": "kB"
+    }
+}
