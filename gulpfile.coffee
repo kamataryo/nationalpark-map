@@ -6,7 +6,7 @@ coffee  = require 'gulp-coffee'
 rename  = require 'gulp-rename'
 plumber = require 'gulp-plumber'
 sketch  = require 'gulp-sketch'
-KarmaServer  = require('karma').Server;
+KarmaServer  = require('karma').Server
 
 
 
@@ -18,7 +18,7 @@ srcs =
     base + 'coffee/**/*.coffee'
     base + 'sketch/**/*.sketch'
   ]
-  uploading :　[
+  uploading : [
     base + '*.html'
     base + 'css/*.css'
     base + 'js/*.js'
@@ -39,7 +39,7 @@ gulp.task 'compass', () ->
     .pipe plumber()
     .pipe compass options
     .on 'error', (err) ->
-        console.log err
+      console.log err
     .pipe gulp.dest base + 'css/'
 
 
@@ -48,7 +48,7 @@ gulp.task 'coffee', () ->
     .pipe plumber()
     .pipe coffee(bare: false)
     .on 'error', (err) ->
-        console.log err.stack
+      console.log err.stack
     .pipe gulp.dest base + 'js/'
 
 gulp.task 'sketch', () ->
@@ -60,11 +60,11 @@ gulp.task 'sketch', () ->
 
 
 gulp.task 'karma',['coffee'], (done) ->
-    new KarmaServer {
-        configFile: __dirname + '/bin/karma.conf.coffee'
-        singleRun: true
-    }, done
-        .start()
+  new KarmaServer {
+    configFile: __dirname + '/bin/karma.conf.coffee'
+    singleRun: true
+  }, done
+      .start()
 
 
 # create server
@@ -88,6 +88,18 @@ gulp.task 'default', ['coffee','compass' ] # exclude sketch
 gulp.task 'dev', ['sketch', 'compass','coffee','karma','connect', 'watch' ]
 gulp.task 'devstyle', ['compass','coffee','connect','watch']
 
+
+browserify = require 'browserify'
+source = require 'vinyl-source-stream'
+
+gulp.task 'script', ->
+  browserify {
+    entries: ['./coffee/app.coffee']
+    extensions: ['coffee']
+  }
+    .bundle()
+    .pipe source 'main.js'
+    .pipe gulp.dest './js/'
 
 # ==========upper for developing==========
 

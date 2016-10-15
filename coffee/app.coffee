@@ -1,5 +1,8 @@
 'use strict'
 
+angular = require 'angular'
+topojson = require 'topojson'
+
 # application definition
 app = angular.module 'nationalpark-map', [
     'ngMap'

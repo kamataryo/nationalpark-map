@@ -15,7 +15,7 @@
   ],
   "homepage": "https://github.com/KamataRyo/nationalpark-map",
   "moduleType": [],
-  "devDependencies": {
+  "Dependencies": {
     "angular": "angularjs#~1.4.8",
     "topojson": "~1.6.19",
     "ngmap": "~1.15.8",

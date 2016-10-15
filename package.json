@@ -39,6 +39,7 @@
     "path": "^0.11.14",
     "phantomjs": "^1.9.20",
     "underscore": "^1.8.3",
+    "vinyl-source-stream": "^1.1.0",
     "xml2js": "^0.4.10"
   },
   "scripts": {
@@ -62,5 +63,10 @@
   "bugs": {
     "url": "https://github.com/KamataRyo/nationalpark-map/issues"
   },
-  "homepage": "https://github.com/KamataRyo/nationalpark-map#readme"
+  "homepage": "https://github.com/KamataRyo/nationalpark-map#readme",
+  "dependencies": {
+    "browserify": "^13.1.0",
+    "coffeeify": "^2.0.1",
+    "debowerify": "^1.5.0"
+  }
 }
